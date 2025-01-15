@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="5lhtPZozlY84dtOBYjZ6ScEiCvMsy3f06rz9A+TCbnicOgZeyJ4Xz2b3pwSBvL0/YRI6zmR52sAMiQ7JDOUygg==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item clearfix list-group-item clearfix-default cursor-not-allowed" href="empty_references.html"><span class="icon-reference bigger"></span>
+                                    Enrichir les controverses
+                                    <span class="badge">64</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_comments.html"><span class="icon-comment bigger"></span>
+                                    Analyser les références
+                                    <span class="badge">453</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_summaries.html"><span class="icon-summary bigger"></span>
+                                    Synthètiser les controverses
+                                    <span class="badge">11</span></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+      <br/>
+      <br/>
+
+      <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>
+                Ces controverses
+                ont besoin de références scientifiques, venez les enrichir !
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="empties">
+                    <div class="page">
+                      <div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading151">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse151" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/tournant-geographique-faut-il-spatialiser-toute-la-sociologie.html">Tournant géographique : faut-il spatialiser toute la sociologie&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse151" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Introduction</strong><br>
+&quot;La géographie, ça compte !&quot; était le slogan lancé en 1985 par <a href="http://www.cambridge.org/us/academic/subjects/geography/human-geography/geography-matters-reader?format=PB" rel="nofollow">Doreen Massey et John Allen</a>, faisant le constat de l&#39;arrivée des réflexions issues des sciences sociales dans le monde de la géographie humaine. Les réflexions sur la <a href="http://www.persee.fr/doc/homso_0018-4306_1974_num_31_1_1855" rel="nofollow">production sociale et politique de l&#39;espace</a> et sur <a href="http://www.persee.fr/doc/homso_0018-4306_1967_num_6_1_1063" rel="nofollow">le droit à la Ville</a>, rapidement suivies de travaux issus des courants du <a href="http://www.espacestemps.net/en/articles/peut-on-ne-pas-etre-postcolonial-surtout-quand-on-est-geographe-en/" rel="nofollow">post-colonialisme</a> et des <a href="http://www.polity.co.uk/book.asp?ref=9780745612362" rel="nofollow">études féministes</a>.<br>
+En retour, les auteurs ne mâchaient pas leurs mots pour fustiger des sciences sociales encore trop promptes à ne considérer l&#39;espace que comme un &quot;conteneur&quot;. Cette critique a été répétée à plusieurs reprises, par <a href="http://www.jstor.org/stable/10.5749/j.cttts65n" rel="nofollow">Byron Miller et Deborah Martin</a>, comme par Choukri Hmed, qui dénoncent une vision des phénomènes sociaux comme étant &quot;sur une tête d&#39;épingle&quot;, ou par <a href="http://www.annualreviews.org/doi/pdf/10.1146/annurev.soc.26.1.463" rel="nofollow">Thomas Gieryn</a>, qui déplore le fait que &quot;Les sociologues ont donné l&#39;impression de ne pas s&#39;intéresser aux lieux&quot;.</p>
+
+<p><strong>Tournant spatial</strong><br>
+Cette critique a donné lieu à un contre-coup qualifié de <a href="https://jjctelemme.hypotheses.org/740" rel="nofollow">&quot;tournant spatial&quot; ou &quot;tournant géographique&quot;</a> : <a href="http://www.academia.edu/5841742/Du_rôle_de_l_espace_aux_théories_de_l_acteur_aller-retour_._La_géographie_à_l_épreuve_des_mouvements_sociaux_dans_R._Séchet_V._Veschambre_dir._2006_Penser_et_faire_la_géographie_sociale._Contributions_à_une_épistémologie_de_la_géographie_sociale_" rel="nofollow">la dimension géographique des mouvements sociaux</a>, <a href="http://www.persee.fr/doc/polix_0295-2319_1989_num_2_7_1392" rel="nofollow">du politique</a>, <a href="https://cybergeo.revues.org/22846" rel="nofollow">des inégalités</a>, <a href="http://cafe-geo.net/wp-content/uploads/le-genre-construction-spatiales.pdf" rel="nofollow">du genre</a>, <a href="http://lacampa.hypotheses.org/55" rel="nofollow">des relations raciales</a>, entre autres exemples, a été considérablement revalorisée dans l&#39;analyse.<br>
+Dans le même temps, les aspects géographiques de plusieurs conceptions en sciences sociales (particulièrement <a href="https://www.cairn.info/load_pdf.php?ID_ARTICLE=ARSS_195_0112" rel="nofollow">Pierre Bourdieu</a>) ont été explorés. En France, le &quot;tournant pragmatique&quot; peut être vu comme portant un <em>a priori</em> géographique persistant mais non-dit, tant dans <a href="http://www.dailymotion.com/video/x2s9tim" rel="nofollow">son intérêt pour les situations et contextes d&#39;interaction</a>, que dans <a href="http://www.persee.fr/doc/rfsp_0035-2950_1999_num_49_1_395353" rel="nofollow">ses objets d&#39;enquête</a>.</p>
+
+<p><strong>Problèmes</strong><br>
+Ce tournant géographique, qui continue à être poussé, présente-t-il un risque ? Dans un colloque intitulé <a href="http://www.lames.cnrs.fr/IMG/pdf/appel_com_espace_des_mobilisations_territoriales_janv15_cherpa.pdf" rel="nofollow">&quot;Conflits de lieux, lieux de conflits&quot;</a> en 2015, l&#39;une des critiques portée à la géographie concernait son ignorance des structurations larges et des dispositions des agents sociaux. Dans la même voie, <a href="https://www.mediapart.fr/journal/culture-idees/130915/la-carte-le-territoire-et-la-politique?onglet=full" rel="nofollow">Joseph Confavreux</a> s&#39;inquiétait la même année d&#39;une cartographie qui nierait le social dans une certaine mesure. A l&#39;inverse, <a href="http://phg.sagepub.com/content/21/3/305.short" rel="nofollow">l&#39;épistémologie des savoirs situés</a> et <a href="https://variations.revues.org/486" rel="nofollow">certains courants anthropologiques</a> insistent sur la nécessité de localiser toute approche.</p>
+
+<p><strong>Questions</strong><br>
+ Le contexte spatial doit-il, peut-il, tout expliquer, et tout phénomène social ne peut-il être compris que comme phénomène spatial et local ? Quelles implications, quels risques, tant théoriques, empiriques, et politiques, d&#39;une sociologie qui serait entièrement spatialisée ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading150">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse150" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-taille-du-penis-en-erection-chez-l-homme-est-elle-correlee-a-la-couleur-de-peau.html">La taille du pénis en érection chez l&#39;homme est-elle corrélée à l&#39;origine ethnique&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse150" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>L&#39;idée que les hommes d&#39;origine africaine aient un pénis en moyenne plus grand que les autres est largement répandue, de même que les hommes d&#39;origine asiatique en auraient un plus petit.<br>
+Mais ces idées pourraient également provenir de préjugés.</p>
+
+<p><strong>Questions</strong><br>
+Quelle est la taille moyenne du pénis en érection chez l&#39;homme ? Quelle est sa variabilité ?<br>
+Y a-t-il une variabilité inter-ethnie ? Si oui, quelle est-elle ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading149">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse149" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-produits-laitiers-consommes-dans-des-quantites-normales-sont-ils-plus-dangereux-que-benefiques-pour-notre-sante.html">Consommer régulièrement des produits laitiers, est-ce dangereux ou bénéfique pour la santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse149" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les <strong>produits laitiers</strong> représentent 2/3 de notre apport en calcium et l&#39;état français nous encourage à consommer 3 produits laitiers par jour.</p>
+
+<p>Mais les produits laitiers sont aussi accusés par certains d&#39;être la cause de cancers, d&#39;obésité, de diabète, de sclérose en plaque et même d&#39;augmenter le risque d&#39;ostéoporose et de fracture osseuse. De plus, beaucoup de personnes se disent intolérantes au lactose. Les populations asiatiques en particulier auraient des troubles à digérer les produits laitiers à l&#39;état adulte à cause de différences génétiques (voir la controverse sur le sujet ici: <a href="https://controversciences.org/timelines/les-asiatiques-ont-ils-plus-de-mal-a-digerer-les-produits-laitiers" rel="nofollow">https://controversciences.org/timelines/les-asiatiques-ont-ils-plus-de-mal-a-digerer-les-produits-laitiers</a>).</p>
+
+<p>On prendra comme définition d&#39;une consommation régulière, une consommation de moins de 1,5g de calcium par jour en moyenne ce qui équivaut à deux fromages entiers ou plusieurs litres de lait par jour.</p>
+
+<p><strong>Question</strong><br>
+Dans le cadre d&#39;une consommation régulière, quel est le rapport bénéfice/risque de la consommation de produits laitiers pour la santé ?</p>
+
+<p><strong>Questions sous-jacentes</strong><br>
+L&#39;intolérance au lactose touche-t-elle beaucoup de gens, et quels sont ses déterminants ?<br>
+Les produits laitiers comportent-t-il des facteurs de croissance dans des quantités qui pourraient s&#39;avérer dangereuses pour notre santé ?<br>
+Les doses de produits laitiers recommandées sont-elles validées scientifiquement ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading147">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse147" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/comment-peut-on-collaborer-sur-une-meme-question-avec-5000-personnes.html"><strong>Comment peut-on collaborer sur une même question avec 5000 personnes&nbsp?</strong></a>
+    </h4>
+  </div>
+  <div id="Collapse147" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>​​<strong>Introduction et présentation</strong></p>
+
+<p>Lors d&#39;un projet collaboratif, il est important de s&#39;organiser au mieux pour obtenir les meilleures idées, et avoir des avis constructifs pour aboutir à la ou les meilleures solutions possibles. C&#39;est ainsi que des dispositifs tels que <em>Reddit</em> ou <em>ControverSciences</em> ont été développés, mais il peut être intéressant de développer d&#39;autres idées ou systèmes permettant d&#39;obtenir de meilleurs résultats. Il s&#39;agit ainsi d&#39;une discussion sur l&#39;optimisation de procédés de brainstorming.</p>
+
+<p><strong>Note :</strong> <br>
+     Ceci est une controverse initiée dans le cadre du <em>Let&#39;s Play Science 4</em> de <a href="https://www.youtube.com/user/dirtybiology" rel="nofollow">DirtyBiology</a>, et un développement a déjà eu lieu sur le lien <em>Github</em> de <a href="http://dirtylab.github.io/" rel="nofollow">DirtyLab</a></p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading146">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse146" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/manger-des-oeufs-donne-t-il-du-cholesterol.html">Manger des oeufs: est-ce que cela augmente la quantité de cholestérol dans le sang? </a>
+    </h4>
+  </div>
+  <div id="Collapse146" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Une rapide ballade sur internet a de quoi rendre fou. Entre les articles non sourcés, les vérités dites scientifiques et celles se voulant révélées par l&#39;ésotérisme, un non spécialiste de l&#39;alimentation a du mal a trouver des informations rationnelles. </p>
+
+<p>La question est de savoir quelle est l&#39;influence du jaune d&#39;oeuf dans notre alimentation. Y-a-t&#39;il une limite quotidienne d&#39;oeuf à s&#39;imposer? Le cholestérol des oeufs est-il plus important que dans d&#39;autres aliments? Y a-t-il un bon et un mauvais cholestérol? Et le cholestérol est-il de toute manière dangereux pour la santé? </p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading144">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse144" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-nature-face-a-la-mondialisation-les-services-ecosystemiques.html">La nature face à la mondialisation : les services écosystémiques</a>
+    </h4>
+  </div>
+  <div id="Collapse144" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="3 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            3
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>​​<strong>Introduction</strong><br>
+La notion de &quot;service écosystémique&quot; est à la mode. Depuis 2005 et le <em>Millenium Ecosystems Assessment</em> (<em>Évaluation des écosystèmes pour le millénaire</em> en français), économistes, politiques et même écologues ne semblent n&#39;avoir que ce terme en bouche. Mais qu&#39;est-ce qu&#39;un service écosystémique ? </p>
+
+<p>La nature procure à la l&#39;Homme des éléments indispensables à sa survie sans que celui ci n&#39;interfère dans les processus qui les produisent. Comment ferait l&#39;espèce humaine sans l&#39;oxygène produit par les organismes photosynthétiques (ou alors mieux expliquer l&#39;autotrophie, mais la photosynthèse est un terme qui parle à plus de gens à mon avis) ? Comment mangerions-nous des fruits sans les milliards de pollinisateurs qui nous entourent ? Ces exemples peuvent sembler évidents mais la nature, et donc les écosystèmes, produisent autour de nous d’innombrables &quot;services écosystémiques&quot; sans que nous n&#39;intervenions.  </p>
+
+<p><strong>Problématiques</strong></p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading143">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse143" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-allaitement-maternel-presente-t-il-des-benefices-superieurs-aux-laits-maternises.html">L&#39;allaitement maternel présente-t-il des bénéfices supérieurs aux laits infantiles artificiels&nbsp? </a>
+    </h4>
+  </div>
+  <div id="Collapse143" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Alors que les médias relaient activement de récentes études sur les <strong>bienfaits de l&#39;allaitement maternel</strong> à une échelle internationale, de nombreuses questions se posent concernant la nature de ces éventuels bénéfices et les avantages qu&#39;ils représentent par rapport à l&#39;utilisation de <strong>laits maternisés</strong>. Ces derniers sont des laits infantiles articiels élaborés pour répondre aux besoins nutritionnels spécifiques des nourrissons. Il en existe une large offre, le plus souvent fabriqués à partir de lait de vache, mais aussi parfois à partir d&#39;une base végétale comme le riz. </p>
+
+<p>Ces bénéfices sont en outre susceptibles de varier selon les pays (par exemple, selon qu&#39;il s&#39;agisse ou non de pays en développement). </p>
+
+<p>De tels avantages sont-ils avérés, et le cas échéant de quelle nature sont-ils ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading138">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse138" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/y-a-t-il-une-technique-en-neurosciences-qui-permet-de-lire-dans-les-pensees.html">Y a-t-il une technique en neurosciences qui permet de lire dans les pensées?</a>
+    </h4>
+  </div>
+  <div id="Collapse138" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Beaucoup, notamment en justice, fantasment sur la possibilité de lire dans les pensées pour voir par exemple quand un accusé ou un témoin ment. D&#39;autres craignent plus que tout ce type d&#39;intrusion dans ce qui constitue nos pensées intimes.</p>
+
+<ul>
+<li>Est-il possible de &quot;lire les pensées&quot; aujourd&#39;hui?</li>
+<li>Quelles sont les techniques actuelles en neurosciences qui permettent de voir l&#39;activité du cerveau? Quelle est leur précision? Y a-t-il des techniques qui permettraient réellement de &quot;lire&quot; l&#39;activité du cerveau et d&#39;en déduire les pensées des sujets?</li>
+</ul>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading120">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse120" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/le-mesure-du-qi-a-t-elle-un-sens.html">Quel(s) sens accorder à la mesure du QI&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse120" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Mesure créée au début du XXe siècle pour identifier les enfants en difficulté et les aider, certains pensent que le quotient intellectuel (QI) serait une mesure absolue reflétant la position de chaque individu dans l&#39;échelle hiérarchique de l&#39;intelligence. Pour mesurer le QI, un ensemble de questions sont posées dans un questionnaire sensé permettre d&#39;évaluer différents aspects des capacités cognitives de chaque individu. Cependant, dès 1983, le psychologue du développement Howard Gardner développe sa théorie des intelligences multiples. Il propose plusieurs paramètres qu&#39;on peut définir comme des &quot;intelligences&quot; et pense que l&#39;on ne peut réduire l&#39;homme à la mesure du QI qui ne correspond qu&#39;à une partie de ces paramètres. La mesure du QI est encore très utilisée par certains psychologues et dans certains médias (dans des magazines notamment) et reste très populaire: quel(s) sens faut-il lui accorder?</p>
+
+<p><strong>A quelle échelle et pour qui</strong><br>
+Ce genre de mesure a de nombreuses applications. On peut déjà distinguer un usage individuel pour des raisons de curiosité ou de santé ou une méthode globale pour étudier ses variations dans une population. Il est difficile de déclarer une équivalence, <em>a priori</em>, entre le pouvoir descriptif du QI dans ces deux contextes.</p>
+
+<p><strong>Sous questions</strong><br>
+Le QI est il une mesure fidèle des capacités cognitives d&#39;un individu ?<br>
+Le QI est il une statistique descriptive valide à l&#39;échelle des populations ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading103">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse103" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-ogm-sont-ils-dangereux-pour-l-environnement.html">La culture de plantes OGM entraîne t-elle une augmentation de l&#39;utilisation de produits phytosanitaires&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse103" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Sujet sensible et médiatique, les critiques concernant les OGM portent souvent sur leurs impacts possibles sur l&#39;environnement, notamment parce qu&#39;il encourageraient une utilisation extensive des produits phytosanitaires. Les OGM sont très variés, les conclusions peuvent donc être différentes en fonction des plantes et variétés concernées. Il conviendra donc de détailler le plus possible à quels types d&#39;OGM chaque étude se rapporte.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading102">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse102" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-ogm-sont-ils-dangereux-pour-la-sante.html">La consommation de produits OGM est-elle dangereuse pour la santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse102" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Débat passionné en Europe, la question des Organismes Génétiquement Modifiés (OGM) touche à des considérations sanitaires, environnementales, techniques et éthiques. Cette controverse vise à comprendre ce que la littérature scientifique dit au sujet de l&#39;impact, ou l&#39;absence d&#39;impact, des OGM sur la santé. Seront abordés les impacts directs des OGM, c&#39;est à dire leur potentielle dangerosité en tant que tels, ainsi que les impacts indirects possibles causés par les pratiques culturales associés à la culture des OGM.</p>
+
+<p>Les OGM sont très variés, les conclusions peuvent donc être différentes en fonction des variétés concernées. Il conviendra donc de détailler le plus possible à quels types d&#39;OGM chaque étude se rapporte. Seuls les OGM végétaux sont inclus dans cette controverse.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading101">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse101" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-energies-renouvelables-sont-elles-moins-emmetrices-de-gaz-a-effet-de-serre-que-les-energies-fossiles.html">Les énergies renouvelables sont-elles moins émettrices de gaz à effet de serre que les énergies fossiles&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse101" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>L&#39;objectif affiché pour justifier le développement des énergies renouvelables (solaire, éolien, hydraulique, biomasse, géothermie, etc.) est qu&#39;elles seraient moins émettrices de gaz à effet de serre que les énergies fossiles (charbon, pétrole, gaz, nucléaire, etc.). Pourtant certains remettent en cause ce postulat et évoquent des émissions cachées lors de la fabrication et/ou le recyclage des panneaux solaires, éoliennes ... qui réduiraient l’intérêt environnemental de ces énergies. </p>
+
+<p>Les analyses de cycles de vie (ACV, ou LCA en anglais) permettent de prendre en compte toutes les émissions liées à la production d&#39;un bien, de l&#39;extraction des matières premières jusqu&#39;à son traitement en fin de vie. Que disent ces analyses pour le cas particulier des énergies renouvelables ?</p>
+
+<p>Il existe deux effets distincts à prendre en compte : la quantité de gaz émise et l&#39;impact de ces gaz sur l&#39;effet de serre.</p>
+
+          </div>
+    </div>
+  </div>
+</div>
+                        <nav class="pagination" role="navigation" aria-label="pager">
+    <span class="first">
+  <a href="empty_references.html">&laquo; Première</a>
+</span>
+
+    <span class="prev">
+  <a rel="prev" href="empty_references.html">&lsaquo; Précédente</a>
+</span>
+
+        <span class="page">
+  <a rel="prev" href="empty_references.html">1</a>
+</span>
+
+        <span class="page current">
+  2
+</span>
+
+        <span class="page">
+  <a rel="next" href="empty_references9ba9.html?page=3">3</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesfdb0.html?page=4">4</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesaf4d.html?page=5">5</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesc575.html?page=6">6</a>
+</span>
+
+      <span class="next">
+  <a rel="next" href="empty_references9ba9.html?page=3">Suivante &rsaquo;</a>
+</span>
+
+      <span class="last">
+  <a href="empty_referencesc575.html?page=6">Dernière &raquo;</a>
+</span>
+
+  </nav>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+          <div class="center-block">
+            <img alt="Enrichir" class="img-responsive" src="assets/3rules-1-72d19a799935de5e1be7f5c12b51f87563b116648d43d5cee5e645195e1ca90b.png" />
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:09 GMT -->
+</html>

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:58:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="zO2V39zReOznvl1kaDJZTMdCyMXTAmJEgupuoNbhSO+2j/68jnz6rLk/KeGLuJ46Z3L4+Juwz3Bk351qPsYUFQ==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item clearfix list-group-item clearfix-default cursor-not-allowed" href="empty_references.html"><span class="icon-reference bigger"></span>
+                                    Enrichir les controverses
+                                    <span class="badge">64</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_comments.html"><span class="icon-comment bigger"></span>
+                                    Analyser les références
+                                    <span class="badge">453</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_summaries.html"><span class="icon-summary bigger"></span>
+                                    Synthètiser les controverses
+                                    <span class="badge">11</span></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+      <br/>
+      <br/>
+
+      <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>
+                Ces controverses
+                ont besoin de références scientifiques, venez les enrichir !
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="empties">
+                    <div class="page">
+                      <div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading315">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse315" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/vente-d-alcool-aux-mineurs.html"><strong>Faut-il autoriser la vente d&#39;alcool aux mineurs&nbsp?</strong></a>
+    </h4>
+  </div>
+  <div id="Collapse315" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><em>La consommation d&#39;alcool déclarée débute à l&#39;adolescence en France :</em> <br>
+<em><a href="https://www.drogues.gouv.fr/comprendre/chiffres-cles/chez-les-17-ans" rel="nofollow">https://www.drogues.gouv.fr/comprendre/chiffres-cles/chez-les-17-ans</a></em><br>
+<em>Faut-il dès lors à présent autoriser la vente d’alcool aux moins de 18 ans ?</em></p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading217">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse217" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-violons-stradivarius-sonnent-ils-mieux-que-les-violons-modernes.html">Les violons Stradivarius sonnent-ils mieux que les violons modernes ?</a>
+    </h4>
+  </div>
+  <div id="Collapse217" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Cadre, focus et mise au point :</strong></p>
+
+<p>Les violons italiens du 18ème siècle, en particulier les « Stradivarius », sont considérés depuis de nombreuses années comme les meilleurs instruments, surpassant en terme de sonorité les violons modernes.</p>
+
+<p>(Cette supériorité ce traduit en partie par une importante différence de prix.  <a href="http://www.lefigaro.fr/culture/encheres/2014/04/15/03016-20140415ARTFIG00345-le-stradivarius-le-plus-cher-du-monde-mis-aux-encheres.php" rel="nofollow">Cf : Alto de Stradivari estimé à 45 millions de dollars</a>  )</p>
+
+<p>La qualité du son d’un violon est par certains aspects quelque chose de subjectif, de l’ordre du ressenti, souvent peu dénommable. Il existe pourtant dans les milieux des musiciens et des luthiers des critères objectifs qui permettent de caractériser la bonne qualité d’un son : puissance, richesse du timbre, durée de résonance, portance du son…</p>
+
+<p>On a longtemps cherché/expliqué les causes de cette différence de son : âge du bois, secret de vernis, mini ère glacière au 17ème siècle influant sur la pousse des arbres, le nombre d’heures de jeu supportées par l’instrument, etc...</p>
+
+<p><strong>Questions sous-jacentes :</strong></p>
+
+<p>Les violons italiens du 18ème siècle, en particulier ceux fabriqués par le luthier Antonio Stradivari, possèdent-ils un meilleur son que ceux fabriqués actuellement par les luthiers modernes ?</p>
+
+<p>Est-il possible de distinguer le son d’un instrument ancien de celui d’un instrument moderne ?</p>
+
+<p>L’âge du bois améliore-t-il les propriétés acoustiques d’un instrument ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading215">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse215" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/avoir-une-activite-sexuelle-avant-un-evenement-sportif-existe-t-il-un-impact-negatif-sur-les-performances-sportives.html">Avoir une activité sexuelle avant un événement sportif : existe-t-il un impact négatif sur les performances sportives&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse215" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Une idée largement rependue dans le monde  sportif de haut niveau et de façon multidisciplinaire est qu&#39;avoir une activité sexuelle,  dans les faits, surtout avec un/une partenaire, aurait des conséquences négatives sur les performances de l&#39;athlète lors d&#39;un événement sportif à venir. <br>
+En effet, certains athlètes ou coachs avancent que pratiquer le sexe fatiguerait beaucoup d&#39;un point de vue physique et d&#39;autres que cela perturberait leur motivation et leur esprit de compétitivité. <br>
+Il n&#39;est donc pas rare de trouver des coachs qui déconseillent voir interdisent les rapports sexuels avant des compétitions, et ce, même plusieurs jours avant leur début !</p>
+
+<p>Une sous idée également rapportée est que l&#39;effet du sexe sur les performances sportives est opposée selon le sexe de l&#39;athlète. Il serait un stimulant pour les femmes mais un inhibiteur pour les hommes.      </p>
+
+<p>Il s&#39;agit donc ici de tenter de voir quelles sont les résultats obtenus par les rares études scientifiques menées sur ce sujet et qui nous éclairerons sur la nature du lien entre activité sexuelle et performances sportives, du point de vue de la science et non pas de la rumeur populaire.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading186">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse186" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-chasse-est-elle-compatible-avec-la-conservation-de-la-biodiversite.html">La chasse récréative est-elle compatible avec la conservation de la biodiversité en France&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse186" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="2 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            2
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Il y a 50 ans de nombreux pays mettent en place des réglementations pour la protection de la nature et pour la conservation des espèces. La question de la chasse fait l&#39;objet de débats parfois houleux en France dans les années 80-90 entre les pro et les anti. Ces dernières années, le débat a perdu de sa vigueur et les organisations de protection de la nature et les chasseurs travaillent de plus en plus ensemble. <br>
+La solution a-t-elle été trouvée? <br>
+quelles sont les faits scientifiques qui nous permettent de trancher la question? </p>
+
+<p>​​<strong>Introduction</strong><br>
+  La chasse en Europe et particulièrement en France est une activité réservé a quelques élites depuis la fin de l&#39;antiquité jusqu&#39;à la fin de l&#39;ancien régime. Activité démocratisée, elle entrainera durant le vingtième siècle la disparation de nombreuses espèces (notamment les rapaces) jusqu&#39;à la mise en place de réglementations de protection de la nature. Jusqu&#39;au début du 21° siècle, c&#39;est la guerre entre les pro et les anti- chasse. Le ROC, ou Rassemblement des Opposants à la Chasse est mobilisé et les Chasseurs du parti &quot;Chasse Pêche Nature et Traditions&quot; remportent de beaux scores dans certaines élections (européennes). Aujourd&#39;hui, le parti &quot;des chasseurs&quot; n&#39;existe plus et le ROC s&#39;est transformé en l&#39;ONG &quot;Humanité et Biodiversité&quot;.<br>
+Le combat est il terminé faute de combattants ou bien parce que des solutions efficaces ont été trouvées? Quels sont les faits scientifiques qui peuvent répondre à cette question? Quelle fut la place de la science par rapport à la politique dans cette évolution?</p>
+
+<p><strong>Cadre concret</strong><br>
+La chasse terrestre de loisir en France et dans les pays européens (et méditerranéens), les rapports entre chasse et conservation de la nature entre 1976 (date de la première loi sur la protection de l&#39;environnement en France) et aujourd&#39;hui.</p>
+
+<p><strong>Cadre conceptuel</strong></p>
+
+<ul>
+<li>La pression de la chasse est devenue négligeable, elle n&#39;est plus un problème pour la conservation de la biodiversité;</li>
+<li>La régulation de la chasse est efficiente pour la conservation de la biodiversité;</li>
+<li>Les chasseurs ont intégré les données scientifiques de la gestion de la ressource dans leurs pratiques;</li>
+<li>Les acteurs de la conservation de la nature se sont désintéressés de la question de la chasse, mais sur quels faits scientifiques?</li>
+<li>la question a été tranchée par la politique (un équilibre a été trouvé qu&#39;il soit rationnel ou non, étayé par des faits scientifiques ou non) </li>
+</ul>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading183">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse183" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-animaux-sont-ils-sensibles-au-champ-magnetique-terrestre.html">Les animaux sont-ils sensibles aux champ magnétique terrestre&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse183" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Contrairement aux être humains qui s&#39;aident de la technologie pour se déplacer, les animaux ne doivent compter que sur eux-mêmes. Certaines espèces migratrices parcourent de longues distances grâce à leur mémoire visuelle, d&#39;autres – terrestres comme marines – semblent s&#39;orienter même en l&#39;absence de repères visuels. Plusieurs espèces de familles très diverses correspondent à ce cas, notamment certains oiseaux, des poissons, des mammifères marins ou encore certains insectes, etc. </p>
+
+<p>Il est d&#39;autant plus intéressant de comprendre les mécanismes sous-jacents que les perturbations anthropiques peuvent altérer les écosystèmes et induire en erreur les animaux migrateurs, allant jusqu&#39;à brouiller leur itinéraire pourtant crucial dans la survie de leurs espèces.</p>
+
+<p>Quels sont les sens qui viennent au secours de ces animaux migrateurs ?</p>
+
+<p>Le terme de &quot;magnétoréception&quot; est apparu pour la première fois en 1972 et désignait à l&#39;époque un sens hypothétique que partageraient certains animaux migrateurs, qui s&#39;orientaient et se localisaient en fonction des champs magnétiques terrestres. Alors, la magnétoréception : mythe ou réalité ? Ce sens est-il depuis confirmé par des études biologiques et éthologiques ? Quelle diversité d&#39;animaux est magnétoréceptive ou au moins susceptible de l&#39;être ? Le cas échéant, quels sont les mécanismes biologiques à l&#39;oeuvre qui expliquent cette magnétoréception?</p>
+
+<p>Il existe trois types de magnétoréception selon les études théoriques : la première est indirecte et se fonde sur la perception de courants induits, la deuxième et la troisième sont directes et se fondent sur la réaction magnétique des radicaux libres ou de particules de magnétite.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading182">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse182" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-hormones-sexuelles-et-leurs-cycles-a-l-age-adulte-ont-ils-un-impact-sur-l-humeur-et-le-comportement.html">Les hormones sexuelles et leurs cycles à l&#39;âge adulte ont-ils un impact sur l&#39;humeur et le comportement?</a>
+    </h4>
+  </div>
+  <div id="Collapse182" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Il est de plus en plus connu que les hormones peuvent avoir des conséquences sur le développement d&#39;un(e) individu(e) chez la plupart des Mammifères. En particulier, les concentrations hormonales auxquelles l&#39;embryon est exposé au cours du développement pourraient avoir des conséquences à très long terme sur le développement d&#39;un individu. De ce fait tout un tas de précautions sont prises au niveau de la santé publique pour éviter des dérégulations hormonales chez les femmes enceintes. De telles dérégulations pouvant en effet entraîner des effets teratogènes (malformations). A l&#39;âge adulte cependant, si tout le monde a déjà entendu parler de l&#39;humeur des femmes qui seraient altérée au moment des menstruations, peu considèrent que d&#39;autres altérations autant chez l&#39;homme que chez les femmes pourraient avoir lieu.</p>
+
+<p>Cette controverse vise avant tout à démêler, autant que faire se peu, dans quelle mesure les cycles menstruels chez la femme et d&#39;éventuels cycles hormonaux chez l&#39;homme impactent l&#39;humeur et le comportement au niveau quotidien.</p>
+
+<p>Les principales hormones sexuelles considérées ici seront la testostérone, les oestrogènes et la progestérone. La première est sensée être l&#39;hormone mâle par excellence alors que les deux dernières sont reconnues comme les hormones femelles. Cela étant dit, on oublie souvent que l&#39;on retrouve ces hormones chez les deux sexes bien qu&#39;en quantités variables.</p>
+
+<p>Les menstruations impactent-elles l&#39;humeur à cause d&#39;une raison biologique directement (via une influence sur l&#39;humeur) ou indirectement (à cause de la douleur) ou n&#39;est-ce qu&#39;un processus social?<br>
+Y a-t-il d&#39;autres périodes où le comportement des personnes de sexe féminin est altéré à cause du cycle menstruel?<br>
+Les hommes sont-ils impactés dans leur humeur par des variations physiologiques de testostérone? A quelle échelle temporelle (au cours d&#39;une journée, au cours d&#39;une semaine, d&#39;un mois, des années?) faut-il se placer si c&#39;est le cas?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading181">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse181" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/y-a-t-il-de-reelles-bases-biologiques-a-l-intolerance-au-gluten.html">Y a-t-il de réelles bases biologiques à l&#39;intolérance au gluten&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse181" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>&quot;Le gluten est un ensemble de protéines que l&#39;on retrouve dans les grains de nombreuses céréales (blé, seigle, orge, etc.). Les protéines constituant le gluten permettent de stocker des oligo-éléments ou des acides aminés nécessaires au développement de la jeune pousse.</p>
+
+<p>Le gluten est principalement constitué de deux protéines  : la prolamine et la gluténine. Ce sont ces protéines, insolubles dans l&#39;eau, qui donnent à la farine des propriétés visco-élastiques, exploitées en agroalimentaire pour donner une certaine structure aux produits.</p>
+
+<p>Le gluten a été décrit en 1742 par Giacomo Beccari, professeur à l&#39;université de Bologne. Le terme dérive du latin classique gluten = « colle, glu, gomme ». Il était initialement appelé glutine.</p>
+
+<p>Il est responsable, chez une partie de la population (1% de la population nord-américaine environ), d&#39;un trouble spécifique de la digestion nommé maladie cœliaque.&quot; (source: Wikipédia)</p>
+
+<p>Comme le texte de Wikipédia le montre bien, si seulement 1% de la population est réellement concerné, il est permis de se demander pourquoi cet emballement dans les magasins pour les produits sans gluten et cette vague de personnes cherchant à ne consommer que des produits sans gluten. D&#39;un côté, s&#39;il faut reconnaître que notre alimentation occidentale est fortement enrichie en gluten depuis quelques décennies à cause de nos choix alimentaires (pizza, pâtes, céréales, etc.), il nous faut aussi nous demander si, sachant que seul un pourcentage très faible de la population est sensé être concerné par cette intolérance, il n&#39;est pas exagéré de faire attention à ce sujet.</p>
+
+<p>Quelles sont les bases biologiques de l&#39;&quot;intolérance au gluten&quot;? Qui est concerné? Doit-on faire attention au gluten à l&#39;échelle globale ou est-ce que seule une partie de la population est concernée?</p>
+
+<p>Par toutes ces questions, l&#39;un des buts principaux de cette controverse est de distinguer entre ce qui relève du marketing médiatique à ce sujet et ce qui peut réellement être en lien avec la santé.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading169">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse169" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/quel-sont-les-principaux-facteurs-de-risque-du-cancer.html">Quel sont les principaux facteurs de risque du cancer&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse169" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>La question des <strong>causes de cancer</strong> est très médiatisée. Un nombre toujours plus grand d&#39;aliments, de sources de pollution ou de comportements sont <strong>réputés cancérigènes</strong>.<br>
+Cela inquiète les citoyens qui changent leurs habitudes pour tenter de minimiser ces risques. C&#39;est pourquoi nous chercherons à faire ressortir les <strong>principaux facteurs de risques de cancer</strong> dans les pays industrialisés.</p>
+
+<p>Les facteurs de risques sont définis par l&#39;OMS comme <a href="http://www.who.int/topics/risk_factors/fr/" rel="nofollow">&quot;tout attribut, caractéristique ou exposition d’un sujet qui <strong>augmente la probabilité</strong> de développer une maladie&quot;</a>, ici le cancer.</p>
+
+<p><strong>Question :</strong><br>
+Quel sont les <strong>principaux facteurs de risque de cancers</strong> dans les pays industrialisés tous cancers confondus ?</p>
+
+<p><strong>Questions sous-jacentes :</strong><br>
+Les facteurs de risques les plus médiatisés sont-ils les plus importants ?<br>
+Les citoyens évaluent-ils correctement les facteurs de risque de cancer ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading164">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse164" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-theorie-du-handicap-est-elle-la-piece-manquante-de-la-theorie-darwinienne.html">La théorie du handicap est-elle la pièce manquante de la théorie darwinienne&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse164" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Définitions et contexte général :</strong></p>
+
+<p>La sélection naturelle, selon la théorie darwinienne (ou théorie synthétique de l’évolution), tend à conserver toutes les variations adaptatives qui sont utiles à l’animal dans son milieu et à éliminer celles qui ne sont pas ou plus indispensables à celui-ci. Autrement dit, elle repose sur une adaptation aussi avantageuse que possible à un milieu environnant. Pourtant dans le monde animal actuel, certains comportements et caractéristiques anatomiques demeurent aberrants du point de vue évolutionniste.</p>
+
+<p>C’est ainsi que la théorie du handicap (ou « principe du handicap ») a vu le jour. Il s’agit d’une hypothèse formulée en 1975 par le biologiste et ornithologue Amotz Zahavi visant à expliquer comment l&#39;évolution a favorisé l’émission de signaux « honnêtes » et dignes de confiance entre individus ou des mises en garde face à un prédateur. Ce principe suggère que les signaux doivent être “coûteux” pour l’animal. Ainsi, la théorie suggère que les individus disposant de meilleures capacités biologiques signalent cet état de fait au travers de comportements ou d’une morphologie handicapants.</p>
+
+<p><strong>Cadre de la controverse :</strong></p>
+
+<p>La généralisation de ce phénomène a fait et fait encore l’objet de nombreux débats et désagréments. L’importance du concept de handicap en biologie d’après le point de vue de Zahavi n’a pas été immédiatement acceptée dans l’opinion majoritaire et pour certains demeure marginale. Cette théorie a néanmoins été largement influente, puisque de nombreux chercheurs du domaine pensent au contraire qu’elle explique quelques aspects complexes de la communication animale. Cette vision de l’évolution n’est donc pas partagée par l’ensemble de la communauté scientifique évolutionniste. (parfait pour moi ce petit paragraphe)</p>
+
+<p><strong>Questions sous-jacentes :</strong></p>
+
+<p>Quels sont les éléments qui laissent à penser que la notion de handicap est essentielle dans la compréhension de la sélection naturelle ?</p>
+
+<p>Sommes-nous sur le point d’éclaircir les points encore obscurs de l’évolution ?</p>
+
+<p>Quelles sont les limites de notre compréhension du phénomène ?</p>
+
+<p>Peut-on considérer la sélection sexuelle comme étant l’un des processus de la “sélection du handicap”?</p>
+
+<p>La théorie du handicap : une analyse anthropocentrique du comportement animal ? </p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading155">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse155" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-homme-est-il-vegetarien-a-l-origine.html">L&#39;Homme a-t-il été végétarien avant d&#39;être omnivore?</a>
+    </h4>
+  </div>
+  <div id="Collapse155" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="3 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            3
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Introduction</strong><br>
+De nos jours de plus en plus de personnes adoptent un régime végétarien (non consommation des produits  alimentaires issus directement de l&#39;exploitation d&#39;animaux) voire végétalien (non consommation des produits issus directement ou indirectement de l&#39;exploitation d&#39;animaux), pour des raisons morales, éthiques, environnementales, sanitaires et même sociétales. De nombreux sites et personnalités, comme <a href="https://www.youtube.com/watch?v=9ivPJUypbVs" rel="nofollow">Gary Yourofsky</a>, justifient cette démarche en affirmant que l&#39;Homme serait végétarien par nature. Pour appuyer leur théorie, ils avancent divers arguments et études scientifiques.  A contrario, de nombreux sites démantèlent point par point les arguments en faveur de cette théorie et soutiennent le statut omnivore de l&#39;Homme (toujours en prenant l&#39;exemple de <a href="http://menace-theoriste.fr/gary-yourofsky-analyse-dune-imposture/" rel="nofollow">Gary Yourofsky</a>).<br>
+Le but de cette controverse est de démêler les arguments fondés, des interprétations et conclusions abusives et partiales.</p>
+
+<p><strong>Question</strong><br>
+L&#39;homme a t-il été végétarien avant d&#39;être omnivore ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading154">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse154" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-nourriture-d-aujourd-hui-est-elle-moins-riche-en-nutriments-que-celle-du-passe.html">Les aliments d&#39;aujourd&#39;hui sont-ils moins riches en nutriments que ceux de 1950&nbsp? </a>
+    </h4>
+  </div>
+  <div id="Collapse154" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="3 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            3
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Introduction</strong><br>
+La révolution agricole mondiale qui a commencé après la moitié du XX<sup>ème</sup> siècle a eu pour conséquence d&#39;augmenter les rendements et de permettre de nourrir une population mondiale en forte croissance. Toutefois, cette évolution s&#39;est fait au détriment d&#39;autres enjeux : outre les conséquences environnementales de l&#39;intensification de l&#39;agriculture et le l&#39;usage abondant des intrants chimiques, se pose aussi un problème d&#39;ordre diététique et gustatif : on peut par exemple entendre &quot;qu&#39;une pomme d&#39;il y a 50 ans en vaut 100 d&#39;aujourd&#39;hui&quot; ou que les tomates vendues en supermarché seraient beaucoup moins savoureuses que les variétés traditionnelles.</p>
+
+<p><strong>Question</strong><br>
+A quantité égale, les aliments communément consommés aujourd&#39;hui sont-ils moins riches en nutriments et moins savoureux que ceux cultivés il y a plus de 50 ans ?<br>
+La saveur peut-elle être utilisée comme un indicateur de qualité nutritive ?<br>
+Nos grands-parents mangeaient-ils de meilleures tartes aux pommes, au gout et pour leur santé, qu&#39;aujourd&#39;hui ?</p>
+
+<p><strong>Périmètre de la controverse</strong> <br>
+La question des OGM et/ou des intrants chimiques utilisés (pesticides, etc.) ne sera pas incluse dans cette controverse, ces sujets étant traités dans d&#39;autres (<a href="https://www.controversciences.org/timelines/les-ogm-sont-ils-dangereux-pour-la-sante" rel="nofollow">controverse OGM</a>, <a href="https://www.controversciences.org/timelines/la-lutte-biologique-peut-elle-reellement-se-substituer-a-l-utilisation-des-pesticides" rel="nofollow">controverse lutte biologique</a> notamment)</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading153">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse153" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/paradoxe-des-calottes-polaires-pourquoi-s-etendent-elles-en-antarctique-alors-qu-elles-diminuent-en-arctique.html">L&#39;élargissement de la banquise antarctique est-il en contradiction avec le réchauffement climatique&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse153" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Introduction</strong><br>
+C&#39;est l&#39;une des conséquences les plus médiatisées du réchauffement climatique : la fonte des calottes polaires et le rétrécissement de la banquise. Si l&#39;Arctique a en effet enregistré des pertes impressionnantes en surface gelée, l&#39;Antarctique au pôle sud ne semble pas suivre la même tendance (voir <a href="http://sciences.blogs.liberation.fr/home/2014/01/banquises-arctique-et-antarctique-sopposent.html" rel="nofollow">l&#39;article synthétique de Libération</a>). Au contraire, la banquise antarctique aurait même tendance à s&#39;étendre, selon certaines mesures !</p>
+
+<p>La banquise, à ne pas confondre avec les calottes polaires, correspond à de l&#39;eau de mer gelée. Les calottes polaires reposent elles sur de la terre ferme.</p>
+
+<p><strong>Questions</strong><br>
+La banquise du pôle sud est-elle vraiment en extension ?<br>
+Comment expliquer les différences observées entre l&#39;Arctique et l&#39;Antarctique ?<br>
+Le réchauffement climatique est-il remis en question par ces observations ? Si non, comment expliquer l&#39;extension de la banquise antarctique ?</p>
+
+          </div>
+    </div>
+  </div>
+</div>
+                        <nav class="pagination" role="navigation" aria-label="pager">
+    
+    
+        <span class="page current">
+  1
+</span>
+
+        <span class="page">
+  <a rel="next" href="empty_references4658.html?page=2">2</a>
+</span>
+
+        <span class="page">
+  <a href="empty_references9ba9.html?page=3">3</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesfdb0.html?page=4">4</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesaf4d.html?page=5">5</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesc575.html?page=6">6</a>
+</span>
+
+      <span class="next">
+  <a rel="next" href="empty_references4658.html?page=2">Suivante &rsaquo;</a>
+</span>
+
+      <span class="last">
+  <a href="empty_referencesc575.html?page=6">Dernière &raquo;</a>
+</span>
+
+  </nav>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+          <div class="center-block">
+            <img alt="Enrichir" class="img-responsive" src="assets/3rules-1-72d19a799935de5e1be7f5c12b51f87563b116648d43d5cee5e645195e1ca90b.png" />
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:59:26 GMT -->
+</html>

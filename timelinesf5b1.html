@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?tag=planet by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:19:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OKwSTK4W1vEZW5/CFDzKfZOOh1dcVBf99fmOCftf87VCznkv/LtUsUfa60f3tg0LM763ahTmuskTzH3DE3ivTw==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-2 col-lg-8">
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-2">
+    </div>
+  </div>
+  <div class="col-xs-12 col-lg-offset-1 col-lg-10">
+    <div class="row">
+      <div id="timelines">
+        <div class="row page">
+                  <div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/est-il-trop-tard-pour-eviter-la-sixieme-crise-d-extinction-massive.html">
+    <span class='int'>19</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/est-il-trop-tard-pour-eviter-la-sixieme-crise-d-extinction-massive.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Sommes-nous entrés dans une sixième crise d&#39;extinction massive&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> Si des extinctions d&#39;espèces animales et végétales ont lieu en continu, elles ont pu être lors de certains épisodes d&#39;une ampleur considérable. Ces événements sont nommés &quot;crises d&#39;extinction massive&quot;, et cinq...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="8 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">8</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="20 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">20</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_107_v_0.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/evolution-des-organismes-theorie-gradualiste-vs-theorie-des-equilibres-ponctuees.html">
+    <span class='int'>18</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/evolution-des-organismes-theorie-gradualiste-vs-theorie-des-equilibres-ponctuees.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L&#39;évolution des organismes se fait elle graduellement ou par saut&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> Même si les prémices de l&#39;idée évolutive étaient déjà en place (Buffon, Lamarck, Cuvier), c&#39;est Darwin en 1859, en publiant <em>On the Origin of Species (De l&#39;origine des espèces)</em>, qui énonça le socle théorique des sciences de...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Archéologie" data-toggle="tooltip" href="timelines9366.html?tag=archeology"><span class="fat icon-archeology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="7 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">7</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="20 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">20</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_135_v_1.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-lutte-biologique-peut-elle-reellement-se-substituer-a-l-utilisation-des-pesticides.html">
+    <span class='int'>22</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-lutte-biologique-peut-elle-reellement-se-substituer-a-l-utilisation-des-pesticides.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La lutte biologique peut-elle se substituer à l’utilisation des pesticides&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>L’utilisation de <strong>pesticides</strong> est reconnue comme une méthode conventionnelle de <strong>lutte</strong> contre les <strong>espèces nuisibles</strong>. Très utilisés en <strong>agriculture</strong>, ils permettent en effet d&#39;éradiquer les organismes ravageurs de cultures qui diminuent les...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="6 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">6</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="18 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">18</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_129_v_0.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/apiculture-et-conservation-de-la-biodiversite-l-abeille-domestique-menace-t-elle-les-pollinisateurs-sauvages.html">
+    <span class='int'>10</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/apiculture-et-conservation-de-la-biodiversite-l-abeille-domestique-menace-t-elle-les-pollinisateurs-sauvages.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Apiculture et conservation : l&#39;abeille domestique menace-t-elle les pollinisateurs sauvages dans son aire de répartition originelle&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>L&#39;<strong>abeille domestique, <em>Apis mellifera</em></strong> (Linnaeus 1758), est une espèce domestiquée depuis environ 4000 ans, et aujourd&#39;hui la plus répandue en Europe. C&#39;est l&#39;une des rares abeilles (super-famille des <em>Apoidea</em>) à avoir un mode de vie...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Epistémologie" data-toggle="tooltip" href="timelinesfd11.html?tag=epistemology"><span class="fat icon-epistemology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="6 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">6</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="15 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">15</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_210_v_2.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/l-aquaculture-est-elle-une-solution-a-la-surpeche.html">
+    <span class='int'>6</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/l-aquaculture-est-elle-une-solution-a-la-surpeche.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L&#39;aquaculture est-elle une solution à la surpêche?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Tandis que les ressources marines s’épuisent, la demande mondiale pour celles-ci augmente, de même que les efforts de pêche. Le développement très rapide des pratiques d’aquaculture<sup>*</sup> permettent une production croissante et a même dépassé...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="18 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">18</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_284_v_4.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-chasse-peut-elle-avoir-un-effet-positif-sur-la-biodiversite.html">
+    <span class='int'>9</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-chasse-peut-elle-avoir-un-effet-positif-sur-la-biodiversite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La chasse peut-elle être bénéfique à la biodiversité&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> Le désir populaire grandissant de protéger notre environnement et les espèces vivantes qui s&#39;y trouvent se heurte parfois à nos activités plus anciennes. Parmi ces pratiques, la chasse semble ne pas être compatible avec la...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="18 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">18</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_193_v_0.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-geo-ingerierie-est-elle-une-solution-envisageable-face-aux-changements-climatiques-actuels.html">
+    <span class='int'>11</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-geo-ingerierie-est-elle-une-solution-envisageable-face-aux-changements-climatiques-actuels.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La géo-ingénierie est-elle une réponse adaptée aux changements climatiques actuels&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> Alors que l’existence d’un <strong>changement climatique</strong> ne fait plus de doute dans la communauté scientifique, les accords passés entre les Etats pour réduire leurs émissions de gaz à effet de serre restent insuffisants. Face à ce manque de...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Géographie" data-toggle="tooltip" href="timelinesb8fa.html?tag=geography"><span class="fat icon-geography"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Epistémologie" data-toggle="tooltip" href="timelinesfd11.html?tag=epistemology"><span class="fat icon-epistemology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="6 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">6</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="13 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">13</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_125_v_0.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/dans-quelle-mesure-est-il-possible-de-ressusciter-une-espece-disparue.html">
+    <span class='int'>11</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/dans-quelle-mesure-est-il-possible-de-ressusciter-une-espece-disparue.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Dans quelle mesure est-il possible de ressusciter une espèce disparue&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Voir des espèces depuis longtemps disparues fouler à nouveau la surface de la Terre a toujours enthousiasmé la communauté scientifique et eu un grand écho dans la culture populaire. <br> Avec l’évolution des sciences et les progrès de la biologie...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="17 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">17</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_166_v_1.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">
+    <span class='int'>6</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Dans un contexte de préservation de la biodiversité, de grandes questions se posent quant à l’implication de l’Homme dans son érosion. Les activités humaines étant un des principaux facteurs impactant la diversité spécifique et fonctionnelle à...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Archéologie" data-toggle="tooltip" href="timelines9366.html?tag=archeology"><span class="fat icon-archeology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Histoire" data-toggle="tooltip" href="timelines82bc.html?tag=history"><span class="fat icon-history"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="24 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">24</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_244_v_3.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/le-role-de-l-espece-domestiquee-_apis-mellifera_-dans-la-pollinisation-des-cultures-est-il-surestime-par-rapport-a-celui-des-especes-sauvages.html">
+    <span class='int'>5</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/le-role-de-l-espece-domestiquee-_apis-mellifera_-dans-la-pollinisation-des-cultures-est-il-surestime-par-rapport-a-celui-des-especes-sauvages.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Le rôle de l’espèce domestiquée <em>Apis mellifera</em> dans la pollinisation des cultures est-il surestimé par rapport à celui des espèces sauvages&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> Au fur et à mesure de la disparition de l’espèce <em>Apis mellifera</em>, dite abeille domestique, l’inquiétude a grandi quant à la pollinisation des cultures (Watanabe, 1994). Alliée prépondérante en agriculture, sa disparition inquiète...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="21 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">21</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_258_v_1.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/l-homme-est-il-responsable-de-l-extinction-de-la-megafaune-au-pleistocene.html">
+    <span class='int'>5</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/l-homme-est-il-responsable-de-l-extinction-de-la-megafaune-au-pleistocene.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L’Homme est-il responsable des extinctions de la mégafaune au Pléistocène&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>La fin du Pléistocène est marquée par des <strong>extinctions successives de plusieurs espèces de grands animaux</strong>, appelées <strong>mégafaune</strong>, sur l’ensemble des continents. La mégafaune regroupe les espèces dont la masse corporelle moyenne des individus adultes...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Archéologie" data-toggle="tooltip" href="timelines9366.html?tag=archeology"><span class="fat icon-archeology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="20 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">20</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_306_v_1.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/l-utilisation-des-neonicotinoides-a-t-elle-un-impact-sur-les-populations-d-abeilles-7c8dec2e-b5a6-4d52-b18d-53d99b6161ea.html">
+    <span class='int'>6</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/l-utilisation-des-neonicotinoides-a-t-elle-un-impact-sur-les-populations-d-abeilles-7c8dec2e-b5a6-4d52-b18d-53d99b6161ea.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L&#39;utilisation des néonicotinoïdes a-t-elle un impact sur les populations d&#39;insectes pollinisateurs&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les insectes pollinisateurs jouent un rôle majeur dans les écosystèmes en participant à la reproduction de nombreuses plantes à fleur. Depuis quelques années, on observe un déclin des populations d’insectes pollinisateurs, en particulier des...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="17 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">17</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_300_v_0.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">
+    <span class='int'>14</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les abeilles domestiques vont-elles disparaître&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les abeilles sont étroitement associées à l&#39;agriculture : elles sont en effet impliquées dans la pollinisation de nombreuses espèces cultivées. Il semblerait que le nombre d&#39;abeilles soit en forte baisse et, depuis plusieurs années, les...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="7 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">7</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="4 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">4</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_18_v_3.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-parcs-eoliens-offshore-favorables-ou-nefastes-pour-l-ichtyofaune.html">
+    <span class='int'>5</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-parcs-eoliens-offshore-favorables-ou-nefastes-pour-l-ichtyofaune.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les parcs éoliens offshore : favorables ou néfastes pour l&#39;ichtyofaune&nbsp? 
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Le concept de parc éolien offshore (OWF pour Offshore Wind Farm) existe depuis peu, mais il a principalement pris son essor avec la construction du premier OWF au Danemark en 1991. L&#39;Europe est actuellement en tête avec 84% de la capacité...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="16 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">16</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_265_v_2.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/l-eco-tourisme-un-remede-ou-un-piege-pour-la-biodiversite.html">
+    <span class='int'>5</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/l-eco-tourisme-un-remede-ou-un-piege-pour-la-biodiversite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L&#39;écotourisme : remède ou poison pour la biodiversité? 
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Le concept de biodiversité existe depuis peu, mais il a principalement pris son essor avec la signature de la Convention sur la diversité biologique à Rio en 1992. La biodiversité concerne l’ensemble des êtres vivants, les interactions qu’ils ont...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="16 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">16</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_242_v_3.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/le-barcoding-outil-efficace-pour-la-classification-des-especes.html">
+    <span class='int'>8</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/le-barcoding-outil-efficace-pour-la-classification-des-especes.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Une courte séquence d&#39;ADN est-elle suffisante pour identifier les espèces&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> La <a href="https://fr.wikipedia.org/wiki/Phylogenèse" rel="nofollow">phylogénie</a> est l&#39;étude des relations de parenté entre les êtres vivants. Elle permet de trouver des liens de parenté entre des individus (pour recréer des arbres généalogiques), mais surtout de retracer les liens de parenté...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="10 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">10</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_131_v_0.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/crues-inondations-comment-reamenager-au-mieux-les-cours-d-eau-choix-d-une-renaturation-ou-d-un-nouvel-amenagement.html">
+    <span class='int'>6</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/crues-inondations-comment-reamenager-au-mieux-les-cours-d-eau-choix-d-une-renaturation-ou-d-un-nouvel-amenagement.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Entre technicisme et écologie : quel devenir des cours d’eau pour limiter les conséquences des crues&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>L’histoire des cours d’eau est intimement liée à celle de l’humanité, plus de 6000 ans d’histoire commune où l’être humain tire profit des services apportés par la ressource en eau.<br> Cette analyse porte sur les conséquences des activités humaines...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Géographie" data-toggle="tooltip" href="timelinesb8fa.html?tag=geography"><span class="fat icon-geography"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="14 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">14</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/1/1_img_295_v_0.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/doit-on-eradiquer-les-moustiques.html">
+    <span class='int'>7</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/doit-on-eradiquer-les-moustiques.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Quel est le bilan risques/bénéfices associé à une régulation systématique des populations de moustiques &nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> Les moustiques sont vecteurs d&#39;un grand nombre de maladies qui touchent les populations humaines et les Vertébrés de manière générale, et ce dans le monde entier. Ils sont les plus importants vecteurs de pathogènes transmissibles...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="10 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">10</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_122_v_1.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/quels-sont-les-effets-de-la-mise-en-place-de-quotas-de-peche-sur-les-populations-de-poissons.html">
+    <span class='int'>7</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/quels-sont-les-effets-de-la-mise-en-place-de-quotas-de-peche-sur-les-populations-de-poissons.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Quels sont les effets de la mise en place de quotas de pêche sur les populations de poissons&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> La surpêche correspond à une situation où l&#39;Homme prélève plus de poissons que ce que l&#39;écosystème peut produire. C&#39;est un problème récurrent qui concerne la majorité des océans du monde. Ses conséquences sont...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">1</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="4 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">4</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="assets/uploads/63/63_img_49_v_11.jpg" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div>
+              
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 center">
+
+            <a class="btn btn-block btn-primary" href="timelines9fbe.html?staging=true&amp;tag=planet"><span class="icon icon-5"> </span> Afficher toutes les controverses à l'état embryonnaire
+                          <span class="badge badge-blue-background"> 82 </span></a> <br/>
+        </div>
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="iptaken" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <br/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"> Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function setupSubscription(context) {
+        $('[data-validate]', context).click(function () {
+            var self = $(this);
+            self.hide();
+            self.after('<svg version="1.1" class="loader-like" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/></path></svg>');
+            $.ajax(self.data('validate'), {
+                url: self.data('validate'),
+                data: {id: self.val()},
+                method: 'POST',
+                statusCode: {
+                    201: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.addClass('btn-success');
+                        self.removeClass('btn-default');
+                        self.removeClass('green');
+                        self.attr('data-original-title', "Vous suivez actuellement cette controverse et recevez les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) + 1);
+                    },
+                    204: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.removeClass('btn-success');
+                        self.addClass('btn-default');
+                        self.addClass('green');
+                        self.attr('data-original-title', "Abonnez-vous à cette controverse si vous souhaitez suivre les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) - 1);
+                    },
+                    401: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        $('#iptaken').modal('show');
+                    }
+                }
+            })
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      $('#filter-button').on( 'click', function() {
+        $('#filter-button').hide();
+        $('.filter').show();
+      });
+        $('.loading-image').imagesLoaded().progress( function( instance, image ) {
+            if (image.isLoaded) {
+                $(image.img).addClass("loaded");
+            }
+        });
+        $('.timeline-name').responsiveEqualHeightGrid();
+        $('.timeline-frame').responsiveEqualHeightGrid();
+        $('.timeline-body').responsiveEqualHeightGrid();
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+        setupSubscription();
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?tag=planet by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:19:36 GMT -->
+</html>

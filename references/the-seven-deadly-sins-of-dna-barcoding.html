@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/references/the-seven-deadly-sins-of-dna-barcoding by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:41:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Malgré les divers bénéfices du barcoding d’ADN en biologie, la confusion entre identification de spécimens et découverte d’espèces mène à des erreurs de méthodologie dans nombre d’études. Ici, la controverse ne réside donc pas sur les buts du barcoding (identification et découverte), mais sur l’imprécision de leurs limites, menant souvent à des méthodologies inadaptées et donc des résultats erronés. Ils listent ici 7 lacunes souvent trouvées dans les études sur le barcoding et proposent de potentielles améliorations pour des résultats plus fiables.
+
+1)Manque d’hypothèses claires 
+Choix de méthodes analytiques inappropriées ou non optimales du fait de la confusion dans les objectifs de l’étude.
+-&gt; Exposer explicitement chaque hypothèse, et séparer clairement les aspects distincts de l’étude dans les méthodes et les résultats.
+
+2)Identification a priori  des spécimens inadéquate
+Identifications contradictoires faites par différents laboratoires qui peuvent compromettre l’efficacité des références dans les bibliothèques de code-barres.
+-&gt;Présenter les références et les caractères morphologiques utilisés dans la procédure d’identification.
+
+3)Utilisation du terme ‘identification d’espèces’
+Confusion entre identification des individus et délimitation/découverte d’espèces.
+-&gt;Clarifier les objectifs, dire plutôt ‘identification de spécimen’ ou ‘découverte d’espèces’ selon le but de l’étude.
+
+4)Utilisation inappropriée des arbres issus de la méthode « Neighbour-Joining » (arbres NJ)
+-Les arbres NJ utilisent une matrice de distances basée sur la similitude des séquences. Mais se baser seulement sur la monophylie peut réduire l’efficacité du barcoding pour l’identification, du fait de la paraphylie de l’ADN mitochondrial ou de la mauvaise identification des spécimens.
+-&gt;Utilisation de critères alternatifs comme ‘best close match’ (variations intra-/interspécifiques distinguées via un seuil établi par les utilisateurs) plus performants, notamment en présence de paraphylie.
+-Pour évaluer la biodiversité et découvrir des espèces, les arbres ne peuvent estimer le nombre d’espèces en respectant les noms taxonomiques.
+-&gt;Estimer la richesse spécifique via différentes méthodes (ABGD, GMYC, BOLD’s BIN) utilisant des informations génétiques pour estimer le nombre de groupes d’espèces similaires plutôt que les arbres NJ pour ce genre d’étude.
+
+5)Utilisation inapproprée du bootstrap
+Le bootstrap permet de confirmer ou non un groupe d’espèces similaires, et peut être utilisé pour la découverte/délimitation d’espèces. Mais il peut diminuer le succès d’identification, déjà faible, des arbres NJ, car il ne peut évaluer l’incertitude des identifications. Rejeter l’identité de spécimens quand la valeur de boostrap est trop faible compromet donc l’efficacité des références de code-barres.
+-&gt;Utiliser seulement le bootstrap quand c’est approprié (e.g. comme une partie du processus de délimitation de groupes pré-estimés).
+
+6)Utilisation inappropriée des seuils de distance fixés
+Pour l’identification de spécimens, un seuil placé trop bas ou trop haut peut réduire ou biaiser l’identification des taux d’erreurs.
+-&gt;Les seuils peuvent maintenant être optimisés pour des jeux de données spécifiques (i.e. logiciels ABGD, Spider).
+
+7)Interprétation incorrecte du barcoding gap
+Les histogrammes de distributions des distances intra-/interspéciques qui se chevauchent ne signifient pas forcément que les codes-barres seront médiocres pour l’identification de spécimens ; la seule erreur est de définir un seuil universel. Ainsi, ce type de représentation ne signifie rien, car les distances intraspécifiques pour une espèce peut excéder les distances interspécifiques pour d’autres espèces présentes dans l’analyse, mais sans compromettre le succès d’identification (local gap).
+-&gt;Pour l’identification d’espèces, la représentation des distances intra-/interspécifiques via des graphiques à points illustrent mieux le barcoding gap.
+">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="../assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="../assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="../assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="aakNpkxxtIy8LOuBntTVyzJxVc6DQOw2usXmVMqG/sgTy2bFHtw2zOKtnwR9XhK9kkFl88vyQQJc8BWeIqGiMg==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="../index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="../timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="../tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="../about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="../users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="../faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+
+<div id="my-container" class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+  <div class="list-group">
+    <div class="list-group-item center">
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="1 contribut·eur·rice">
+        <span class="fat icon-users"></span>
+        1
+      </div>
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="1 analyse">
+        <span class="fat icon-comment"></span>
+        1
+      </div>
+    </div>
+    <a class="list-group-item" href="../timelines/131.html"><span class="icon-arrow-left normal"></span> Revenir à la controverse</a>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-6 col-sm-offset-1 col-md-offset-0">
+          <div class="panel panel-default comment">
+  <div class="panel-body clearfix">
+    <span class="content clearfix">
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Titre de la review </h6>
+                <div id="content6" class="text-justify content3476">
+                  <p>Les sept péchés capitaux du barcoding d&#39;ADN</p>
+
+                </div>
+              <div id="field6" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-left">
+              <p>Les sept péchés capitaux du barcoding d&#39;ADN</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide6" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide6').click(function () {
+            $('#field6').hide(500);
+            $('#show6').show(500);
+            $('#content6').show(500);
+            $('.typo6').show(500);
+        });
+        $('#show6').click(function () {
+            $(this).hide(500);
+            $('#content6').hide(500);
+            $('#field6').show(500);
+            $('.typo6').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Résumé de la review </h6>
+                <div id="content0" class="text-justify content3470">
+                  <p>Malgré les divers bénéfices du barcoding d’ADN en biologie, la confusion entre identification de spécimens et découverte d’espèces mène à des erreurs de méthodologie dans nombre d’études. Ici, la controverse ne réside donc pas sur les buts du barcoding (identification et découverte), mais sur l’imprécision de leurs limites, menant souvent à des méthodologies inadaptées et donc des résultats erronés. Ils listent ici 7 lacunes souvent trouvées dans les études sur le barcoding et proposent de potentielles améliorations pour des résultats plus fiables.</p>
+
+<p>1)Manque d’hypothèses claires <br>
+Choix de méthodes analytiques inappropriées ou non optimales du fait de la confusion dans les objectifs de l’étude.<br>
+-&gt; Exposer explicitement chaque hypothèse, et séparer clairement les aspects distincts de l’étude dans les méthodes et les résultats.</p>
+
+<p>2)Identification a priori  des spécimens inadéquate<br>
+Identifications contradictoires faites par différents laboratoires qui peuvent compromettre l’efficacité des références dans les bibliothèques de code-barres.<br>
+-&gt;Présenter les références et les caractères morphologiques utilisés dans la procédure d’identification.</p>
+
+<p>3)Utilisation du terme ‘identification d’espèces’<br>
+Confusion entre identification des individus et délimitation/découverte d’espèces.<br>
+-&gt;Clarifier les objectifs, dire plutôt ‘identification de spécimen’ ou ‘découverte d’espèces’ selon le but de l’étude.</p>
+
+<p>4)Utilisation inappropriée des arbres issus de la méthode « Neighbour-Joining » (arbres NJ)<br>
+-Les arbres NJ utilisent une matrice de distances basée sur la similitude des séquences. Mais se baser seulement sur la monophylie peut réduire l’efficacité du barcoding pour l’identification, du fait de la paraphylie de l’ADN mitochondrial ou de la mauvaise identification des spécimens.<br>
+-&gt;Utilisation de critères alternatifs comme ‘best close match’ (variations intra-/interspécifiques distinguées via un seuil établi par les utilisateurs) plus performants, notamment en présence de paraphylie.<br>
+-Pour évaluer la biodiversité et découvrir des espèces, les arbres ne peuvent estimer le nombre d’espèces en respectant les noms taxonomiques.<br>
+-&gt;Estimer la richesse spécifique via différentes méthodes (ABGD, GMYC, BOLD’s BIN) utilisant des informations génétiques pour estimer le nombre de groupes d’espèces similaires plutôt que les arbres NJ pour ce genre d’étude.</p>
+
+<p>5)Utilisation inapproprée du bootstrap<br>
+Le bootstrap permet de confirmer ou non un groupe d’espèces similaires, et peut être utilisé pour la découverte/délimitation d’espèces. Mais il peut diminuer le succès d’identification, déjà faible, des arbres NJ, car il ne peut évaluer l’incertitude des identifications. Rejeter l’identité de spécimens quand la valeur de boostrap est trop faible compromet donc l’efficacité des références de code-barres.<br>
+-&gt;Utiliser seulement le bootstrap quand c’est approprié (e.g. comme une partie du processus de délimitation de groupes pré-estimés).</p>
+
+<p>6)Utilisation inappropriée des seuils de distance fixés<br>
+Pour l’identification de spécimens, un seuil placé trop bas ou trop haut peut réduire ou biaiser l’identification des taux d’erreurs.<br>
+-&gt;Les seuils peuvent maintenant être optimisés pour des jeux de données spécifiques (i.e. logiciels ABGD, Spider).</p>
+
+<p>7)Interprétation incorrecte du barcoding gap<br>
+Les histogrammes de distributions des distances intra-/interspéciques qui se chevauchent ne signifient pas forcément que les codes-barres seront médiocres pour l’identification de spécimens ; la seule erreur est de définir un seuil universel. Ainsi, ce type de représentation ne signifie rien, car les distances intraspécifiques pour une espèce peut excéder les distances interspécifiques pour d’autres espèces présentes dans l’analyse, mais sans compromettre le succès d’identification (local gap).<br>
+-&gt;Pour l’identification d’espèces, la représentation des distances intra-/interspécifiques via des graphiques à points illustrent mieux le barcoding gap.</p>
+
+                </div>
+              <div id="field0" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content3470">
+              <p>Malgré les divers bénéfices du barcoding d’ADN en biologie, la confusion entre identification de spécimens et découverte d’espèces mène à des erreurs de méthodologie dans nombre d’études. Ici, la controverse ne réside donc pas sur les buts du barcoding (identification et découverte), mais sur l’imprécision de leurs limites, menant souvent à des méthodologies inadaptées et donc des résultats erronés. Ils listent ici 7 lacunes souvent trouvées dans les études sur le barcoding et proposent de potentielles améliorations pour des résultats plus fiables.</p>
+
+<p>1)Manque d’hypothèses claires <br>
+Choix de méthodes analytiques inappropriées ou non optimales du fait de la confusion dans les objectifs de l’étude.<br>
+-&gt; Exposer explicitement chaque hypothèse, et séparer clairement les aspects distincts de l’étude dans les méthodes et les résultats.</p>
+
+<p>2)Identification a priori  des spécimens inadéquate<br>
+Identifications contradictoires faites par différents laboratoires qui peuvent compromettre l’efficacité des références dans les bibliothèques de code-barres.<br>
+-&gt;Présenter les références et les caractères morphologiques utilisés dans la procédure d’identification.</p>
+
+<p>3)Utilisation du terme ‘identification d’espèces’<br>
+Confusion entre identification des individus et délimitation/découverte d’espèces.<br>
+-&gt;Clarifier les objectifs, dire plutôt ‘identification de spécimen’ ou ‘découverte d’espèces’ selon le but de l’étude.</p>
+
+<p>4)Utilisation inappropriée des arbres issus de la méthode « Neighbour-Joining » (arbres NJ)<br>
+-Les arbres NJ utilisent une matrice de distances basée sur la similitude des séquences. Mais se baser seulement sur la monophylie peut réduire l’efficacité du barcoding pour l’identification, du fait de la paraphylie de l’ADN mitochondrial ou de la mauvaise identification des spécimens.<br>
+-&gt;Utilisation de critères alternatifs comme ‘best close match’ (variations intra-/interspécifiques distinguées via un seuil établi par les utilisateurs) plus performants, notamment en présence de paraphylie.<br>
+-Pour évaluer la biodiversité et découvrir des espèces, les arbres ne peuvent estimer le nombre d’espèces en respectant les noms taxonomiques.<br>
+-&gt;Estimer la richesse spécifique via différentes méthodes (ABGD, GMYC, BOLD’s BIN) utilisant des informations génétiques pour estimer le nombre de groupes d’espèces similaires plutôt que les arbres NJ pour ce genre d’étude.</p>
+
+<p>5)Utilisation inapproprée du bootstrap<br>
+Le bootstrap permet de confirmer ou non un groupe d’espèces similaires, et peut être utilisé pour la découverte/délimitation d’espèces. Mais il peut diminuer le succès d’identification, déjà faible, des arbres NJ, car il ne peut évaluer l’incertitude des identifications. Rejeter l’identité de spécimens quand la valeur de boostrap est trop faible compromet donc l’efficacité des références de code-barres.<br>
+-&gt;Utiliser seulement le bootstrap quand c’est approprié (e.g. comme une partie du processus de délimitation de groupes pré-estimés).</p>
+
+<p>6)Utilisation inappropriée des seuils de distance fixés<br>
+Pour l’identification de spécimens, un seuil placé trop bas ou trop haut peut réduire ou biaiser l’identification des taux d’erreurs.<br>
+-&gt;Les seuils peuvent maintenant être optimisés pour des jeux de données spécifiques (i.e. logiciels ABGD, Spider).</p>
+
+<p>7)Interprétation incorrecte du barcoding gap<br>
+Les histogrammes de distributions des distances intra-/interspéciques qui se chevauchent ne signifient pas forcément que les codes-barres seront médiocres pour l’identification de spécimens ; la seule erreur est de définir un seuil universel. Ainsi, ce type de représentation ne signifie rien, car les distances intraspécifiques pour une espèce peut excéder les distances interspécifiques pour d’autres espèces présentes dans l’analyse, mais sans compromettre le succès d’identification (local gap).<br>
+-&gt;Pour l’identification d’espèces, la représentation des distances intra-/interspécifiques via des graphiques à points illustrent mieux le barcoding gap.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide0" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide0').click(function () {
+            $('#field0').hide(500);
+            $('#show0').show(500);
+            $('#content0').show(500);
+            $('.typo0').show(500);
+        });
+        $('#show0').click(function () {
+            $(this).hide(500);
+            $('#content0').hide(500);
+            $('#field0').show(500);
+            $('.typo0').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Ce que cette review apporte au débat </h6>
+                <div id="content4" class="text-justify content3474">
+                  <p>Cette revue semble poser un regard positif sur le barcoding d’ADN en lui accordant un potentiel important aussi bien dans les recherches sur la biodiversité que pour les sciences réglementaires. Selon les auteurs, la controverse se pose donc plutôt sur les hypothèses, parfois floues, menant à une utilisation de méthodologies inappropriées dans certaines études.<br>
+Ainsi, d’après cette revue, le barcoding d’ADN est un outil offrat nombre d’opportunités, à partir du moment où il est bien compris et  donc utilisé à bon escient.</p>
+
+                </div>
+              <div id="field4" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content3474">
+              <p>Cette revue semble poser un regard positif sur le barcoding d’ADN en lui accordant un potentiel important aussi bien dans les recherches sur la biodiversité que pour les sciences réglementaires. Selon les auteurs, la controverse se pose donc plutôt sur les hypothèses, parfois floues, menant à une utilisation de méthodologies inappropriées dans certaines études.<br>
+Ainsi, d’après cette revue, le barcoding d’ADN est un outil offrat nombre d’opportunités, à partir du moment où il est bien compris et  donc utilisé à bon escient.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide4" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide4').click(function () {
+            $('#field4').hide(500);
+            $('#show4').show(500);
+            $('#content4').show(500);
+            $('.typo4').show(500);
+        });
+        $('#show4').click(function () {
+            $(this).hide(500);
+            $('#content4').hide(500);
+            $('#field4').show(500);
+            $('.typo4').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Remarques sur la review </h6>
+                <div id="content5" class="text-justify content3475">
+                  <p>Review intéressante et bien structurée, offrant de potentielles améliorations pour palier aux mauvaise utilisations du barcoding d&#39;ADN.</p>
+
+                </div>
+              <div id="field5" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content3475">
+              <p>Review intéressante et bien structurée, offrant de potentielles améliorations pour palier aux mauvaise utilisations du barcoding d&#39;ADN.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide5" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide5').click(function () {
+            $('#field5').hide(500);
+            $('#show5').show(500);
+            $('#content5').show(500);
+            $('.typo5').show(500);
+        });
+        $('#show5').click(function () {
+            $(this).hide(500);
+            $('#content5').hide(500);
+            $('#field5').show(500);
+            $('.typo5').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+    </span>
+
+    <div class="pull-right">
+        Publiée il y a environ 9 ans
+par
+  <a href="../users/219.html">MarilouH</a>.
+  <br> Dernière modification il y a environ 9 ans.
+
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h6 class="panel-title"> Review : The seven deadly sins of DNA barcoding </h6>
+  </div>
+  <div class="panel-body">
+    <ul class="list-group">
+        <li class="list-group-item clearfix">
+              <a class="btn btn-default stick hvr-shadow" title="2 contributeurs pensent que cette référence appartient au thème Biologie" data-toggle="tooltip" href="../timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> 2</a>
+        </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Auteurs
+        </div> Collins, R. A., & Cruickshank, R. H. </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Année de publication
+        </div> 2013 </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Journal
+        </div> <i> Molecular ecology resources </i>
+      </li>
+      <li class="list-group-item clearfix">
+        <div class="bold">
+          
+        </div>
+        <a class="break-word btn btn-default" target="_blank" href="https://web.natur.cuni.cz/~muncling/barcoding2.pdf"><span class='glyphicon glyphicon-share-alt'></span> Accéder à la référence</a>
+            <form style="margin-top: 5px" action="https://sci-hub.st/" method="post" target="_blank">
+  <button class="btn btn-default"
+          name="request"
+          value="The seven deadly sins of DNA barcoding">
+    <span class="bigger icon-pirate"></span>
+    Accéder à la référence (en utilisant Sci-Hub)
+  </button>
+</form>
+
+      </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Apparait dans la controverse
+        </div>
+        <a target="_blank" href="../timelines/le-barcoding-outil-efficace-pour-la-classification-des-especes.html">Une courte séquence d&#39;ADN est-elle suffisante pour identifier les espèces&nbsp?</a>
+      </li>
+      <li class="list-group-item clearfix">
+                <span class="bold"> Comment les contributeurs jugent la qualité scientifique de cette référence :
+                 </span>
+            </br>
+            </br>
+            <div class="row">
+              <div class="col-xs-1">
+              </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse et n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-1" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est rigoureuse mais n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-2" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse mais est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-3" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="2 contributeurs pensent que cette référence est rigoureuse et est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.5em;">
+                          <span class="icon-4" ></span>
+                          <span>2</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est à lire absolument dans le cadre de cette controverse !" data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-5" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+            </div>
+      </li>
+          <li class="list-group-item clearfix">
+              <b> Une courte séquence d&#39;ADN est-elle suffisante pour identifier les espèces&nbsp? Oui              ou
+              Non</b>
+            <br style="margin-bottom: 5px">
+                <div class="row">
+                  <div class="col-xs-1">
+                  </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog1"
+                             title="0 contributeur pense que cette référence est très fermement du côté oui."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog2"
+                             title="2 contributeurs pensent que cette référence est du côté oui."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.3333333333333333em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>2</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog3"
+                             title="1 contributeur pense que cette référence est neutre."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.1666666666666667em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>1</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog4"
+                             title="0 contributeur pense que cette référence est du côté non."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog5"
+                             title="0 contributeur pense que cette référence est très fermement du côté non."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                </div>
+          </li>
+    </ul>
+  </div>
+  <div class="panel-footer clearfix">
+    <span class="pull-right">
+      <br/>
+      Référence ajoutée par <a href="../users/219.html">MarilouH</a>
+    </span>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    $('.my-btn').responsiveEqualHeightGrid();
+    $(function () {
+        $('.ajax-btn').click(function () {
+            $(this).text("Chargement");
+        });
+    });
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'})
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="../about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/references/the-seven-deadly-sins-of-dna-barcoding by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:41:03 GMT -->
+</html>

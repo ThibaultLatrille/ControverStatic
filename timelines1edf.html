@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?staging=true&tag=geology by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:36:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ULgIIjiOStWEZcHLulKwqnCacvHBQ/RRewRCqcyfOloq2mNBaiPIldrktU5Z2Hfc0KpCzInxWWWdMbFjJLhmoA==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-2 col-lg-8">
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-2">
+    </div>
+  </div>
+  <div class="col-xs-12 col-lg-offset-1 col-lg-10">
+    <div class="row">
+      <div id="timelines">
+        <div class="row page">
+                  <div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-aires-marines-protegees-sont-elles-efficaces.html">
+    <span class='int'>4</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-aires-marines-protegees-sont-elles-efficaces.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les aires marines protégées sont-elles efficaces&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Une aire marine protégée (AMP) est une zone spatialement délimitée dans un environnement marin, gérée entièrement ou en partie pour conserver la biodiversité. Depuis les années 1960-70, ces aires augmentent en nombre (Gubbay, 1995) et présentent...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="17 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">17</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/est-il-legitime-de-definir-l-anthropocene-comme-periode-geologique.html">
+    <span class='int'>5</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/est-il-legitime-de-definir-l-anthropocene-comme-periode-geologique.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Est-il légitime de définir l&#39;anthropocène comme époque géologique&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Le terme d’Anthropocène a été créé en 1980 par Eugène Stoermer pour exprimer l’impact des activités humaines sur la planète. Il a ensuite été repris par Paul Crutzen dans les années 2000 qui explique dans un article que nous avons quitté l’...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="17 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">17</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/peut-on-considerer-la-terre-comme-un-organisme-vivant-l-hypothese-gaia.html">
+    <span class='int'>6</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/peut-on-considerer-la-terre-comme-un-organisme-vivant-l-hypothese-gaia.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les êtres vivants améliorent-ils en leur faveur les conditions environnementales à la surface de la Terre&nbsp? L&#39;Hypothèse Gaïa.
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Devant la complexité du changement climatique, il devient nécessaire de penser le système-Terre à travers différentes composantes: atmosphère, hydrosphère, lithosphère et biosphère. Des disciplines jeunes comme la climatologie, l&#39;écologie...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="17 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">17</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/peut-on-reellement-parler-de-l-anthropocene-comme-une-nouvelle-ere-geologique.html">
+    <span class='int'>3</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/peut-on-reellement-parler-de-l-anthropocene-comme-une-nouvelle-ere-geologique.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Peut on réellement parler de l&#39;Anthropocène comme une nouvelle période géologique&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> L’échelle des temps géologique permet de décrire l’histoire des changements globaux terrestres. Elle permet de classer les événements marquants des principaux facteurs biotiques et abiotiques. Afin de définir ces unités géologiques,...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Histoire" data-toggle="tooltip" href="timelines82bc.html?tag=history"><span class="fat icon-history"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="14 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">14</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/le-rechauffement-climatique-peut-il-provoquer-des-seismes.html">
+    <span class='int'>3</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/le-rechauffement-climatique-peut-il-provoquer-des-seismes.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Le réchauffement climatique peut-il provoquer des séismes&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Le réchauffement climatique (quelle que soit son origine) est un fait scientifique avéré. Cette controverse vise à étudier une des conséquences possibles du changement climatique : peut-il provoquer des tremblements de terre ?</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Géographie" data-toggle="tooltip" href="timelinesb8fa.html?tag=geography"><span class="fat icon-geography"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">1</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">1</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div>
+              
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 center">
+
+        </div>
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="iptaken" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <br/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"> Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function setupSubscription(context) {
+        $('[data-validate]', context).click(function () {
+            var self = $(this);
+            self.hide();
+            self.after('<svg version="1.1" class="loader-like" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/></path></svg>');
+            $.ajax(self.data('validate'), {
+                url: self.data('validate'),
+                data: {id: self.val()},
+                method: 'POST',
+                statusCode: {
+                    201: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.addClass('btn-success');
+                        self.removeClass('btn-default');
+                        self.removeClass('green');
+                        self.attr('data-original-title', "Vous suivez actuellement cette controverse et recevez les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) + 1);
+                    },
+                    204: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.removeClass('btn-success');
+                        self.addClass('btn-default');
+                        self.addClass('green');
+                        self.attr('data-original-title', "Abonnez-vous à cette controverse si vous souhaitez suivre les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) - 1);
+                    },
+                    401: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        $('#iptaken').modal('show');
+                    }
+                }
+            })
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      $('#filter-button').on( 'click', function() {
+        $('#filter-button').hide();
+        $('.filter').show();
+      });
+        $('.loading-image').imagesLoaded().progress( function( instance, image ) {
+            if (image.isLoaded) {
+                $(image.img).addClass("loaded");
+            }
+        });
+        $('.timeline-name').responsiveEqualHeightGrid();
+        $('.timeline-frame').responsiveEqualHeightGrid();
+        $('.timeline-body').responsiveEqualHeightGrid();
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+        setupSubscription();
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?staging=true&tag=geology by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:36:07 GMT -->
+</html>

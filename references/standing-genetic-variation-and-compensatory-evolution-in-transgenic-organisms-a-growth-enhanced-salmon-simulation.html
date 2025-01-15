@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/references/standing-genetic-variation-and-compensatory-evolution-in-transgenic-organisms-a-growth-enhanced-salmon-simulation by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:52:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="En aquaculture , la transgénèse permet d'augmenter la taille des poissons pour un meilleur rendement. Cependant, des inquiétudes existent quant aux conséquences d'une introduction accidentelle de ces poissons dans les milieux naturelles. La différence entre la valeur sélective d'un individu sauvage et d'un individu transgénique ne se résume pas qu'au gène introduit. Il est le résultat de nombreuses influences comme celle de l'interaction entre les gènes, dont le transgène. Les auteurs ont simulés l'introduction d'individus transgéniques dans une population sauvage de saumon coho. Ils ont suivis à l'aide d'un modèle mathématique l'influence du génome sur l'évolution des fréquences alléliques du transgène et la persistance de la population.
+">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="../assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="../assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="../assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wRw6EFe62BlxQ664JiTHiJWJTU0WMM9YVafPCBLL95+7flFzBRdaWS/C2j3FrgD+Nbl9cF6CYmyzkjzC+uyrZQ==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="../index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="../timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="../tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="../about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="../users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="../faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+
+<div id="my-container" class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+  <div class="list-group">
+    <div class="list-group-item center">
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="1 contribut·eur·rice">
+        <span class="fat icon-users"></span>
+        1
+      </div>
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="1 analyse">
+        <span class="fat icon-comment"></span>
+        1
+      </div>
+    </div>
+    <a class="list-group-item" href="../timelines/194.html"><span class="icon-arrow-left normal"></span> Revenir à la controverse</a>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-6 col-sm-offset-1 col-md-offset-0">
+          <div class="panel panel-default comment">
+  <div class="panel-body clearfix">
+    <span class="content clearfix">
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Titre de l&#39;article </h6>
+                <div id="content6" class="text-justify content9866">
+                  <p>Variation génétique permanente et évolution compensatoire chez les organismes transgéniques: une simulation de croissance améliorée du saumon</p>
+
+                </div>
+              <div id="field6" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-left">
+              <p>Variation génétique permanente et évolution compensatoire chez les organismes transgéniques: une simulation de croissance améliorée du saumon</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide6" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide6').click(function () {
+            $('#field6').hide(500);
+            $('#show6').show(500);
+            $('#content6').show(500);
+            $('.typo6').show(500);
+        });
+        $('#show6').click(function () {
+            $(this).hide(500);
+            $('#content6').hide(500);
+            $('#field6').show(500);
+            $('.typo6').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Introduction à l&#39;article </h6>
+                <div id="content0" class="text-justify content9860">
+                  <p>En aquaculture , la transgénèse permet d&#39;augmenter la taille des poissons pour un meilleur rendement. Cependant, des inquiétudes existent quant aux conséquences d&#39;une introduction accidentelle de ces poissons dans les milieux naturelles. La différence entre la valeur sélective d&#39;un individu sauvage et d&#39;un individu transgénique ne se résume pas qu&#39;au gène introduit. Il est le résultat de nombreuses influences comme celle de l&#39;interaction entre les gènes, dont le transgène. Les auteurs ont simulés l&#39;introduction d&#39;individus transgéniques dans une population sauvage de saumon coho. Ils ont suivis à l&#39;aide d&#39;un modèle mathématique l&#39;influence du génome sur l&#39;évolution des fréquences alléliques du transgène et la persistance de la population.</p>
+
+                </div>
+              <div id="field0" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content9860">
+              <p>En aquaculture , la transgénèse permet d&#39;augmenter la taille des poissons pour un meilleur rendement. Cependant, des inquiétudes existent quant aux conséquences d&#39;une introduction accidentelle de ces poissons dans les milieux naturelles. La différence entre la valeur sélective d&#39;un individu sauvage et d&#39;un individu transgénique ne se résume pas qu&#39;au gène introduit. Il est le résultat de nombreuses influences comme celle de l&#39;interaction entre les gènes, dont le transgène. Les auteurs ont simulés l&#39;introduction d&#39;individus transgéniques dans une population sauvage de saumon coho. Ils ont suivis à l&#39;aide d&#39;un modèle mathématique l&#39;influence du génome sur l&#39;évolution des fréquences alléliques du transgène et la persistance de la population.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide0" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide0').click(function () {
+            $('#field0').hide(500);
+            $('#show0').show(500);
+            $('#content0').show(500);
+            $('.typo0').show(500);
+        });
+        $('#show0').click(function () {
+            $(this).hide(500);
+            $('#content0').hide(500);
+            $('#field0').show(500);
+            $('.typo0').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Expériences de l&#39;article </h6>
+                <div id="content1" class="text-justify content9861">
+                  <p>Les auteurs ont conçu un modèle où une population de saumon sauvage coho se fait envahir 1 fois par des individus transgéniques. A chaque génération, les fréquences alléliques sont calculées. Dans le modèle, l&#39;un des gènes détermine la présence ou l&#39;absence de transgène, sachant que l&#39;allèle transgénique est dominant, et un autre influencera positivement ou négativement les effets du transgène. A chaque génération, la viabilité des juvéniles, la survie des adultes et le nombre de descendants sont calculés et sont densité-dépendante.  L&#39;avantage des individus transgéniques réside dans leurs croissances rapides et une probabilité d&#39;accouplement supérieure pour le mâle transgénique. Lors de la reproduction, les allèles des gènes sont brassés, voire recombinés selon les lois de Mendel. La sélection est modélisé comme modifiant certains traits des individus transgéniques pour les rapprocher des individus sauvages dans le temps.  </p>
+
+                </div>
+              <div id="field1" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content9861">
+              <p>Les auteurs ont conçu un modèle où une population de saumon sauvage coho se fait envahir 1 fois par des individus transgéniques. A chaque génération, les fréquences alléliques sont calculées. Dans le modèle, l&#39;un des gènes détermine la présence ou l&#39;absence de transgène, sachant que l&#39;allèle transgénique est dominant, et un autre influencera positivement ou négativement les effets du transgène. A chaque génération, la viabilité des juvéniles, la survie des adultes et le nombre de descendants sont calculés et sont densité-dépendante.  L&#39;avantage des individus transgéniques réside dans leurs croissances rapides et une probabilité d&#39;accouplement supérieure pour le mâle transgénique. Lors de la reproduction, les allèles des gènes sont brassés, voire recombinés selon les lois de Mendel. La sélection est modélisé comme modifiant certains traits des individus transgéniques pour les rapprocher des individus sauvages dans le temps.  </p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide1" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide1').click(function () {
+            $('#field1').hide(500);
+            $('#show1').show(500);
+            $('#content1').show(500);
+            $('.typo1').show(500);
+        });
+        $('#show1').click(function () {
+            $(this).hide(500);
+            $('#content1').hide(500);
+            $('#field1').show(500);
+            $('.typo1').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Résultats de l&#39;article </h6>
+                <div id="content2" class="text-justify content9862">
+                  <p>L&#39;augmentation de la vitesse de croissance des poissons dû au transgène réduira l&#39;énergie attribuée à d&#39;autres traits, ce qui peut mettre en péril leurs survies. Les allèles compensant les effets négatifs du transgène seraient sélectionnés. La capacité du transgène a envahir la population sera dans le même temps augmenter.</p>
+
+<p>Même si les effets négatifs du transgène réduisent la taille de la population, aucun des scénarios ne mène à une extinction. En effet, lorsque la population est petite, la probabilité de survie s’accroît ce qui réduit les effets négatifs du transgène. Le transgène peut donc envahir une population ou être maintenu par fréquence-dépendance.</p>
+
+<p>Les allèles contre-sélectionnant le transgène, c&#39;est-à-dire diminuant la valeur sélective, se propageront dans la population. Alors que sans transgène, ils seraient maintenus en équilibre par une sélection stabilisante. Ces allèles défavorables également chez les individus non-transgéniques peuvent diminuer la taille de la population.</p>
+
+                </div>
+              <div id="field2" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content9862">
+              <p>L&#39;augmentation de la vitesse de croissance des poissons dû au transgène réduira l&#39;énergie attribuée à d&#39;autres traits, ce qui peut mettre en péril leurs survies. Les allèles compensant les effets négatifs du transgène seraient sélectionnés. La capacité du transgène a envahir la population sera dans le même temps augmenter.</p>
+
+<p>Même si les effets négatifs du transgène réduisent la taille de la population, aucun des scénarios ne mène à une extinction. En effet, lorsque la population est petite, la probabilité de survie s’accroît ce qui réduit les effets négatifs du transgène. Le transgène peut donc envahir une population ou être maintenu par fréquence-dépendance.</p>
+
+<p>Les allèles contre-sélectionnant le transgène, c&#39;est-à-dire diminuant la valeur sélective, se propageront dans la population. Alors que sans transgène, ils seraient maintenus en équilibre par une sélection stabilisante. Ces allèles défavorables également chez les individus non-transgéniques peuvent diminuer la taille de la population.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide2" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide2').click(function () {
+            $('#field2').hide(500);
+            $('#show2').show(500);
+            $('#content2').show(500);
+            $('.typo2').show(500);
+        });
+        $('#show2').click(function () {
+            $(this).hide(500);
+            $('#content2').hide(500);
+            $('#field2').show(500);
+            $('.typo2').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Rigueur de l&#39;article </h6>
+                <div id="content3" class="text-justify content9863">
+                  <p>Les auteurs considèrent comme <a href="1308.html" class="linked-ref" data-ref="1308" target="_blank">Muir et Howard</a> que les mâles transgéniques ont un succès d&#39;accouplement supérieur aux mâles sauvages et que les juvéniles transgéniques ont une viabilité plus faible. De plus, ils considèrent que les paramètres modélisés sont influencés par de la densité-dépendance et ils incorporent l&#39;effet d&#39;autres allèles sur la fréquence du transgène. Les auteurs ont testés différentes valeurs de paramètres, parfois surréaliste. Par exemple, ils ont été jusqu&#39;à multiplié l&#39;avantage reproducteur des mâles transgéniques par un facteur 10. Par ailleurs, s&#39;agissant d&#39;un modèle mathématique, il est approximatif de la réalité. Par exemple, il n&#39;incorpore aucun paramètre environnemental. Les individus transgéniques sont moins bien adaptés à l&#39;environnement car ils ont subit une sélection artificielle. Par ailleurs, les valeurs attribués aux paramètres sont des valeurs supposées ou observées en laboratoire, comme par exemple le temps développement des individus transgéniques.</p>
+
+                </div>
+              <div id="field3" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content9863">
+              <p>Les auteurs considèrent comme <a href="1308.html" class="linked-ref" data-ref="1308" target="_blank">Muir et Howard</a> que les mâles transgéniques ont un succès d&#39;accouplement supérieur aux mâles sauvages et que les juvéniles transgéniques ont une viabilité plus faible. De plus, ils considèrent que les paramètres modélisés sont influencés par de la densité-dépendance et ils incorporent l&#39;effet d&#39;autres allèles sur la fréquence du transgène. Les auteurs ont testés différentes valeurs de paramètres, parfois surréaliste. Par exemple, ils ont été jusqu&#39;à multiplié l&#39;avantage reproducteur des mâles transgéniques par un facteur 10. Par ailleurs, s&#39;agissant d&#39;un modèle mathématique, il est approximatif de la réalité. Par exemple, il n&#39;incorpore aucun paramètre environnemental. Les individus transgéniques sont moins bien adaptés à l&#39;environnement car ils ont subit une sélection artificielle. Par ailleurs, les valeurs attribués aux paramètres sont des valeurs supposées ou observées en laboratoire, comme par exemple le temps développement des individus transgéniques.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide3" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide3').click(function () {
+            $('#field3').hide(500);
+            $('#show3').show(500);
+            $('#content3').show(500);
+            $('.typo3').show(500);
+        });
+        $('#show3').click(function () {
+            $(this).hide(500);
+            $('#content3').hide(500);
+            $('#field3').show(500);
+            $('.typo3').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Ce que cet article apporte au débat </h6>
+                <div id="content4" class="text-justify content9864">
+                  <p>L&#39;incorporation des effets de densité-dépendance dans les calculs perfectionne le modèle de <a href="1308.html" class="linked-ref" data-ref="1308" target="_blank">Muir et Howard</a> et contredit leurs conclusions. L&#39;introduction d&#39;individus transgéniques dans une population sauvage de saumon coho ne mènerait pas à l&#39;extinction de la population. Selon les paramètres, les scénarios concluent soit en la propagation du transgène, soit à sa disparition ou bien à son maintien par fréquence-dépendance dans la population. La conclusion du modèle dépend entre autre du reste du génome. Les allèles peuvent compenser les effets délétères du transgène, ce qui le maintient. Ils peuvent aussi aggraver ces effets délétères, ce qui purgera les individus transgéniques de la population. Cependant, la reproduction sexuée peut défavoriser les individus non transgéniques s&#39;ils héritent de ce dernier type d&#39;allèle diminuant la fitness.</p>
+
+                </div>
+              <div id="field4" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content9864">
+              <p>L&#39;incorporation des effets de densité-dépendance dans les calculs perfectionne le modèle de <a href="1308.html" class="linked-ref" data-ref="1308" target="_blank">Muir et Howard</a> et contredit leurs conclusions. L&#39;introduction d&#39;individus transgéniques dans une population sauvage de saumon coho ne mènerait pas à l&#39;extinction de la population. Selon les paramètres, les scénarios concluent soit en la propagation du transgène, soit à sa disparition ou bien à son maintien par fréquence-dépendance dans la population. La conclusion du modèle dépend entre autre du reste du génome. Les allèles peuvent compenser les effets délétères du transgène, ce qui le maintient. Ils peuvent aussi aggraver ces effets délétères, ce qui purgera les individus transgéniques de la population. Cependant, la reproduction sexuée peut défavoriser les individus non transgéniques s&#39;ils héritent de ce dernier type d&#39;allèle diminuant la fitness.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide4" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide4').click(function () {
+            $('#field4').hide(500);
+            $('#show4').show(500);
+            $('#content4').show(500);
+            $('.typo4').show(500);
+        });
+        $('#show4').click(function () {
+            $(this).hide(500);
+            $('#content4').hide(500);
+            $('#field4').show(500);
+            $('.typo4').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Remarques sur l&#39;article </h6>
+                <div id="content5" class="text-justify content9865">
+                  <p>L&#39;introduction de cet article constitue une sorte de review faisant l&#39;état des lieux des modèles pré-existant, décrivant les conséquences de l&#39;introduction d&#39;individus transgéniques dans les populations sauvages. </p>
+
+                </div>
+              <div id="field5" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content9865">
+              <p>L&#39;introduction de cet article constitue une sorte de review faisant l&#39;état des lieux des modèles pré-existant, décrivant les conséquences de l&#39;introduction d&#39;individus transgéniques dans les populations sauvages. </p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide5" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide5').click(function () {
+            $('#field5').hide(500);
+            $('#show5').show(500);
+            $('#content5').show(500);
+            $('.typo5').show(500);
+        });
+        $('#show5').click(function () {
+            $(this).hide(500);
+            $('#content5').hide(500);
+            $('#field5').show(500);
+            $('.typo5').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+    </span>
+
+    <div class="pull-right">
+        Publiée il y a environ 7 ans
+par
+  <a href="../users/605.html">G. Uguen</a>.
+  <br> Dernière modification il y a environ 7 ans.
+
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h6 class="panel-title"> Article : Standing genetic variation and compensatory evolution in transgenic organisms: a growth-enhanced salmon simulation </h6>
+  </div>
+  <div class="panel-body">
+    <ul class="list-group">
+        <li class="list-group-item clearfix">
+              <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Biologie" data-toggle="tooltip" href="../timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> 1</a>
+        </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Auteurs
+        </div> Robert N. M. Ahrens, Robert H. Devlin </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Année de publication
+        </div> 2010 </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Journal
+        </div> <i> Transgenic Research </i>
+      </li>
+          <li class="list-group-item">
+            <div class="bold">
+              Abstract (dans sa langue originale)
+            </div>
+            <div class="justify">
+              <p>Genetically modified strains usually are generated within defined genetic backgrounds to minimize variation for the engineered characteristic in order to facilitate basic research investigations or for commercial application. However, interactions between transgenes and genetic background have been documented in both model and commercial agricultural species, indicating that allelic variation at transgene-modifying loci are not uncommon in genomes. Engineered organisms that have the potential to allow entry of transgenes into natural populations may cause changes to ecosystems via the interaction of their specific phenotypes with ecosystem components and services. A transgene introgressing through natural populations is likely to encounter a range of natural genetic variation (among individuals or sub-populations) that could result in changes in phenotype, concomitant with effects on fitness and ecosystem consequences that differ from that seen in the progenitor transgenic strain. In the present study, using a growth hormone transgenic salmon example, we have modeled selection of modifier loci (single and multiple) in the presence of a transgene and have found that accounting for genetic background can significantly affect the persistence of transgenes in populations, potentially reducing or reversing a “Trojan gene” effect. Influences from altered life history characteristics (e.g., developmental timing, age of maturation) and compensatory demographic/ecosystem controls (e.g., density dependence) also were found to have a strong influence on transgene effects. Further, with the presence of a transgene in a population, genetic backgrounds were found to shift in non-transgenic individuals as well, an effect expected to direct phenotypes away from naturally selected optima. The present model has revealed the importance of understanding effects of selection for background genetics on the evolution of phenotypes in populations harbouring transgenes.</p>
+
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="bold">
+             Identifiant unique
+            </div> 10.1007/s11248-010-9443-0
+          </li>
+      <li class="list-group-item clearfix">
+        <div class="bold">
+          
+        </div>
+        <a class="break-word btn btn-default" target="_blank" href="https://link.springer.com/article/10.1007%2Fs11248-010-9443-0"><span class='glyphicon glyphicon-share-alt'></span> Accéder à la référence</a>
+            <form style="margin-top: 5px" action="https://sci-hub.st/" method="post" target="_blank">
+  <button class="btn btn-default"
+          name="request"
+          value="10.1007/s11248-010-9443-0">
+    <span class="bigger icon-pirate"></span>
+    Accéder à la référence (en utilisant Sci-Hub)
+  </button>
+</form>
+
+      </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Apparait dans la controverse
+        </div>
+        <a target="_blank" href="../timelines/quels-sont-les-impacts-environnementaux-des-organismes-genetiquement-modifies-en-agriculture-et-en-elevage.html">Quels sont les impacts environnementaux des organismes génétiquement modifiés en agriculture et en élevage&nbsp?</a>
+      </li>
+      <li class="list-group-item clearfix">
+                <span class="bold"> Comment les contributeurs jugent la qualité scientifique de cette référence :
+                 </span>
+            </br>
+            </br>
+            <div class="row">
+              <div class="col-xs-1">
+              </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse et n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-1" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est rigoureuse mais n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-2" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse mais est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-3" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="1 contributeur pense que cette référence est rigoureuse et est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.5em;">
+                          <span class="icon-4" ></span>
+                          <span>1</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est à lire absolument dans le cadre de cette controverse !" data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-5" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+            </div>
+      </li>
+    </ul>
+  </div>
+  <div class="panel-footer clearfix">
+    <span class="pull-right">
+      <br/>
+      Référence ajoutée par <a href="../users/605.html">G. Uguen</a>
+    </span>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    $('.my-btn').responsiveEqualHeightGrid();
+    $(function () {
+        $('.ajax-btn').click(function () {
+            $(this).text("Chargement");
+        });
+    });
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'})
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="../about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/references/standing-genetic-variation-and-compensatory-evolution-in-transgenic-organisms-a-growth-enhanced-salmon-simulation by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:52:25 GMT -->
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/signup by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:56:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Qtt5+WAR4FPRDV4YuvgR5xdF1OTTOveAPt818AwyA3g4uRKaMrxiE4+MKp1ZctaRt3Xk2ZuIWrTY6sY65BVfgg==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3> Créer un compte </h3>
+      </div>
+      <div class="panel-body">
+    <form class="new_user" id="new_user" action="http://0.0.0.0:3000/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="3xnBaOnTeNWRGHh9ctgV1jRWSMFyxY6MzsoIJxGgLdQFcepWJaPBK29VM4A4AzpWACYWa6+CVzzSxxbs19cIsw==" autocomplete="off" />
+        
+
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <label for="user_first_name">Prénom</label>
+            <input class="form-control" placeholder="Charles" type="text" value="" name="user[first_name]" id="user_first_name" />
+            <br/>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <label for="user_last_name">Nom</label>
+            <input class="form-control" placeholder="Darwin" type="text" value="" name="user[last_name]" id="user_last_name" />
+            <br/>
+          </div>
+        </div>
+
+        <label for="user_name">Identifiant</label>
+        <input class="form-control" placeholder="C. Darwin" type="text" name="user[name]" id="user_name" />
+            <br/>
+        <label for="user_email">Adresse électronique</label>
+        <input class="form-control" placeholder="Charles.darwin@cnrs.fr" data-validate="/users/checkemail" type="text" name="user[email]" id="user_email" />
+        <div id="fetch" style="display: none; margin-left: 30px; margin-top: 20px">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+               width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+            <rect x="0" y="0" width="4" height="10" fill="#FF6700">
+              <animateTransform attributeType="xml"
+                                attributeName="transform" type="translate"
+                                values="0 0; 0 20; 0 0"
+                                begin="0" dur="0.6s" repeatCount="indefinite" />
+            </rect>
+            <rect x="10" y="0" width="4" height="10" fill="#FF6700">
+              <animateTransform attributeType="xml"
+                                attributeName="transform" type="translate"
+                                values="0 0; 0 20; 0 0"
+                                begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+            </rect>
+            <rect x="20" y="0" width="4" height="10" fill="#FF6700">
+              <animateTransform attributeType="xml"
+                                attributeName="transform" type="translate"
+                                values="0 0; 0 20; 0 0"
+                                begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+            </rect>
+          </svg>
+        </div>
+        <div id="why" style="display:none" >
+          <br/>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              Si vous disposez d'une adresse électronique appartenant à une institution scientifique, votre compte sera automatiquement activé. </br>
+Sinon, veuillez détailler brièvement votre champ d'expertise scientifique et pourquoi pour souhaitez participer à ControverSciences. <br/>
+Vous recevrez alors un mail de confirmation pour activer votre compte. <br/>
+            </div>
+            <div class="panel-body">
+            <textarea class="form-control textarea" name="user[why]" id="user_why">
+</textarea>
+            </div>
+          </div>
+        </div>
+            <br/>
+        <label for="user_password">Mot de passe</label>
+        <input class="form-control" type="password" name="user[password]" id="user_password" />
+            <br/>
+        <label for="user_password_confirmation">Confirmation de mot de passe</label>
+        <input class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+        <br/>
+	<div id="test"> </div>
+        <br/>
+            <label for="user_terms_of_service">
+                <input name="user[terms_of_service]" type="hidden" value="0" autocomplete="off" /><input type="checkbox" value="1" name="user[terms_of_service]" id="user_terms_of_service" />
+                <span> J&#39;ai lu et j&#39;accepte <a target="_blank" href="terms.html">Les conditions générales d&#39;utilisation</a> </span>
+
+                <span> ET <a target="_blank" href="magna-charta.html">La Magna Charta</a>. </span>
+</label>       <br/>
+       <button name="button" type="submit" id="submit" class="btn btn-success pull-right" data-disable-with="&lt;span class=&quot;glyphicon glyphicon-save&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &amp;nbsp Création en cours ">Créer votre compte &nbsp <span class="icon-frog fat" aria-hidden="true"></span></button>
+</form>      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+$(function() {
+    $('[data-validate]').blur(function() {
+        $('#fetch').show();
+        $this = $(this);
+        $.get($this.data('validate'), {
+            user: $this.val()
+        }).success(function() {
+            $('#fetch').hide();
+            $('#why').hide();
+        }).error(function() {
+            $('#fetch').hide();
+            $('#why').show();
+        });
+    });
+});
+
+$(document).ready(function () {
+    $('input#user_password_confirmation').keyup(function () {
+        $('#test').show();
+        var $pwc = $('input#user_password_confirmation').val();
+        var $pw = $('input#user_password').val();
+
+        if ($pwc == $pw) {
+            $('#test').html("<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok' aria-hidden='true'></span><span class='sr-only'>Parfait: </span> Votre mot de passe a bien été confirmé.</div>");
+        } else {
+            $('#test').html("<div class='alert alert-danger' role='alert'><span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span><span class='sr-only'></span> Attention, Les deux mots de passe ne sont pas identiques !</div>");
+        }
+    });
+    String.prototype.capitalize = function() {
+        return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase()
+    };
+    $('input#user_first_name').keyup(function () {
+        if ($('input#user_last_name').val() != '' ){
+            var $fn = $('input#user_first_name').val().replace("-", " ").split(' ').map(function(num) {
+                if (num[0]){
+                    return num[0].toUpperCase() + '.';
+                } else {
+                    return ''
+                }
+            }).join('');
+            var $ln = $('input#user_last_name').val().capitalize();
+            $('input#user_name').val($fn + " " + $ln);
+        }
+    });
+    $('input#user_last_name').keyup(function () {
+        if ($('input#user_first_name').val() != '' ){
+            var $fn = $('input#user_first_name').val().replace("-", " ").split(' ').map(function(num) {
+                if (num[0]){
+                    return num[0].toUpperCase() + '.';
+                } else {
+                    return ''
+                }
+            }).join('');
+            var $ln = $('input#user_last_name').val().capitalize();
+            $('input#user_name').val($fn + " " + $ln);
+        }
+    });
+});
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/signup by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:56:02 GMT -->
+</html>

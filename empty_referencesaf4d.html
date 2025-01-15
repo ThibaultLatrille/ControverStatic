@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="NeJDfI3CwnFoCofdZUJhhVgKbMz4uwu8suatLlVPWrRPgCgf329AMTaL81iGyKbz+Dpc8bAJpohU017kvWgGTg==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item clearfix list-group-item clearfix-default cursor-not-allowed" href="empty_references.html"><span class="icon-reference bigger"></span>
+                                    Enrichir les controverses
+                                    <span class="badge">64</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_comments.html"><span class="icon-comment bigger"></span>
+                                    Analyser les références
+                                    <span class="badge">453</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_summaries.html"><span class="icon-summary bigger"></span>
+                                    Synthètiser les controverses
+                                    <span class="badge">11</span></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+      <br/>
+      <br/>
+
+      <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>
+                Ces controverses
+                ont besoin de références scientifiques, venez les enrichir !
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="empties">
+                    <div class="page">
+                      <div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading45">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse45" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-aspartame-est-il-inoffensif-pour-la-sante.html">L&#39;aspartame est-il inoffensif pour la santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse45" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>L&#39;aspartame est un édulcorant artificiel découvert en 1965. C&#39;est un édulcorant, c&#39;est-à-dire qu&#39;il a le même goût que le sucre, sans avoir les mêmes propriétés (il ne fait notamment pas grossir). Il est généralement utilisé dans la plupart des aliments, anciennement sucrés, où la mention &quot;SANS SUCRES&quot; est écrite en gros (chewing gums, boissons et aliments &quot;light&quot;, etc.), justement car il n&#39;est pas aussi calorique que le sucre. C&#39;est un produit artificiel en ce que, jusqu&#39;à preuve du contraire, il n&#39;a jamais été observé dans la nature. Il s&#39;agit d&#39;un produit qui existe uniquement après synthèse en laboratoire. Il a été mis sur le marché pour la première fois aux Etats-Unis en 1974. En France, il a été autorisé à partir de 1981.<br>
+On l&#39;accuse de tous les maux: neurotoxique (il augmenterait les chances d&#39;avoir une tumeur au cerveau), déclenchement accru de crises épileptiques, risque pour les phénylcétonuriques du fait de la libération de phénylalaline. Les médias reprennent souvent toutes ces accusations pour les souligner ou les dévaloriser. Cette controverse vise donc à faire la part des choses et à livrer l&#39;état des connaissances des études scientifiques sur le sujet.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading38">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse38" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-experimentation-animale-est-elle-efficace-est-elle-encore-necessaire-aujourd-39-hui.html">L&#39;expérimentation animale est-elle encore nécessaire dans la recherche médicale&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse38" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            5
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>L&#39;expérimentation animale consiste à tester des produits (médicaments, cosmétiques, aliments, molécule diverses, etc.) ou techniques (méthodes d&#39;analyse, greffes, etc.) sur des animaux pour étudier leurs effets, dans le but de faire avancer la recherche (souvent au bénéfice de l&#39;Homme). Parfois décriée, cette pratique est elle efficace et nécessaire pour la Science ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading37">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse37" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/est-il-possible-d-39-exterminer-les-moustiques-sans-bouleverser-la-plupart-des-ecosystemes.html">Est-il possible d&#39;exterminer les moustiques sans bouleverser la plupart des écosystèmes&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse37" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Vecteurs d&#39;infections mortelles ou simplement agaçants, les moustiques sont des parasites dont l&#39;homme se passerait bien. D&#39;un point de vue écologique pourtant, les moustiques pourraient bien avoir un rôle important pour les écosystèmes auxquels ils appartiennent. En faisant l’hypothèse qu&#39;il soit techniquement possible d&#39;exterminer les moustiques, quelles en seraient les conséquences écologiques ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading29">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse29" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-biere-fait-elle-grossir.html">La bière fait-elle grossir&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="right"
+               title="2 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            2
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Le fameux &quot;ventre à bière&quot;, et plus généralement le fait que la bière fasse grossir, est-il plus qu&#39;une croyance populaire ? Que disent les études scientifiques sur le sujet : la bière fait-elle particulièrement prendre beaucoup de poids ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading26">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse26" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-intestin-est-il-possible-de-parler-d-39-un-deuxieme-cerveau.html">Est-il possible de parler de l&#39;intestin comme d&#39;un deuxième cerveau&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Une expression commune veut que les gourmands &quot;pensent avec leur ventre&quot;. Derrière la legerté de cette observation se cache peut-être une réalité biologique bien plus complexe : l&#39;intestin peut-il être qualifié de &quot;deuxième cerveau&quot; ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading24">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse24" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/changement-du-climat-origine-anthropique-ou-naturelle.html">Dans quelle mesure les activités humaines sont-elles à l&#39;origine du changement climatique&nbsp? </a>
+    </h4>
+  </div>
+  <div id="Collapse24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>A la différence de la météorologie qui s’intéresse à l&#39;état de l&#39;atmosphère à court terme, la climatologie analyse des périodes plus longues (plusieurs dizaines d&#39;années). De nombreuses études montrent que le climat terrestre global se réchauffe rapidement, si l&#39;on compare ce rythme à celui des cycles climatiques précédents.  Dans quelle mesure ce changement climatique global est-il d&#39;origine anthropique ? A l&#39;heure actuelle, un large consensus existe pour reconnaître une influence des activités humaines dans ce processus. Les travaux du GIEC, Groupe d&#39;Expert Environnemental sur l&#39;Evolution du Climat, synthétisent ainsi les travaux internationaux sur cette question.  Néanmoins, il reste peu évident de mesurer précisément cette influence. </p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading22">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse22" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-humanite-peut-elle-se-nourrir-sans-degrader-son-environnement.html">L&#39;humanité peut-elle se nourrir sans dégrader son environnement&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="6 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            6
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="right"
+               title="3 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            3
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>La population humaine ne cesse de croître et devrait attendre 9 milliards d&#39;individus en 2040. Alors que le problème de la faim est loin d&#39;être résolu aujourd&#39;hui, il risque d&#39;être encore plus important demain si la production agricole n&#39;augmente pas. Mais les systèmes très productifs les plus répandus aujourd&#39;hui dans les pays développés ont souvent des impacts négatifs sur l&#39;environnement, il convient donc de se demander dans quelle mesure la population humaine mondiale peut subvenir à ses besoins alimentaires sans dégrader l&#39;environnement.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading21">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse21" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-virus-appartiennent-ils-au-vivant.html">Les virus appartiennent-ils au vivant&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="2 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            2
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Comment différencier vivant et inerte ? La question semble a priori évidente : les animaux, les plantes, sont facilement identifiables au monde du vivant. Les objets inanimés (table, ordinateur, etc.) sont consensuellement considérés comme inertes. Mais le cas des virus est discuté : ils présenteraient des caractéristiques propres aux deux catégories.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading20">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse20" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/viande-rouge-ou-viande-blanche-l-39-impact-sur-la-sante.html">Les viandes rouges et blanches participent-elles différemment à l&#39;apparition du cancer du côlon&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="4 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            4
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>La consommation de viande augmente globalement avec le niveau de richesse d&#39;un pays. Cependant, la consommation régulière de viande pourrait avoir des impacts sur la santé, notamment pour l&#39;apparition du cancer du colon, différemment selon le type de viande consommée (blanche ou rouge). Qu&#39;en est-il ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading12">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse12" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/le-point-g-mythe-ou-realite.html">Le point G est-il une réalité anatomique&nbsp? </a>
+    </h4>
+  </div>
+  <div id="Collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Afin de pouvoir mener une réflexion sur la réalité de ce point G, on peut d&#39;ores et déjà se poser la question de sa définition : désigne-t-il un point très précis, constitue-t-il une entité anatomique bien identifiable ? S&#39;agit-il d&#39;une zone plus floue ? Constitue t-il une entité indépendante du clitoris ? Le cas échéant, exsite-t-il chez toutes les femmes ? <br>
+Serpent de mer de la sexualité, l&#39;existence du point G chez la femme est très controversée et suscite de nombreux fantasmes. <br>
+On constate que de nombreux contenus considèrent son existence comme acquise, souvent sans qu&#39;on sache toutefois si ce qui est appelé &quot;point G&quot; est lié ou non au clitoris. <br>
+Ici, nous nous demanderons si les données scientifiques disponibles permettent de conclure à une réalité anatomique du point G, indépendante ou non des organes déjà connus comme le clitoris. </p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading11">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse11" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="7 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            7
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="3 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            3
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les jeux vidéos sont régulièrement accusés présenter des images et des comportements violents et, par la même occasion, de rendre les joueurs plus agressifs dans la vie de tous les jours.</p>
+
+<p>Ces accusations reposent-elles sur des preuves scientifiques?<br>
+Dans l&#39;hypothèse ou le jeu vidéo rend violent, quels sont les mécanismes qui expliquent cette agressivité?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading10">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse10" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/le-vaccin-de-l-39-hepatite-b-un-lien-avec-la-sclerose-en-plaque.html">Le vaccin de l&#39;hépatite B : un lien avec la sclérose en plaque&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Parmi les vaccins critiqués pour leurs possibles effets secondaires, celui contre l&#39;hépatite B fait figure de cas d&#39;école. Selon ses détracteurs, il pourrait induire ou participer à induire la sclérose en plaque, maladie (grave) auto-immune chronique du système nerveux central. Qu&#39;en est-il ?</p>
+
+          </div>
+    </div>
+  </div>
+</div>
+                        <nav class="pagination" role="navigation" aria-label="pager">
+    <span class="first">
+  <a href="empty_references.html">&laquo; Première</a>
+</span>
+
+    <span class="prev">
+  <a rel="prev" href="empty_referencesfdb0.html?page=4">&lsaquo; Précédente</a>
+</span>
+
+        <span class="page">
+  <a href="empty_references.html">1</a>
+</span>
+
+        <span class="page">
+  <a href="empty_references4658.html?page=2">2</a>
+</span>
+
+        <span class="page">
+  <a href="empty_references9ba9.html?page=3">3</a>
+</span>
+
+        <span class="page">
+  <a rel="prev" href="empty_referencesfdb0.html?page=4">4</a>
+</span>
+
+        <span class="page current">
+  5
+</span>
+
+        <span class="page">
+  <a rel="next" href="empty_referencesc575.html?page=6">6</a>
+</span>
+
+      <span class="next">
+  <a rel="next" href="empty_referencesc575.html?page=6">Suivante &rsaquo;</a>
+</span>
+
+      <span class="last">
+  <a href="empty_referencesc575.html?page=6">Dernière &raquo;</a>
+</span>
+
+  </nav>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+          <div class="center-block">
+            <img alt="Enrichir" class="img-responsive" src="assets/3rules-1-72d19a799935de5e1be7f5c12b51f87563b116648d43d5cee5e645195e1ca90b.png" />
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=5 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:10 GMT -->
+</html>

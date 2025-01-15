@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/references/2220 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:54:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La fragmentation des habitats accentue l'isolement entre les populations. Souvent, ces dernières présentent alors une diversité génétique réduite et des niveaux relativement élevés de consanguinité. La perte de variation génétique et la dépression de consanguinité contribueront alors à la disparition de nombreuses petites populations. Certaines études ont donc mis en avant la possibilité d'inverser ces effets en rétablissant le flux de gènes dans ces populations (sauvetage génétique). Cependant, cette stratégie reste très peu appliquée en raison des risques de dépression de croisement (réduction de la fitness chez les hybrides, "Outbreeding Depression" : DO). Il est donc essentiel de mettre au point des méthodes permettant de prédire la probabilité de DO. En effet, la décision d'augmenter le flux de gènes dans les populations menacées devrait être basée sur une analyse coûts-bénéfices. La dépression de consanguinité, la perte de diversité génétique et les risques de DO seraient ainsi considérés comme les coûts et le sauvetage génétique, comme le bénéfice. 
+
+Le but de cette review est d'examiner les mécanismes entraînant une DO et de développer une théorie permettant d'estimer la probabilité d'une évolution rapide de la DO.  En utilisant des données empiriques, le nombre de générations nécessaires pour entraîner une DO à été estimé. Ensuite, un arbre de décision a été établi afin de prédire la probabilité de DO dans le cas d'un croisement entre deux populations génétiquement divergentes. Enfin, la capacité prédictive de cet arbre a été évaluée à partir d'études de cas. 
+
+Les auteurs proposent trois principaux mécanismes pouvant entraîner la DO :
+
+
+Les différences chromosomiques fixes (ex. différents réarrangements chromosomiques). Ces dernières conduisent par exemple à la stérilité partielle ou totale des hybrides F1
+La différenciation adaptative entre des populations en allopatrie (zones géographiques différentes associées parfois à un isolement reproducteur)
+La dérive génétique et les goulots d'étranglement. La dérive (et la sélection) vont en effet conduire à l'évolution de différents complexes de gènes co-adaptés au sein des populations isolées. L'hybridation pourrait donc casser ces complexes
+
+
+Cette review souligne que les différences chromosomiques fixes peuvent être évaluées par caryotypage. Ensuite, les auteurs se sont concentrés sur le problème de différenciation adaptative. Ces derniers ont utilisé divers outils mathématiques afin de prédire la probabilité de DO lors de croisements entre des populations présentant le même caryotype et selon différents scénarios. Ainsi, il a été mis en évidence que le degré de différenciation adaptative et la probabilité de DO sont une fonction croissante de 4 facteurs : le différentiel de sélection, l'héritabilité, la taille de la population et le nombre de générations écoulées depuis l'isolement. De plus, il apparaît que lorsque les environnements sont différents entre les deux populations, le nombre de générations nécessaires pour entraîner une DO diminue.
+Compte tenu des résultats, les auteurs ont ensuite pu développer un arbre de décision afin de déterminer la probabilité de DO entre deux populations. Ainsi, ils mettent en évidence une probabilité élevée lorsque les populations présentent au moins l'une des caractéristiques suivantes : populations d'espèces distinctes,  présentant des différences chromosomiques, n'ayant pas échangé de gènes au cours des 500 dernières années, ou habitant des environnements différents. Inversement, la probabilité de DO est faible entre deux populations ayant le même caryotype, isolées depuis moins de 500 ans et occupant des environnements similaires. Les auteurs ont ensuite évalué le pouvoir prédictif de leur arbre décisionnel à partir de différentes études de cas, mettant ainsi en évidence la capacité de ce dernier à prédire correctement la probabilité de DO.
+">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="../assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="../assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="../assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="/kkrdEq86ifL9aM+GFa5/aMhU3Qihh6gv/40TfdozH2EK0AXGBFoZ5V017v73H6LAxFjSWo0s5RZy8eHH0+Qhw==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="../index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="../timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="../tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="../about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="../users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="../faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+
+<div id="my-container" class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+  <div class="list-group">
+    <div class="list-group-item center">
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="2 contribut·eur·rice·s">
+        <span class="fat icon-users"></span>
+        2
+      </div>
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="1 analyse">
+        <span class="fat icon-comment"></span>
+        1
+      </div>
+    </div>
+    <a class="list-group-item" href="../timelines/221.html"><span class="icon-arrow-left normal"></span> Revenir à la controverse</a>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-6 col-sm-offset-1 col-md-offset-0">
+          <div class="panel panel-default comment">
+  <div class="panel-body clearfix">
+    <span class="content clearfix">
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Titre de la review </h6>
+                <div id="content6" class="text-justify content18116">
+                  <p>Prédire la probabilité de dépression hybride</p>
+
+                </div>
+              <div id="field6" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-left">
+              <p>Prédire la probabilité de dépression hybride</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide6" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide6').click(function () {
+            $('#field6').hide(500);
+            $('#show6').show(500);
+            $('#content6').show(500);
+            $('.typo6').show(500);
+        });
+        $('#show6').click(function () {
+            $(this).hide(500);
+            $('#content6').hide(500);
+            $('#field6').show(500);
+            $('.typo6').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Résumé de la review </h6>
+                <div id="content0" class="text-justify content18110">
+                  <p>La fragmentation des habitats accentue l&#39;isolement entre les populations. Souvent, ces dernières présentent alors une diversité génétique réduite et des niveaux relativement élevés de consanguinité. La perte de variation génétique et la dépression de consanguinité contribueront alors à la disparition de nombreuses petites populations. Certaines études ont donc mis en avant la possibilité d&#39;inverser ces effets en rétablissant le flux de gènes dans ces populations (sauvetage génétique). Cependant, cette stratégie reste très peu appliquée en raison des risques de <strong>dépression de croisement</strong> (réduction de la fitness chez les hybrides, &quot;<em>Outbreeding Depression&quot;</em> : DO). Il est donc essentiel de mettre au point des méthodes permettant de <strong>prédire la probabilité de DO</strong>. En effet, la décision d&#39;augmenter le flux de gènes dans les populations menacées devrait être basée sur une analyse coûts-bénéfices. La dépression de consanguinité, la perte de diversité génétique et les risques de DO seraient ainsi considérés comme les coûts et le sauvetage génétique, comme le bénéfice. </p>
+
+<p>Le but de cette review est d&#39;examiner les <strong>mécanismes entraînant une DO</strong> et de développer une théorie permettant d&#39;estimer la probabilité d&#39;une évolution rapide de la DO.  En utilisant des données empiriques, le nombre de générations nécessaires pour entraîner une DO à été estimé. Ensuite, un <strong>arbre de décision</strong> a été établi afin de prédire la probabilité de DO dans le cas d&#39;un croisement entre deux populations génétiquement divergentes. Enfin, la capacité prédictive de cet arbre a été évaluée à partir d&#39;études de cas. </p>
+
+<p>Les auteurs proposent trois principaux mécanismes pouvant entraîner la DO :</p>
+
+<ul>
+<li>Les <strong>différences chromosomiques fixes</strong> (ex. différents réarrangements chromosomiques). Ces dernières conduisent par exemple à la stérilité partielle ou totale des hybrides F1</li>
+<li>La <strong>différenciation adaptative</strong> entre des populations en allopatrie (zones géographiques différentes associées parfois à un isolement reproducteur)</li>
+<li>La <strong>dérive génétique et les goulots d&#39;étranglement</strong>. La dérive (et la sélection) vont en effet conduire à l&#39;évolution de différents complexes de gènes co-adaptés au sein des populations isolées. L&#39;hybridation pourrait donc casser ces complexes</li>
+</ul>
+
+<p>Cette review souligne que les différences chromosomiques fixes peuvent être évaluées par caryotypage. Ensuite, les auteurs se sont concentrés sur le problème de différenciation adaptative. Ces derniers ont utilisé divers outils mathématiques afin de prédire la probabilité de DO lors de croisements entre des populations présentant le même caryotype et selon différents scénarios. Ainsi, il a été mis en évidence que le degré de différenciation adaptative et la probabilité de DO sont une fonction croissante de 4 facteurs : le différentiel de sélection, l&#39;héritabilité, la taille de la population et le nombre de générations écoulées depuis l&#39;isolement. De plus, il apparaît que lorsque les environnements sont différents entre les deux populations, le nombre de générations nécessaires pour entraîner une DO diminue.<br>
+Compte tenu des résultats, les auteurs ont ensuite pu développer un arbre de décision afin de déterminer la probabilité de DO entre deux populations. Ainsi, ils mettent en évidence une <strong>probabilité élevée</strong> lorsque les populations présentent au moins l&#39;une des caractéristiques suivantes : <strong>populations d&#39;espèces distinctes</strong>,  présentant des <strong>différences chromosomiques</strong>, n&#39;ayant <strong>pas échangé de gènes au cours des 500 dernières années</strong>, ou habitant des <strong>environnements différents</strong>. Inversement, la probabilité de DO est <strong>faible</strong> entre deux populations ayant le <strong>même caryotype</strong>, <strong>isolées depuis moins de 500 ans</strong> et occupant des <strong>environnements similaires</strong>. Les auteurs ont ensuite évalué le pouvoir prédictif de leur arbre décisionnel à partir de différentes études de cas, mettant ainsi en évidence la capacité de ce dernier à prédire correctement la probabilité de DO.</p>
+
+                </div>
+              <div id="field0" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content18110">
+              <p>La fragmentation des habitats accentue l&#39;isolement entre les populations. Souvent, ces dernières présentent alors une diversité génétique réduite et des niveaux relativement élevés de consanguinité. La perte de variation génétique et la dépression de consanguinité contribueront alors à la disparition de nombreuses petites populations. Certaines études ont donc mis en avant la possibilité d&#39;inverser ces effets en rétablissant le flux de gènes dans ces populations (sauvetage génétique). Cependant, cette stratégie reste très peu appliquée en raison des risques de <strong>dépression de croisement</strong> (réduction de la fitness chez les hybrides, &quot;<em>Outbreeding Depression&quot;</em> : DO). Il est donc essentiel de mettre au point des méthodes permettant de <strong>prédire la probabilité de DO</strong>. En effet, la décision d&#39;augmenter le flux de gènes dans les populations menacées devrait être basée sur une analyse coûts-bénéfices. La dépression de consanguinité, la perte de diversité génétique et les risques de DO seraient ainsi considérés comme les coûts et le sauvetage génétique, comme le bénéfice. </p>
+
+<p>Le but de cette review est d&#39;examiner les <strong>mécanismes entraînant une DO</strong> et de développer une théorie permettant d&#39;estimer la probabilité d&#39;une évolution rapide de la DO.  En utilisant des données empiriques, le nombre de générations nécessaires pour entraîner une DO à été estimé. Ensuite, un <strong>arbre de décision</strong> a été établi afin de prédire la probabilité de DO dans le cas d&#39;un croisement entre deux populations génétiquement divergentes. Enfin, la capacité prédictive de cet arbre a été évaluée à partir d&#39;études de cas. </p>
+
+<p>Les auteurs proposent trois principaux mécanismes pouvant entraîner la DO :</p>
+
+<ul>
+<li>Les <strong>différences chromosomiques fixes</strong> (ex. différents réarrangements chromosomiques). Ces dernières conduisent par exemple à la stérilité partielle ou totale des hybrides F1</li>
+<li>La <strong>différenciation adaptative</strong> entre des populations en allopatrie (zones géographiques différentes associées parfois à un isolement reproducteur)</li>
+<li>La <strong>dérive génétique et les goulots d&#39;étranglement</strong>. La dérive (et la sélection) vont en effet conduire à l&#39;évolution de différents complexes de gènes co-adaptés au sein des populations isolées. L&#39;hybridation pourrait donc casser ces complexes</li>
+</ul>
+
+<p>Cette review souligne que les différences chromosomiques fixes peuvent être évaluées par caryotypage. Ensuite, les auteurs se sont concentrés sur le problème de différenciation adaptative. Ces derniers ont utilisé divers outils mathématiques afin de prédire la probabilité de DO lors de croisements entre des populations présentant le même caryotype et selon différents scénarios. Ainsi, il a été mis en évidence que le degré de différenciation adaptative et la probabilité de DO sont une fonction croissante de 4 facteurs : le différentiel de sélection, l&#39;héritabilité, la taille de la population et le nombre de générations écoulées depuis l&#39;isolement. De plus, il apparaît que lorsque les environnements sont différents entre les deux populations, le nombre de générations nécessaires pour entraîner une DO diminue.<br>
+Compte tenu des résultats, les auteurs ont ensuite pu développer un arbre de décision afin de déterminer la probabilité de DO entre deux populations. Ainsi, ils mettent en évidence une <strong>probabilité élevée</strong> lorsque les populations présentent au moins l&#39;une des caractéristiques suivantes : <strong>populations d&#39;espèces distinctes</strong>,  présentant des <strong>différences chromosomiques</strong>, n&#39;ayant <strong>pas échangé de gènes au cours des 500 dernières années</strong>, ou habitant des <strong>environnements différents</strong>. Inversement, la probabilité de DO est <strong>faible</strong> entre deux populations ayant le <strong>même caryotype</strong>, <strong>isolées depuis moins de 500 ans</strong> et occupant des <strong>environnements similaires</strong>. Les auteurs ont ensuite évalué le pouvoir prédictif de leur arbre décisionnel à partir de différentes études de cas, mettant ainsi en évidence la capacité de ce dernier à prédire correctement la probabilité de DO.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide0" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide0').click(function () {
+            $('#field0').hide(500);
+            $('#show0').show(500);
+            $('#content0').show(500);
+            $('.typo0').show(500);
+        });
+        $('#show0').click(function () {
+            $(this).hide(500);
+            $('#content0').hide(500);
+            $('#field0').show(500);
+            $('.typo0').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Ce que cette review apporte au débat </h6>
+                <div id="content4" class="text-justify content18114">
+                  <p>Cette revue met en évidence la <strong>possibilité de minimiser les risques de dépression hybride</strong>. En effet, la probabilité de dépression de croisement est <strong>faible</strong> lorsque les populations possèdent le <strong>même caryotype</strong>, ont été <strong>séparées depuis moins de 500 ans</strong> et habitent dans des <strong>environnements similaires</strong>. Ces <strong>lignes directrices</strong> peuvent donc <strong>faciliter</strong> le sauvetage génétique des populations menacées via <strong>l&#39;hybridation</strong>. De plus, les auteurs soulignent qu&#39;en tenant compte des indications données dans cette review et en utilisant l&#39;arbre de décision établi, la probabilité de dépression hybride serait plus faible que la probabilité de disparition de la population en raison de la dépression de consanguinité et de la perte de diversité génétique. Ces constatations encouragent donc l&#39;augmentation du flux de gènes dans les petites populations isolées. Finalement, les auteurs soulignent également que les <strong>préoccupations</strong> actuelles au sujet de la dépression hybride sont presque certainement <strong>excessives</strong>.</p>
+
+                </div>
+              <div id="field4" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content18114">
+              <p>Cette revue met en évidence la <strong>possibilité de minimiser les risques de dépression hybride</strong>. En effet, la probabilité de dépression de croisement est <strong>faible</strong> lorsque les populations possèdent le <strong>même caryotype</strong>, ont été <strong>séparées depuis moins de 500 ans</strong> et habitent dans des <strong>environnements similaires</strong>. Ces <strong>lignes directrices</strong> peuvent donc <strong>faciliter</strong> le sauvetage génétique des populations menacées via <strong>l&#39;hybridation</strong>. De plus, les auteurs soulignent qu&#39;en tenant compte des indications données dans cette review et en utilisant l&#39;arbre de décision établi, la probabilité de dépression hybride serait plus faible que la probabilité de disparition de la population en raison de la dépression de consanguinité et de la perte de diversité génétique. Ces constatations encouragent donc l&#39;augmentation du flux de gènes dans les petites populations isolées. Finalement, les auteurs soulignent également que les <strong>préoccupations</strong> actuelles au sujet de la dépression hybride sont presque certainement <strong>excessives</strong>.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide4" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide4').click(function () {
+            $('#field4').hide(500);
+            $('#show4').show(500);
+            $('#content4').show(500);
+            $('.typo4').show(500);
+        });
+        $('#show4').click(function () {
+            $(this).hide(500);
+            $('#content4').hide(500);
+            $('#field4').show(500);
+            $('.typo4').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Figure </h6>
+                <div id="content7" class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <img class="img-rounded img-responsive" src="../assets/uploads/734/734_ref_2220_v_0.png" />
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="caption">
+                      <b> Légende </b> :
+                      <p><strong>Arbre de décision permettant de déterminer la probabilité de dépression de croisement entre deux populations.</strong><br>
+(Frankham et <em>al</em>. 2011)</p>
+
+                    </div>
+                  </div>
+                </div>
+              <div id="field7" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <img class="img-rounded img-responsive" src="../assets/uploads/734/734_ref_2220_v_0.png" />
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="caption">
+                  <b> Légende </b> :
+                  <p><strong>Arbre de décision permettant de déterminer la probabilité de dépression de croisement entre deux populations.</strong><br>
+(Frankham et <em>al</em>. 2011)</p>
+
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide7" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide7').click(function () {
+            $('#field7').hide(500);
+            $('#show7').show(500);
+            $('#content7').show(500);
+            $('.typo7').show(500);
+        });
+        $('#show7').click(function () {
+            $(this).hide(500);
+            $('#content7').hide(500);
+            $('#field7').show(500);
+            $('.typo7').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+    </span>
+
+    <div class="pull-right">
+        Publiée il y a environ 6 ans
+par
+  <a href="../users/734.html">L. Rodrigues de sa</a>.
+  <br> Dernière modification il y a environ 6 ans.
+
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h6 class="panel-title"> Review : Predicting the Probability of Outbreeding Depression </h6>
+  </div>
+  <div class="panel-body">
+    <ul class="list-group">
+        <li class="list-group-item clearfix">
+              <a class="btn btn-default stick hvr-shadow" title="2 contributeurs pensent que cette référence appartient au thème Ecologie" data-toggle="tooltip" href="../timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> 2</a>
+              <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Epistémologie" data-toggle="tooltip" href="../timelinesfd11.html?tag=epistemology"><span class="fat icon-epistemology"></span> 1</a>
+              <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Biologie" data-toggle="tooltip" href="../timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> 1</a>
+        </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Auteurs
+        </div> RICHARD FRANKHAM, JONATHAN D. BALLOU, MARK D. B. ELDRIDGE, ROBERT C. LACY, KATHERINE RALLS, MICHELE R. DUDASH, CHARLES B. FENSTER </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Année de publication
+        </div> 2011 </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Journal
+        </div> <i> Conservation Biology </i>
+      </li>
+          <li class="list-group-item">
+            <div class="bold">
+             Identifiant unique
+            </div> 10.1111/j.1523-1739.2011.01662.x
+          </li>
+      <li class="list-group-item clearfix">
+        <div class="bold">
+          
+        </div>
+        <a class="break-word btn btn-default" target="_blank" href="https://onlinelibrary.wiley.com/action/cookieAbsent"><span class='glyphicon glyphicon-share-alt'></span> Accéder à la référence</a>
+            <form style="margin-top: 5px" action="https://sci-hub.st/" method="post" target="_blank">
+  <button class="btn btn-default"
+          name="request"
+          value="10.1111/j.1523-1739.2011.01662.x">
+    <span class="bigger icon-pirate"></span>
+    Accéder à la référence (en utilisant Sci-Hub)
+  </button>
+</form>
+
+      </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Apparait dans la controverse
+        </div>
+        <a target="_blank" href="../timelines/l-hybridation-peut-elle-sauver-les-especes-menacees-d-extinction.html">L&#39;hybridation peut-elle sauver les populations menacées d&#39;extinction&nbsp? </a>
+      </li>
+      <li class="list-group-item clearfix">
+                <span class="bold"> Comment les contributeurs jugent la qualité scientifique de cette référence :
+                 </span>
+            </br>
+            </br>
+            <div class="row">
+              <div class="col-xs-1">
+              </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse et n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-1" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="1 contributeur pense que cette référence est rigoureuse mais n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.1666666666666667em;">
+                          <span class="icon-2" ></span>
+                          <span>1</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse mais est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-3" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="2 contributeurs pensent que cette référence est rigoureuse et est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.3333333333333333em;">
+                          <span class="icon-4" ></span>
+                          <span>2</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est à lire absolument dans le cadre de cette controverse !" data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-5" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+            </div>
+      </li>
+          <li class="list-group-item clearfix">
+              <b> L&#39;hybridation peut-elle sauver les populations menacées d&#39;extinction&nbsp?  Oui              ou
+              Non</b>
+            <br style="margin-bottom: 5px">
+                <div class="row">
+                  <div class="col-xs-1">
+                  </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog1"
+                             title="0 contributeur pense que cette référence est très fermement du côté oui."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog2"
+                             title="1 contributeur pense que cette référence est du côté oui."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.5em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>1</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog3"
+                             title="0 contributeur pense que cette référence est neutre."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog4"
+                             title="0 contributeur pense que cette référence est du côté non."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog5"
+                             title="0 contributeur pense que cette référence est très fermement du côté non."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                </div>
+          </li>
+    </ul>
+  </div>
+  <div class="panel-footer clearfix">
+    <span class="pull-right">
+      <br/>
+      Référence ajoutée par <a href="../users/752.html">S. Roux</a>
+    </span>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    $('.my-btn').responsiveEqualHeightGrid();
+    $(function () {
+        $('.ajax-btn').click(function () {
+            $(this).text("Chargement");
+        });
+    });
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'})
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="../about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/references/2220 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:54:33 GMT -->
+</html>

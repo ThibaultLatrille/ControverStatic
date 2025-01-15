@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/references/heterosexual-male-carriers-could-explain-persistence-of-homosexuality-in-men-individual-based-simulations-of-an-x-linked-inheritance-model by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:23:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Une des hypothèses expliquant le maintien de l'homosexualité dans les populations naturelles est la théorie de la "femme fertile". Cette hypothèse dit que l'orientation sexuelle masculine est déterminée par des facteurs génétiques liés au chromosome X. Ces mêmes facteurs augmenteraient la fécondité chez les femelles les portant.
+
+De nombreuses études ont montré que cette hypothèse est crédible ( par exemple Factors Associated with Higher Fecundity in Female Maternal Relatives of Homosexual Men, New Evidence of Genetic Factors Influencing Sexual Orientation in Men: Female Fecundity Increase in the Maternal Line). Néanmoins, des critiques subsistent sur cette théorie, puisque l'avantage féminin associé au gène devrait être conséquent pour combler le fardeau qu'il assigne aux mâles (Sexual orientation, controversy, and science). 
+
+Dans cet article, l'auteur teste par simulation si un tel gène peut se maintenir dans une population, selon différents scénarios. 
+">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="../assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="../assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="../assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="uhUfwo+jXI+cltEBoMYhucjM8h15aKy1Och20k6LgKPAd3Sh3Q7ez8IXpYRDTObPaPzCIDHaAYHf/YUYpqzcWQ==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="../index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="../timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="../tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="../about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="../users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="../faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+
+<div id="my-container" class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+  <div class="list-group">
+    <div class="list-group-item center">
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="1 contribut·eur·rice">
+        <span class="fat icon-users"></span>
+        1
+      </div>
+      <div class="sticky" data-placement="bottom"
+           data-toggle="tooltip"
+           title="1 analyse">
+        <span class="fat icon-comment"></span>
+        1
+      </div>
+    </div>
+    <a class="list-group-item" href="../timelines/159.html"><span class="icon-arrow-left normal"></span> Revenir à la controverse</a>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-10 col-md-9 col-lg-6 col-sm-offset-1 col-md-offset-0">
+          <div class="panel panel-default comment">
+  <div class="panel-body clearfix">
+    <span class="content clearfix">
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Titre de l&#39;article </h6>
+                <div id="content6" class="text-justify content6466">
+                  <p>Les Mâles hétérosexuels pourraient expliquer la persistance de l&#39;homosexualité : Simulations individus centrées d&#39;un modèle basé sur une transmission par le chromosome X</p>
+
+                </div>
+              <div id="field6" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-left">
+              <p>Les Mâles hétérosexuels pourraient expliquer la persistance de l&#39;homosexualité : Simulations individus centrées d&#39;un modèle basé sur une transmission par le chromosome X</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide6" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide6').click(function () {
+            $('#field6').hide(500);
+            $('#show6').show(500);
+            $('#content6').show(500);
+            $('.typo6').show(500);
+        });
+        $('#show6').click(function () {
+            $(this).hide(500);
+            $('#content6').hide(500);
+            $('#field6').show(500);
+            $('.typo6').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Introduction à l&#39;article </h6>
+                <div id="content0" class="text-justify content6460">
+                  <p>Une des hypothèses expliquant le maintien de l&#39;homosexualité dans les populations naturelles est la théorie de la <strong>&quot;femme fertile&quot;</strong>. Cette hypothèse dit que l&#39;orientation sexuelle masculine est déterminée par des <strong>facteurs génétiques</strong> liés au <strong>chromosome X</strong>. Ces mêmes facteurs <strong>augmenteraient la fécondité</strong> chez les femelles les portant.</p>
+
+<p>De nombreuses études ont montré que cette hypothèse est <strong>crédible</strong> ( par exemple <a href="885.html" class="linked-ref" data-ref="885" target="_blank">Factors Associated with Higher Fecundity in Female Maternal Relatives of Homosexual Men</a>, <a href="831.html" class="linked-ref" data-ref="831" target="_blank">New Evidence of Genetic Factors Influencing Sexual Orientation in Men: Female Fecundity Increase in the Maternal Line</a>). Néanmoins, des <strong>critiques</strong> subsistent sur cette théorie, puisque l&#39;avantage féminin associé au gène devrait être <strong>conséquent</strong> pour combler le fardeau qu&#39;il assigne aux mâles (<a href="819.html" class="linked-ref" data-ref="819" target="_blank">Sexual orientation, controversy, and science</a>). </p>
+
+<p>Dans cet article, l&#39;auteur teste par simulation si un tel gène peut se maintenir dans une population, selon différents scénarios. </p>
+
+                </div>
+              <div id="field0" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content6460">
+              <p>Une des hypothèses expliquant le maintien de l&#39;homosexualité dans les populations naturelles est la théorie de la <strong>&quot;femme fertile&quot;</strong>. Cette hypothèse dit que l&#39;orientation sexuelle masculine est déterminée par des <strong>facteurs génétiques</strong> liés au <strong>chromosome X</strong>. Ces mêmes facteurs <strong>augmenteraient la fécondité</strong> chez les femelles les portant.</p>
+
+<p>De nombreuses études ont montré que cette hypothèse est <strong>crédible</strong> ( par exemple <a href="885.html" class="linked-ref" data-ref="885" target="_blank">Factors Associated with Higher Fecundity in Female Maternal Relatives of Homosexual Men</a>, <a href="831.html" class="linked-ref" data-ref="831" target="_blank">New Evidence of Genetic Factors Influencing Sexual Orientation in Men: Female Fecundity Increase in the Maternal Line</a>). Néanmoins, des <strong>critiques</strong> subsistent sur cette théorie, puisque l&#39;avantage féminin associé au gène devrait être <strong>conséquent</strong> pour combler le fardeau qu&#39;il assigne aux mâles (<a href="819.html" class="linked-ref" data-ref="819" target="_blank">Sexual orientation, controversy, and science</a>). </p>
+
+<p>Dans cet article, l&#39;auteur teste par simulation si un tel gène peut se maintenir dans une population, selon différents scénarios. </p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide0" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide0').click(function () {
+            $('#field0').hide(500);
+            $('#show0').show(500);
+            $('#content0').show(500);
+            $('.typo0').show(500);
+        });
+        $('#show0').click(function () {
+            $(this).hide(500);
+            $('#content0').hide(500);
+            $('#field0').show(500);
+            $('.typo0').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Expériences de l&#39;article </h6>
+                <div id="content1" class="text-justify content6461">
+                  <p>L&#39;auteur teste 3 modèles à 1 locus situé sur le chromosome X, avec deux allèles A1 et A2. Les hommes A1 sont <strong>homosexuels</strong> et ont une <strong>fécondité inférieure</strong> aux hommes A2. Les femmes A1A1 et A1A2 (gène dominant) ont une <strong>fécondité supérieure</strong> aux femmes A2A2. Les 3 modèles sont les suivants :</p>
+
+<p>Modèle 1 : Les hommes A1 sont tous homosexuels et ont une fécondité réduite.</p>
+
+<p>Modèle 2 : Parmi les hommes A1 50% sont homosexuels et ont une fécondité réduite, 50% sont hétérosexuels et ont une fécondité normale.</p>
+
+<p>Modèle 3 : Parmi les hommes A1 20% sont homosexuels et ont une fécondité réduite, 80% sont hétérosexuels et ont une fécondité normale.</p>
+
+<p>Au départ des simulations, les allèles A1et A2 sont en quantités égales dans la population (50%), et le sexe-ratio est équilibré. Le sexe des enfants est déterminé aléatoirement, avec des probabilités équivalentes d&#39;avoir un garçon ou une fille.</p>
+
+                </div>
+              <div id="field1" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content6461">
+              <p>L&#39;auteur teste 3 modèles à 1 locus situé sur le chromosome X, avec deux allèles A1 et A2. Les hommes A1 sont <strong>homosexuels</strong> et ont une <strong>fécondité inférieure</strong> aux hommes A2. Les femmes A1A1 et A1A2 (gène dominant) ont une <strong>fécondité supérieure</strong> aux femmes A2A2. Les 3 modèles sont les suivants :</p>
+
+<p>Modèle 1 : Les hommes A1 sont tous homosexuels et ont une fécondité réduite.</p>
+
+<p>Modèle 2 : Parmi les hommes A1 50% sont homosexuels et ont une fécondité réduite, 50% sont hétérosexuels et ont une fécondité normale.</p>
+
+<p>Modèle 3 : Parmi les hommes A1 20% sont homosexuels et ont une fécondité réduite, 80% sont hétérosexuels et ont une fécondité normale.</p>
+
+<p>Au départ des simulations, les allèles A1et A2 sont en quantités égales dans la population (50%), et le sexe-ratio est équilibré. Le sexe des enfants est déterminé aléatoirement, avec des probabilités équivalentes d&#39;avoir un garçon ou une fille.</p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide1" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide1').click(function () {
+            $('#field1').hide(500);
+            $('#show1').show(500);
+            $('#content1').show(500);
+            $('.typo1').show(500);
+        });
+        $('#show1').click(function () {
+            $(this).hide(500);
+            $('#content1').hide(500);
+            $('#field1').show(500);
+            $('.typo1').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Résultats de l&#39;article </h6>
+                <div id="content2" class="text-justify content6462">
+                  <p>Les résultats des simulation sont les suivants :</p>
+
+<ul>
+<li><p>Le modèle 1 prédit l&#39;<strong>extinction</strong> du gène de l&#39;homosexualité masculine, peu importe les valeurs des paramètres de fécondité.</p></li>
+<li><p>Le modèle 2 prédit le <strong>maintient de l&#39;homosexualité</strong> masculine dans la population, avec une fréquence variant entre <strong>4.9 et 35.9 %</strong>, avec en moyenne 19% d&#39;hommes et 52% de femmes porteurs de l&#39;allèle à l&#39;équilibre.</p></li>
+<li><p>Le modèle 3 prédit le <strong>maintient de l&#39;homosexualité</strong> masculine dans la population, avec une fréquence variant entre <strong>5.9 et 17.9 %</strong>, avec en moyenne 53% d&#39;hommes et 80% de femmes porteurs de l&#39;allèle à l&#39;équilibre.</p></li>
+</ul>
+
+                </div>
+              <div id="field2" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content6462">
+              <p>Les résultats des simulation sont les suivants :</p>
+
+<ul>
+<li><p>Le modèle 1 prédit l&#39;<strong>extinction</strong> du gène de l&#39;homosexualité masculine, peu importe les valeurs des paramètres de fécondité.</p></li>
+<li><p>Le modèle 2 prédit le <strong>maintient de l&#39;homosexualité</strong> masculine dans la population, avec une fréquence variant entre <strong>4.9 et 35.9 %</strong>, avec en moyenne 19% d&#39;hommes et 52% de femmes porteurs de l&#39;allèle à l&#39;équilibre.</p></li>
+<li><p>Le modèle 3 prédit le <strong>maintient de l&#39;homosexualité</strong> masculine dans la population, avec une fréquence variant entre <strong>5.9 et 17.9 %</strong>, avec en moyenne 53% d&#39;hommes et 80% de femmes porteurs de l&#39;allèle à l&#39;équilibre.</p></li>
+</ul>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide2" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide2').click(function () {
+            $('#field2').hide(500);
+            $('#show2').show(500);
+            $('#content2').show(500);
+            $('.typo2').show(500);
+        });
+        $('#show2').click(function () {
+            $(this).hide(500);
+            $('#content2').hide(500);
+            $('#field2').show(500);
+            $('.typo2').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Rigueur de l&#39;article </h6>
+                <div id="content3" class="text-justify content6463">
+                  <p>Il aurait été intéressant de tester des fécondités différentes pour les femmes A1A1 et A1A2, afin de voir si un effet additif du gène associé à l&#39;homosexualité masculine donne des résultats différents. </p>
+
+                </div>
+              <div id="field3" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content6463">
+              <p>Il aurait été intéressant de tester des fécondités différentes pour les femmes A1A1 et A1A2, afin de voir si un effet additif du gène associé à l&#39;homosexualité masculine donne des résultats différents. </p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide3" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide3').click(function () {
+            $('#field3').hide(500);
+            $('#show3').show(500);
+            $('#content3').show(500);
+            $('.typo3').show(500);
+        });
+        $('#show3').click(function () {
+            $(this).hide(500);
+            $('#content3').hide(500);
+            $('#field3').show(500);
+            $('.typo3').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Ce que cet article apporte au débat </h6>
+                <div id="content4" class="text-justify content6464">
+                  <p>Cet article montre que si le <strong>gène</strong> déterminant l&#39;orientation <strong>homosexuelle</strong> est <strong>lié au chromosome X</strong>, et qu&#39;il code uniquement pour des hommes homosexuels, alors l&#39;<strong>homosexualité</strong> ne peut <strong>pas être maintenue</strong> dans une population, malgré l&#39;avantage sélectif qu&#39;il confère aux femmes le portant. </p>
+
+<p>L&#39;homosexualité peut <strong>uniquement</strong> être <strong>maintenue à faible fréquence</strong> si, au minimum <strong>50%</strong> des <strong>femmes et des hommes</strong> sont porteurs de l&#39;allèle, et que chez ces derniers, au moins <strong>50%</strong> puissent tout de même exprimer un phénotype <strong>hétérosexuel</strong>. Ce dernier point est possible, car le phénotype &quot;homosexuel&quot; est sans doute déterminé <strong>génétiquement et environnementalement</strong>. Des preuves empiriques vont dans ce sens, par exemple, Vrangalova et Savin-Williams (2010) ont observé que <strong>43%</strong> des individus hétérosexuels interrogés dans leur étude ont, par moment, une <strong>attraction</strong> pour les personnes de <strong>même sexe</strong>. </p>
+
+<p>Cela pourrait être important à considérer dans les études comparants des individus d&#39;orientations sexuelles différentes. </p>
+
+                </div>
+              <div id="field4" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="text-justify content6464">
+              <p>Cet article montre que si le <strong>gène</strong> déterminant l&#39;orientation <strong>homosexuelle</strong> est <strong>lié au chromosome X</strong>, et qu&#39;il code uniquement pour des hommes homosexuels, alors l&#39;<strong>homosexualité</strong> ne peut <strong>pas être maintenue</strong> dans une population, malgré l&#39;avantage sélectif qu&#39;il confère aux femmes le portant. </p>
+
+<p>L&#39;homosexualité peut <strong>uniquement</strong> être <strong>maintenue à faible fréquence</strong> si, au minimum <strong>50%</strong> des <strong>femmes et des hommes</strong> sont porteurs de l&#39;allèle, et que chez ces derniers, au moins <strong>50%</strong> puissent tout de même exprimer un phénotype <strong>hétérosexuel</strong>. Ce dernier point est possible, car le phénotype &quot;homosexuel&quot; est sans doute déterminé <strong>génétiquement et environnementalement</strong>. Des preuves empiriques vont dans ce sens, par exemple, Vrangalova et Savin-Williams (2010) ont observé que <strong>43%</strong> des individus hétérosexuels interrogés dans leur étude ont, par moment, une <strong>attraction</strong> pour les personnes de <strong>même sexe</strong>. </p>
+
+<p>Cela pourrait être important à considérer dans les études comparants des individus d&#39;orientations sexuelles différentes. </p>
+
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide4" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide4').click(function () {
+            $('#field4').hide(500);
+            $('#show4').show(500);
+            $('#content4').show(500);
+            $('.typo4').show(500);
+        });
+        $('#show4').click(function () {
+            $(this).hide(500);
+            $('#content4').hide(500);
+            $('#field4').show(500);
+            $('.typo4').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body clearfix">
+            <h6> Figure </h6>
+                <div id="content7" class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <img class="img-rounded img-responsive" src="../assets/uploads/451/451_ref_915_v_0.png" />
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="caption">
+                      <b> Légende </b> :
+                      <p>Figure issue du texte, reprenant les différentes hypothèses des 3 modèles. Une petite erreur des auteurs, alpha est supérieur à 1, et non à 0.</p>
+
+                    </div>
+                  </div>
+                </div>
+              <div id="field7" style="display: none">
+                  
+<div class="coms">
+          <div class="panel panel-default">
+      <div class="panel-body clearfix">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <img class="img-rounded img-responsive" src="../assets/uploads/451/451_ref_915_v_0.png" />
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="caption">
+                  <b> Légende </b> :
+                  <p>Figure issue du texte, reprenant les différentes hypothèses des 3 modèles. Une petite erreur des auteurs, alpha est supérieur à 1, et non à 0.</p>
+
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+</div>
+<div class="clearfix">
+  <div id="hide7" class="detail btn btn-default pull-right">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#hide7').click(function () {
+            $('#field7').hide(500);
+            $('#show7').show(500);
+            $('#content7').show(500);
+            $('.typo7').show(500);
+        });
+        $('#show7').click(function () {
+            $(this).hide(500);
+            $('#content7').hide(500);
+            $('#field7').show(500);
+            $('.typo7').hide(500);
+        });
+    });
+</script>
+
+              </div>
+          </div>
+          <div class="panel-heading clearfix">
+            
+          </div>
+        </div>
+    </span>
+
+    <div class="pull-right">
+        Publiée il y a environ 8 ans
+par
+  <a data-toggle="tooltip" title="J. Clo, A. Champreux, P. Nogaret et F. Fekraoui" href="../users4266.html?contributors%5B%5D=461&amp;contributors%5B%5D=436&amp;contributors%5B%5D=465&amp;editors%5B%5D=451">J. Clo <i><b> et collaborateurs.</b></i></a>.
+  <br> Dernière modification il y a environ 8 ans.
+
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h6 class="panel-title"> Article : Heterosexual Male Carriers Could Explain Persistence of Homosexuality in Men: Individual-Based Simulations of an X-Linked Inheritance Model </h6>
+  </div>
+  <div class="panel-body">
+    <ul class="list-group">
+        <li class="list-group-item clearfix">
+              <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Biologie" data-toggle="tooltip" href="../timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> 1</a>
+        </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Auteurs
+        </div> Giorgi Chaladze </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Année de publication
+        </div> 2016 </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Journal
+        </div> <i> Archives of Sexual Behavior </i>
+      </li>
+          <li class="list-group-item">
+            <div class="bold">
+              Abstract (dans sa langue originale)
+            </div>
+            <div class="justify">
+              <p>Homosexuality has been documented throughout history and is found in almost all human cultures. Twin studies suggestthat homosexualityisto some extent heritable.However, from an evolutionary perspective, this poses a problem: Male homosexuals tendto have on average fivetimes fewer children than heterosexual males, so how can a phenomenon associated withlow reproductive success bemaintained at relatively stable frequencies?Recent findings ofincreasedmaternal fecundity of male homosexuals suggestthatthe genes responsible for homosexuality in males increase fecundity in the females who carry them. Can an increase in maternal fecundity compensate for the fecundity reduction in homosexual men and produce a stable<br>
+polymorphism? Inthecurrent study,this problemwasaddressed withanindividual-basedmodeling (IBM) approach. IBM suggests that male homosexuality can be maintained in a population at low and stable frequenciesif roughly morethan half ofthe females and half ofthe males are carriers of genes that predispose the male to homosexuality</p>
+
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="bold">
+             Identifiant unique
+            </div> 10.1007/s10508-016-0742-2
+          </li>
+      <li class="list-group-item clearfix">
+        <div class="bold">
+          
+        </div>
+        <a class="break-word btn btn-default" target="_blank" href="http://link.springer.com/article/10.1007%2Fs10508-016-0742-2"><span class='glyphicon glyphicon-share-alt'></span> Accéder à la référence</a>
+            <form style="margin-top: 5px" action="https://sci-hub.st/" method="post" target="_blank">
+  <button class="btn btn-default"
+          name="request"
+          value="10.1007/s10508-016-0742-2">
+    <span class="bigger icon-pirate"></span>
+    Accéder à la référence (en utilisant Sci-Hub)
+  </button>
+</form>
+
+      </li>
+      <li class="list-group-item">
+        <div class="bold">
+          Apparait dans la controverse
+        </div>
+        <a target="_blank" href="../timelines/y-a-t-il-un-avantage-adaptatif-a-l-homosexualite.html">Y a-t-il un avantage adaptatif à l&#39;homosexualité&nbsp?</a>
+      </li>
+      <li class="list-group-item clearfix">
+                <span class="bold"> Comment les contributeurs jugent la qualité scientifique de cette référence :
+                 </span>
+            </br>
+            </br>
+            <div class="row">
+              <div class="col-xs-1">
+              </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse et n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-1" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est rigoureuse mais n&#39;est pas importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-2" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est peu rigoureuse mais est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-3" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="1 contributeur pense que cette référence est rigoureuse et est importante pour comprendre la controverse." data-toggle="tooltip">
+                        <span style="font-size: 1.5em;">
+                          <span class="icon-4" ></span>
+                          <span>1</span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="cursor-default"
+                         title="0 contributeur pense que cette référence est à lire absolument dans le cadre de cette controverse !" data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-5" ></span>
+                          <span>0</span>
+                        </span>
+                    </div>
+                  </div>
+            </div>
+      </li>
+          <li class="list-group-item clearfix">
+              <b> Y a-t-il un avantage adaptatif à l&#39;homosexualité&nbsp? Oui              ou
+              Non</b>
+            <br style="margin-bottom: 5px">
+                <div class="row">
+                  <div class="col-xs-1">
+                  </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog1"
+                             title="0 contributeur pense que cette référence est très fermement du côté oui."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog2"
+                             title="0 contributeur pense que cette référence est du côté oui."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog3"
+                             title="1 contributeur pense que cette référence est neutre."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.5em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>1</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog4"
+                             title="0 contributeur pense que cette référence est du côté non."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-xs-2">
+                        <div class="cursor-default div-frog5"
+                             title="0 contributeur pense que cette référence est très fermement du côté non."
+                             data-toggle="tooltip">
+                        <span style="font-size: 1.0em;">
+                          <span class="icon-frog cd-frog" ></span>
+                          <span>0</span>
+                        </span>
+                        </div>
+                      </div>
+                </div>
+          </li>
+    </ul>
+  </div>
+  <div class="panel-footer clearfix">
+    <span class="pull-right">
+      <br/>
+      Référence ajoutée par <a href="../users/451.html">J. Clo</a>
+    </span>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    $('.my-btn').responsiveEqualHeightGrid();
+    $(function () {
+        $('.ajax-btn').click(function () {
+            $(this).text("Chargement");
+        });
+    });
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'})
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="../about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/references/heterosexual-male-carriers-could-explain-persistence-of-homosexuality-in-men-individual-based-simulations-of-an-x-linked-inheritance-model by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:23:29 GMT -->
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:17:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="5fXAsiIbOMUYl1eexpUQe03VxlzCmImF7qDRjkNGoLmfl6vRcLa6hUYWIxslH9cN7eX2YYoqJLEIlSJEq2H8Qw==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div class="heading">
+  <img class="img-responsive" src="assets/stars-e33d2e736733ee8a0e4d49b2b67e577cb436018eaa26c3b86ffcd0d045380d95.png" />
+</div>
+<div class="rocket">
+  <img class="img-responsive" src="assets/rocket-3879efa22d254b3c04a98e729c6a8ce33422137a2e0b2758b0a1634c19fe363d.svg" />
+</div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item" href="about.html"> A propos</a>
+        <a class="list-group-item" href="magna-charta.html">La charte du site</a>
+        <div class="list-group-item list-group-item-default cursor-not-allowed">
+          Foire aux questions (FAQ)
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3> Foire aux questions (FAQ) </h3>
+          <br>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-12">
+              <div id="empties">
+                <div class="page">
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading9">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse9" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse9" aria-expanded="true" aria-controls="Collapse9">
+                              Quelle est la démarche de ControverSciences ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              ControverSciences est un <strong>portail collaboratif</strong> et <strong>indépendant</strong> qui rassemble les <strong>publications scientifiques</strong> autour de <strong>questions controversées</strong>, en les rendant <strong>accessibles à tous</strong>.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading21">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse21" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse21" aria-expanded="true" aria-controls="Collapse21">
+                              Qui sont les contributeurs de ControverSciences ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Les contributeurs de ControverSciences sont <strong>des chercheurs, des ingénieurs, des étudiants en sciences, des passionnés de tous horizons</strong> ... Le minimum requis et de pouvoir analyser des publications scientifiques, à la base de l&#39;étude des controverses sur ControverSciences. </p>
+
+<p>L&#39;équipe de ControverSciences valide au cas par cas l&#39;inscription des contributeurs n&#39;appartenant pas à des institutions scientifiques, et veille en permanence pour repérer d&#39;éventuels faux profils et les supprimer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading10">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse10" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse10" aria-expanded="true" aria-controls="Collapse10">
+                              Qu&#39;est ce qu&#39;une controverse ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Par <strong>controverse</strong>, on entend : la <strong>discussion</strong> de <strong>toute position</strong> ou<br>
+de <strong>toute opposition chargée d&#39;enjeux sociaux</strong> (au sens large) compatibles avec une approche par la <strong>méthode scientifique</strong>.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading17">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse17" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse17" aria-expanded="true" aria-controls="Collapse17">
+                              Je ne suis pas d&#39;accord avec un contributeur, comment puis-je lui répondre ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              <strong>Vous ne pouvez tout simplement pas !</strong> Et pas parce que le site est encore en construction : ceci est volontaire. Nous souhaitons favoriser les <strong>approches constructives</strong> et <strong>positives</strong> : sur ControverSciences, on répond à une analyse (ou synthèse) par une nouvelle analyse (ou synthèse). Les autres contributeurs se chargeront ensuite de déterminer laquelle est la meilleure en votant pour les plus pertinentes.</p>
+
+<p><strong>Si vous trouvez qu&#39;une analyse ou une synthèse est mauvaise, faites mieux !</strong>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading11">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse11" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse11" aria-expanded="true" aria-controls="Collapse11">
+                              Qu&#39;est ce qu&#39;une référence ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Sous le terme <strong>référence</strong> sont regroupés les différents <strong>types de publication</strong> considérés comme <strong>recevables</strong> par la <strong>communauté scientifique contemporaine</strong>.</p>
+
+<p>Il s&#39;agit en général d&#39;<strong>articles, revues, méta-analyses publiées dans des revues à comités de lecture</strong>, mais aussi de <strong>livres de recherche, de thèses ou d&#39;articles préparés pour des séminaires ou conférences scientifiques</strong>.</p>
+
+<p>Les articles de presse, même s&#39;il sont sérieux et bien documentés, ne sont pas acceptés comme référence mais peuvent être insérés dans les cadres, analyses et/ou les synthèses pour éclairer la controverse.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading13">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse13" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse13" aria-expanded="true" aria-controls="Collapse13">
+                              Qu&#39;est ce qu&#39;un thème et comment sont ils fixés ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Le <strong>thèmes</strong> sont attachés aux <strong>publications</strong> et désignent la <strong>méthodologie employée</strong>. Les thèmes d&#39;une controverse correspondent au résumé des thèmes des références déposées. Ils ne sont donc pas définis par la question mais par la <strong>nature des réponses</strong> proposées.</p>
+
+<p>Pour chaque référence, les contributeurs peuvent voter pour les thèmes qu&#39;ils jugent les plus appropriés.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading14">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse14" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse14" aria-expanded="true" aria-controls="Collapse14">
+                              Quelle est la différence entre une analyse et une synthèse ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Une <strong>analyse</strong> est la version vulgarisée en français d&#39;une <strong>publication scientifique</strong>. Une <strong>synthèse</strong> est un <strong>bilan</strong> de l&#39;ensemble des analyses, pour une controverse donnée.</p>
+
+<p>Pour une référence donnée, une analyse s&#39;attache à expliquer la méthodologie utilisée, les résultats obtenus, les limites de l&#39;étude et en quoi cette référence fait avancer la controverse.</p>
+
+<p>Une synthèse s&#39;appuie sur les différentes références analysées pour donner une réponse à la question posée dans le titre et le cadre (ou, le cas échéant, statuer sur l&#39;impossibilité de donner une réponse).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading18">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse18" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse18" aria-expanded="true" aria-controls="Collapse18">
+                              Qu&#39;advient-il des contributions produites par les contributeurs de ControverSciences ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Les contributions sont dans le <strong>domaine public</strong>. Plus précisément les contributions sont sous la <a href="https://fr.wikipedia.org/wiki/Licence_Creative_Commons" rel="nofollow"><strong>licence CC-BY-SA</strong></a>.</p>
+
+<p><strong>BY</strong> : Cela signifie que tout le monde peut reprendre les contenus de ControverSciences à condition de citer le nom des contributeurs et du site (avec un petit lien vers <a href="https://www.controversciences.org/" rel="nofollow">https://www.controversciences.org</a> c&#39;est encore mieux). </p>
+
+<p><strong>SA</strong> : Les contenus de ControverSciences peuvent aussi être modifiés sans demande d&#39;autorisation préalable, mais ces nouvelles créations basées sur des productions originales des contributeurs de ControverSciences doivent également être soumises à une licence CC-BY-SA.</p>
+
+<p><strong>Ainsi, ControverSciences participe au maximum à la diffusion des connaissances scientifiques !</strong>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading15">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse15" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse15" aria-expanded="true" aria-controls="Collapse15">
+                              Comment ajouter une image de couverture à une controverse ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Seuls <strong>les administrateurs peuvent ajouter des images</strong> de couverture aux controverses qui ont éclos. Cela garantit l&#39;utilisation d&#39;images <strong>libres de droits</strong> et qui respectent la charte graphique du portail.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading19">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse19" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse19" aria-expanded="true" aria-controls="Collapse19">
+                              Est-il imaginable de faire de la politique ou du lobbying sur ControverSciences ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              Au risque d&#39;enfoncer des portes ouvertes, il est quasiment impossible de demander aux contributeurs de laisser leurs idées au pas de la porte. Cependant, la <strong>médiation scientifique</strong> ne doit pas céder la place à des <strong>revendications</strong> et les modérateurs seront donc attentifs à la <strong>démarche</strong> des contributeurs. </p>
+
+<p>En bref, une décision politique ou économique peut être décrite comme nécessaire à la lumière des publications mais <strong>une synthèse ne devrait pas être construite dans l&#39;objectif d&#39;appuyer une requête</strong>.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading16">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse16" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse16" aria-expanded="true" aria-controls="Collapse16">
+                              Comment est financé ControverSciences ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              ControverSciences est codé et maintenu par des <strong>bénévoles</strong> convaincus de la raison d&#39;être de ce site. Les frais d&#39;hébergement sont actuellement maigres mais vont évidemment changer dans le même sens que l&#39;affluence. <strong>Ce portail ne sera jamais financé par de la pub</strong>. </p>
+
+<p>Si vous trouvez l’initiative intéressante et que vous souhaitez y participer financièrement, vous pouvez adhérer à l&#39;association <strong>ControverSciences et al.</strong> avec une cotisation de 10 €. Contactez nous pour plus d&#39;informations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default empty">
+                        <div class="panel-heading" role="tab" id="heading20">
+                          <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+                            <a data-toggle="collapse" href="#Collapse20" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                            <a data-toggle="collapse" href="#Collapse20" aria-expanded="true" aria-controls="Collapse20">
+                              Je n&#39;y connais rien en science mais je souhaite soutenir ControverSciences : que puis-je faire ?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="Collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>
+                              <strong>Même sans être contributeur, il est possible de participer à la dynamique de ControverSciences !</strong><br>
+Suivez nous sur Facebook et Twitter en utilisant les boutons en haut à droite de cette fenêtre, partagez les liens vers les controverses écloses sur les réseaux sociaux, parlez de ControverSciences à vos amis ... Nous apprécions tout soutien quel qu&#39;il soit !
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="actions pull-right" style="margin-right: 15px">
+            <a data-toggle="modal" class="btn btn-default" href="#newquestion"><span class="glyphicon glyphicon-question-sign">
+    </span> Poser une question</a>
+            <br/>
+            <br/>
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="newquestion" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"> Poser une question </h4>
+      </div>
+      <div class="modal-body clearfix">
+        <form role="form" data-model="issue" action="http://0.0.0.0:3000/issues" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" />
+            <div class="form-group">
+              <label class="control-label" for="issue_title">Poser une question</label>
+              <br>
+              <input class="form-control" type="text" name="issue[title]" id="issue_title" />
+              <span class="help-block"></span>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="issue_body">Description</label>
+              <br>
+              <textarea class="form-control textarea" name="issue[body]" id="issue_body">
+</textarea>
+              <span class="help-block"></span>
+            </div>
+            <input value="http://0.0.0.0:3000/faq" autocomplete="off" type="hidden" name="issue[url]" id="issue_url" />
+            <input value="FAQ" autocomplete="off" type="hidden" name="issue[labels]" id="issue_labels" />
+            </br>
+            <div class="form-group">
+              <label class="control-label" for="issue_author">Auteur (facultatif)</label>
+              <br>
+                  <input class="form-control" type="text" name="issue[author]" id="issue_author" />
+              <span class="help-block"></span>
+            </div>
+            <div class="actions pull-right">
+              <button name="button" type="submit" class="btn btn-success" data-disable-with="&lt;span class=&quot;glyphicon glyphicon-send&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &amp;nbsp Envoi en cours ">Envoyer &nbsp <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+            </div>
+</form>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $("#markdown-title").markdown({autofocus:false,savable:false,hiddenButtons:['cmdLinkInt','cmdUrl', 'cmdWiki','cmdLinkCVS']});
+    $("#markdown-content").markdown({autofocus:false,savable:false,hiddenButtons:['cmdLinkInt','cmdUrl', 'cmdWiki','cmdLinkCVS']});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:17:36 GMT -->
+</html>

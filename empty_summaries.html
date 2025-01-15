@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/empty_summaries by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:00:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="JeS89lreMtrKBUWAWX3DukcGVSmYsfwiIU0Ia7+mmPhfhteVCHOwmpSEMQW69wTM5zZlFNADURbHePuhV4HEAg==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_references.html"><span class="icon-reference bigger"></span>
+                                    Enrichir les controverses
+                                    <span class="badge">64</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_comments.html"><span class="icon-comment bigger"></span>
+                                    Analyser les références
+                                    <span class="badge">453</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix list-group-item-default cursor-not-allowed" href="empty_summaries.html"><span class="icon-summary bigger"></span>
+                                    Synthètiser les controverses
+                                    <span class="badge">11</span></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-1 col-lg-6">
+      <br/>
+      <br/>
+
+      <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>
+                Ces controverses
+                ont des référénces analysées mais n&#39;ont pas de synthèse, résumez la situation et apportez une vue d&#39;ensemble au débat !
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="empties">
+                    <div class="page">
+                      <div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading152">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse152" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/comment-integrer-le-concept-de-services-ecosystemiques-dans-les-etudes-d-impact-environnemental.html">Peut-on mesurer précisément les impacts des activités humaines sur l&#39;environnement&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse152" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="6 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            6
+          </div>
+          <div class="sticky" data-placement="right"
+               title="6 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            6
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>​​<strong>Introduction</strong><br>
+Un impact sur l&#39;environnement peut se définir comme un effet, direct ou indirect, immédiat ou à long terme, d&#39;une intervention planifiée (projet, politique, activité économique ou sociale)  sur un environnement décrit comme un système organisé, dynamique et évolutif où les êtres vivants s&#39;activent, où des activités humaines ont lieu et où des relations affectives-sensorielles et fonctionnelles s&#39;expriment. Ces effets se manifestent dans un intervalle de temps donné et sur une aire géographique définie (définition inspirée du livre <em>L&#39;évaluation des impacts sur l&#39;environnement</em>, de Pierre André et <em>al.</em>).</p>
+
+<p>Mesurer précisément les impacts environnementaux des activités humaines est un prérequis nécessaire pour pouvoir mettre en place des mesures pour éviter, réduire ou compenser ces impacts.</p>
+
+<p><strong>Question</strong><br>
+Est-on capable aujourd&#39;hui de mesurer les impacts environnementaux, au niveau local et global, des activités humaines ?</p>
+
+<p><strong>Questions sous-jacentes</strong><br>
+Nos connaissances sur les écosystèmes et leurs dynamiques sont-elles suffisantes pour conduire de telles évaluations ?<br>
+Quels moyens demandent ces mesures ? Sont-elles généralisables ?<br>
+Le concept de service écosystémique peut-il être utilisé dans ce but ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading118">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse118" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-evolution-implique-t-elle-la-complexification.html">L&#39;évolution implique-t-elle la complexification&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse118" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="5 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            5
+          </div>
+          <div class="sticky" data-placement="right"
+               title="5 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            5
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>En biologie, l&#39;évolution peut être définie comme la différence morphologique et génétique observée d’une génération à l’autre. A un sens plus large, elle englobe non seulement les organismes, les populations, les espèces mais également les écosystèmes (successions écologiques par exemple).<br>
+Elle consiste donc au changement de caractère au fil des générations. Les caractères peuvent être considérés à différentes échelles : moléculaires, cellulaires, physiologiques, individuelles, populationnelles et écosystémiques.<br>
+Il est important de prendre en compte ces différentes échelles lorsque l’on s&#39;interroge sur la finalité de l’évolution au sens large comme au sens strict.<br>
+Il est souvent considéré que l&#39;évolution est gage de complexification. Cette dernière peut être considéré comme l&#39;élaboration progressive de solutions par l&#39;ajout de nouvelle structure.<br>
+L&#39;évolution aboutit-elle obligatoirement à une complexification du système, observe-t-on au contraire, une simplification au cours des génération ? Y a-t-il une tendance globale ou bien le nombre de réponse à cette question dépend du nombre de types d’organismes vivants ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading75">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse75" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/boire-moderement-et-regulierement-du-vin-est-il-bon-pour-la-sante.html">Boire modérement et régulièrement du vin est-il bon pour la santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse75" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="15 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            15
+          </div>
+          <div class="sticky" data-placement="right"
+               title="15 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            15
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>En France, la consommation de vin est culturellement très importante. Si les effets d&#39;une consommation excessive sont bien connus, une consommation modérée et régulière pourrait avoir des impacts positifs sur la santé humaine. Qu&#39;en est-il ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading66">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse66" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-zoos-et-aquariums-sont-ils-efficaces-comme-vecteurs-de-sensibilisation-a-la-protection-de-la-biodiversite.html">Les zoos et aquariums sont-ils efficaces comme vecteurs de sensibilisation à la protection de la biodiversité&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse66" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="4 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="right"
+               title="4 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            4
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les parcs zoologiques et aquariums ouverts au grand public sont en général considérés comme des lieux éducatifs, permettant d&#39;inculquer aux visiteurs des bases concernant la protection des espèces animales voire même de l&#39;environnement dans son ensemble. Cette controverse vise à examiner l&#39;impact réel des zoos et aquariums en termes de sensibilisation à la protection de la biodiversité.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading57">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse57" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-publicite-exploite-t-elle-notre-inconscient.html">La publicité exploite-t-elle notre inconscient&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse57" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="11 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            11
+          </div>
+          <div class="sticky" data-placement="right"
+               title="11 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            11
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>La publicité est une technique de communication qui a pour objectif de modifier le comportement des personnes exposées à un message contenant une information en relation avec le but recherché. Comme tout acte de communication, cette technique comprend:</p>
+
+<ul>
+<li>un émetteur: les annonceurs (cad. les publicitaires), généralement prestataire d&#39;acteurs privés (entreprise commerciales) , d&#39;acteurs en coopératives (ONG, associations, etc...) ou bien d&#39;acteurs publics (état, mairies,etc...)</li>
+<li>un récepteur: le public cible</li>
+<li>un message: l&#39;information fournie par le message publicitaire qui peut faire référence à un produit, des valeurs, des croyances avec un but recherché, tel que favoriser un comportement de consommation (acheter des sodas), des comportements sanitaires (manger des fruits et légumes) ou civiques (exercer son droit de vote).</li>
+<li>un code: le format du message publicitaire (télévisuel, radio, affichage,etc...)</li>
+<li>un contexte: géographique (dans un magasin) ou temporel (précédant le passage aux caisses)</li>
+<li>un contact: passif (message audio diffusé dans les centres commerciaux) ou actif (lecture de prospectus publicitaires)</li>
+</ul>
+
+<p>L&#39;inconscient décrit l&#39;ensemble des processus mentaux qui ne sont pas compris dans le champ de la conscience. Une multitude de phénomènes psychologiques peuvent se dérouler en dehors de la sphère consciente et sous-tendre un comportement aussi banal que la marche par exemple, il convient donc de préciser les processus mentaux qui interviennent dans les comportements ciblés par la publicité.<br>
+La décision de consommation d&#39;un produit (une barre de chocolat) dépends de nos désirs (à quel point j&#39;ai envie de chocolat), nos croyances (à quel point je pense que ce produit est diététique si je fais attention à ma ligne), notre état actuel (à quel point j&#39;ai faim) et d&#39;un ensemble de biais de décision ( effet de contrastes, effet halo, etc...). Ainsi, le message publicitaire peut en principe influencer inconsciemment notre comportement à travers:</p>
+
+<ul>
+<li>la formation de nos désirs</li>
+<li>la formation de nos croyances</li>
+<li>la modification de notre état actuel</li>
+<li>le déclenchement de biais décisionnels </li>
+</ul>
+
+<p>Les sous-questions qui ressortent de cette mise au point sont les suivantes:</p>
+
+<ul>
+<li>les questions descriptives: les annonceurs détournent-ils nos processus mentaux inconscients dans leur démarche publicitaire?</li>
+<li>les questions d&#39;efficacité: les messages publicitaires atteignent-ils leurs objectifs par le biais d&#39;influences inconscientes?</li>
+</ul>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading46">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse46" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-peine-de-mort-permet-elle-de-reduire-la-criminalite.html">La peine de mort permet-elle de réduire la criminalité&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse46" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="4 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="right"
+               title="4 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            4
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les débats sur la peine de mort se concentrent souvent sur des arguments éthiques, mais rarement sur son efficacité ou inefficacité pour réduire la criminalité. Ses opposants dénoncent une pratique barbare et d&#39;un autre age, ses partisans louent son pouvoir de dissuasion permettant de décourager les criminels en puissance, et donc de réduire le nombre de victimes. Dans le cadre de cette controverse, il est important de se délester de ses considérations morales et éthiques pour se concentrer très pragmatiquement sur les impacts positifs et/ou négatifs de la peine de mort sur la criminalité. L&#39;exercice n&#39;est simple pour personne, pas même pour les chercheurs qui travaillent sur le sujet tant il est politique et touche à des valeurs essentielles et constitutives de nos démocraties. </p>
+
+<p>Avant de commencer l&#39;analyse et/ou la lecture, il ne faut pas adopter une approche partisane, et ne considérer que les faits démontrés, en veillant à l&#39;objectivité des études invoquées (vérifier d&#39;où viennent les financements notamment). Il ne s&#39;agit pas de savoir si la peine de mort est juste ou injuste, mais si elle permet de réduire effectivement la criminalité (en chiffrant cette réduction si possible). </p>
+
+<p><strong>Pas de politique ici</strong> : si la peine de mort est efficace, elle n&#39;est pas forcément souhaitable pour autant d&#39;un point de vue sociétal ; si elle est inefficace, elle peut tout de même répondre à une attente de la population et apparaître légitime. <strong>Cette controverse ne vise pas à prouver qu&#39;il faille autoriser ou interdire la peine de mort, mais seulement à mesurer ses effets.</strong></p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading40">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse40" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/transfert-du-vis-vih-du-singe-a-l-39-homme-accident-quot-naturel-quot-ou-erreur-humaine.html">Des expériences scientifiques sont elles à l&#39;origine du transfert du VIS/VIH du singe à l&#39;homme&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse40" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            5
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="9 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            9
+          </div>
+          <div class="sticky" data-placement="right"
+               title="11 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            11
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Si la parenté avec les virus de singes désignés par le sigle <strong>VIS</strong> (Virus de l&#39;Immunodéficience Simienne) donne une idée précise du <strong>phénomène</strong> à l&#39;origine de l&#39;émergence du <strong>VIH</strong> (Virus de l&#39;Immunodéficience Humaine), le <strong>mécanisme</strong> et les <strong>événements</strong> ayant permis le transfert de ce virus du singe à l&#39;homme restent inexpliqués. <br>
+En 1991, dans l&#39;article <em>AIDS, monkeys and malaria</em>, un chercheur propose une <strong>hypothèse testable</strong> impliquant la responsabilité de parasitologues : des chercheurs belges ont étudié la possibilité de transfert vers l&#39;homme des parasites responsables du <strong>paludisme</strong> chez le singe en effectuant des <strong>transfusions sanguines</strong> inter-espèces.<br>
+L&#39;hypothèse ne semble pas avoir eu un grand écho et le travail de vérification auquel elle appelle reste à faire. En passant en revue les autres hypothèses et les connaissances sur les circonstances du transfert, cette controverse est l&#39;occasion de rechercher s&#39;il existe un <strong>faisceau de preuves</strong> pouvant asseoir le lien entre <em>le SIDA, les singes et la recherche sur le paludisme</em>.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading30">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse30" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-perturbateurs-endocriniens-sont-ils-dangereux-pour-la-sante-humaine.html">Les perturbateurs endocriniens :  quels impacts sur la santé humaine&nbsp? </a>
+    </h4>
+  </div>
+  <div id="Collapse30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="6 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            6
+          </div>
+          <div class="sticky" data-placement="right"
+               title="6 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            6
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Le terme de perturbateurs endocriniens est utilisé depuis les années 1990 pour désigner les molécules qui agissent comme des &quot;leurres hormonaux&quot;. Du fait de cette propriété, ces substances sont susceptibles d&#39;avoir un impact sur la santé humaine, notamment sur les fonctions reproductives.  L&#39;action des perturbateurs endocriniens est devenue une question de santé publique et a ainsi donné lieu à des rapports par des institutions internationale comme  l&#39;Organisation Mondiale de la Santé et l&#39;Union Européenne, et par des instituts médicaux de recherche comme l&#39;Inserm en France. <br>
+Toutefois, il est difficile de mesurer les différents impacts des perturbateurs endocriniens. Cette controverse a pour but d&#39;éclairer cette question, en cherchant à mobiliser les études qui se sont déjà penchées sur différentes conséquences envisagées sur la santé humaine. </p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading25">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse25" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="6 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            6
+          </div>
+          <div class="sticky" data-placement="right"
+               title="7 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            7
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>L&#39;attachement qu&#39;un individu éprouve pour sa famille, son partenaire, ses amis, etc. repose sur des mécanismes biologiques, encore imparfaitement connus. L&#39;ocytocine pourrait être une des clés pour comprendre ce phénomène. Qu&#39;en est-il ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading17">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse17" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-homeopathie-est-elle-efficace.html">L&#39;homéopathie a-t-elle des effets bénéfiques sur la santé autres que par effet placebo&nbsp? </a>
+    </h4>
+  </div>
+  <div id="Collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="12 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            12
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="9 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            9
+          </div>
+          <div class="sticky" data-placement="right"
+               title="15 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            15
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Introduction</strong><br>
+L&#39;homéopathie est une médecine non conventionnelle formalisée en 1796 par le médecin allemand Samuel Hahnemann (1755 - 1843).<br>
+Elle repose sur quatre principes :</p>
+
+<ul>
+<li><p>Le principe de similitude : Le symptôme serait guéri par un produit qui donnerait le même symptôme sur un patient sain.</p></li>
+<li><p>Les principes de dilution et dynamisation : Plus les produits sont dilués et « dynamisés » (c&#39;est à dire secoués) plus le traitement sera efficace.<br>
+Ainsi, une dilution à 1CH correspond à 1 goutte de produit pour 99 gouttes d&#39;eau, soit 1% de produit, 2CH correspond à 1% de 1% c&#39;est à dire 0,01% de produit et 12CH correspond à 0,0000000000000000000001% de produit c&#39;est-à-dire environ à une goutte de produit diluée dans la somme des océans de la planète.</p></li>
+<li><p>Le principe d&#39;individualisation : L&#39;homéopathe considère les symptômes du patient dans son ensemble et pas uniquement ceux de la maladie.</p></li>
+</ul>
+
+<p>Contrairement a ce qui est parfois pensé, l&#39;homéopathie n&#39;est pas une médecine qui a exclusivement recours aux plantes, elle utilise également des substances d&#39;origine animale, minérale ou chimique.<a href="http://www.boiron.fr/l-homeopathie/il-parait-que-l-homeopathie" rel="nofollow">Idées reçue sur l&#39;homéopathie</a></p>
+
+<p>En France, l&#39;homéopathie dispose d&#39;un statut juridique d&#39;exception. En effet l&#39;autorisation de mise sur le marché (AMM) nécessaire à tout nouveau médicament - elle évalue le rapport bénéfice/risque - n&#39;est pas requise pour les médicaments homéopathiques, qui ne nécessitent qu&#39;un simple enregistrement. Ainsi, les laboratoires homéopathiques n&#39;ont pas besoin de prouver l&#39;efficacité de leurs traitements, nous sommes donc en droit de nous demander :</p>
+
+<p><strong>Question</strong><br>
+<strong>Les traitements homéopathiques ont-ils une efficacité propre en plus de l&#39;effet placebo ?</strong></p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading16">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse16" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-differences-cerebrales-entre-hommes-et-femmes-dependent-elles-de-facteurs-sociaux-ou-biologiques.html">Y-a-t-il de réelles différences innées entre les cerveaux masculins et féminins&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="6 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            6
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="8 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            8
+          </div>
+          <div class="sticky" data-placement="right"
+               title="8 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            8
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les cerveaux des hommes et des femmes présenteraient certaines différences, il est donc intéressant de comprendre si ces différences sont d&#39;ordre biologique (innées) ou principalement le résultat de facteurs sociaux (acquises).<br>
+La principale différence est évidente : le volume moyen des cerveaux féminins est inférieur à celui des cerveaux masculins, ce qui découle directement du fait que les femmes sont en moyenne plus petites que les hommes. Ceci est incontestable. Mais ce fait continue de poser problème en Neurosciences : en effet, quand on étudie des différences plus fines, on peut choisir de prendre en compte la différence de groupe en volume, ou de ne pas le faire.<br>
+Ceci implique aussi que, pour réaliser une même tâche cognitive, les hommes et les femmes pourraient utiliser des réseaux cérébraux un peu différents. Dans ce cas précis, les différences existent mais ne sont pas informatives sur les capacités d&#39;un groupe comparé à l&#39;autre.<br>
+Une autre manière d&#39;aborder les choses est d&#39;étudier une fonction cérébrale ou une tâche pour laquelle des différences sont bien connues et de rechercher les bases cérébrales de cette différence. Seulement dans ce cas, rien n&#39;indique que les divergences ne sont pas dues à l&#39;éducation ou à d&#39;autres facteurs sociaux...<br>
+Il est donc extrêmement difficile dans les études comparant les sexes, de différencier le fait que de réelles différences cérébrales existent (de structure, de connexion des réseaux, d&#39;activations cérébrales, ...) et le fait qu&#39;elles soient vraiment informatives sur des différences de fonctionnement cérébral et de capacités. De plus, comment savoir à quel point les facteurs sociaux ont joué sur les différences sexuelles maintenant &quot;imprimées&quot; dans le cerveau adulte ? L&#39;étude de très jeunes enfants pourrait en partie répondre à ces questions même si elle pose d&#39;évidents problèmes éthiques et techniques.<br>
+Pour finir, il convient de se poser la question de l&#39;utilité de ces études démontrant des différences cérébrales entre les hommes et les femmes. Veut-on prouver qu&#39;il y a des domaines ou les un(e)s sont supérieur(e)s aux autres ? Cela ne sera pas très informatif dans un contexte de tous les jours car des moyennes de groupes ne permettent en aucun cas d&#39;étendre les conclusions à une personne particulière. En revanche, dans les cas de pathologies et dans un contexte de traitement personnalisé, il convient de connaître et de prendre en compte ces différences afin de s&#39;adapter au mieux aux besoins du patient.</p>
+
+          </div>
+    </div>
+  </div>
+</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+          <div class="center-block">
+            <img alt="Enrichir" class="img-responsive" src="assets/3rules-2-de8041748e3360409cdb34f740df994062398036664de8f73b1776eae1085574.png" />
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/empty_summaries by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:01:34 GMT -->
+</html>

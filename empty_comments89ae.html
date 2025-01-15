@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/empty_comments?page=23 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 04:22:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FUGqzHYtZc8Bc64nWXl8ZHOQCXWE/RsVlNiE8QmPqMxvI8GvJIDnj1/y2qK687sS06A5SMxPtiFy7Xc74aj0Ng==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_references.html"><span class="icon-reference bigger"></span>
+                                    Enrichir les controverses
+                                    <span class="badge">64</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix list-group-item clearfix-default cursor-not-allowed" href="empty_comments.html"><span class="icon-comment bigger"></span>
+                                    Analyser les références
+                                    <span class="badge">453</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_summaries.html"><span class="icon-summary bigger"></span>
+                                    Synthètiser les controverses
+                                    <span class="badge">11</span></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+      <br/>
+      <br/>
+
+      <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>
+                Ces références
+                n&#39;ont pas encore d&#39;analyse, soyez le premier à les décortiquer !
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="empties">
+                    <div class="page">
+                      <div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading735">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse735" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/investigating-the-impacts-of-field-realistic-exposure-to-a-neonicotinoid-pesticide-on-bumblebee-foraging-homing-ability-and-colony-growth.html">Non analysée - Investigating the impacts of field-realistic exposure to a neonicotinoid pesticide on bumblebee foraging, homing ability and colony growth</a>
+    </h4>
+  </div>
+  <div id="Collapse735" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Dara A. Stanley, Avery L. Russel, Sarah J. Morrisson et al </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2016 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Journal of Applied Ecology
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12689/full?platform=hootsuite">http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12689/full?platform=hootsuite</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading733">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse733" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/spray-toxicity-and-risk-potential-of-42-commonly-used-formulations-of-row-crop-pesticides-to-adult-honey-bees-hymenoptera-apidae.html">Non analysée - Spray Toxicity and Risk Potential of 42 Commonly Used Formulations of Row Crop Pesticides to Adult Honey Bees (Hymenoptera: Apidae)</a>
+    </h4>
+  </div>
+  <div id="Collapse733" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Yu Cheng Zhu, John Adamczyk, Thomas Rinderer, Jianxiu Yao, Robert Danka, Randall Luttrell, Jeff Gore </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2015 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Journal of economic Entomology
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="https://jee.oxfordjournals.org/content/108/6/2640.full">https://jee.oxfordjournals.org/content/108/6/2640.full</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading731">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse731" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/neonicotinoids-trying-to-make-sense-of-the-science-part-2.html">Non analysée - Neonicotinoids: Trying To Make Sense of the Science</a>
+    </h4>
+  </div>
+  <div id="Collapse731" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Randy Oliver </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2012 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> American Bee Journal
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            (<span class="icon icon-lock normal"></span> Accès libre)
+            :
+          </div> <a class="break-word" target="_blank" href="https://www.researchgate.net/publication/282254557_Neonicotinoids_Trying_to_Make_Sense_of_Science">https://www.researchgate.net/publication/282254557_Neonicotinoids_Trying_to_Make_Sense_of_Science</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading729">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse729" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/the-impact-of-the-use-of-neonicotinoid-insecticides-on-honey-bees-in-the-cultivation-of-spring-oilseed-crops-in-finland-in-2013-2015.html">Non analysée - The Impact of the Use of Neonicotinoid Insecticides on Honey Bees in the Cultivation of Spring Oilseed Crops in Finland in 2013–2015</a>
+    </h4>
+  </div>
+  <div id="Collapse729" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Ketola, Jarmo; Hakala, Kati; Ruottinen, Lauri; Ojanen, Hannu; Rämö, Sari; Jauhiainen, Lauri; Raiskio, Sakari; Kukkola, Mari; Heinikainen, Sirpa; Pelkonen, Sinikka </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2015 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Natural resources and bioeconomy studies
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://jukuri.luke.fi/handle/10024/530967">http://jukuri.luke.fi/handle/10024/530967</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading728">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse728" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/review-an-overview-of-the-environmental-risks-posed-by-neonicotinoid-insecticides-authors.html">Non analysée - An overview of the environmental risks posed by neonicotinoid insecticides</a>
+    </h4>
+  </div>
+  <div id="Collapse728" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Dave Goulson </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2013 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Journal of applied ecology
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12111/full">http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12111/full</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading727">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse727" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/a-meta-analysis-of-experiments-testing-the-effects-of-a-neonicotinoid-insecticide-imidacloprid-on-honey-bees.html">Non analysée - A meta-analysis of experiments testing the effects of a neonicotinoid insecticide (imidacloprid) on honey bees</a>
+    </h4>
+  </div>
+  <div id="Collapse727" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> James E. Cresswell  </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2010 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Ecotoxicology
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://link.springer.com/article/10.1007/s10646-010-0566-0">http://link.springer.com/article/10.1007/s10646-010-0566-0</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading726">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse726" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/neonicotinoids-in-bees-a-review-on-concentrations-side-effects-and-risk-assessment.html">Non analysée - Neonicotinoids in bees: a review on concentrations, side-effects and risk assessment</a>
+    </h4>
+  </div>
+  <div id="Collapse726" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Tjeerd Blacquière et al </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2012 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Ecotoxicology
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://link.springer.com/article/10.1007/s10646-012-0863-x">http://link.springer.com/article/10.1007/s10646-012-0863-x</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading725">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse725" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/a-restatement-of-the-natural-science-evidence-base-concerning-neonicotinoid-insecticides-and-insect-pollinators.html">Non analysée - A restatement of the natural science evidence base concerning neonicotinoid insecticides and insect pollinators</a>
+    </h4>
+  </div>
+  <div id="Collapse725" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> H. Charles J. Godfray, Tjeerd Blacquière, Linda M. Field, Rosemary S. Hails, Gillian Petrokofsky, Simon G. Potts, Nigel E. Raine, Adam J. Vanbergen, Angela R. McLean </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2014 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Royal Society Publishing Biological Sciences
+        </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://rspb.royalsocietypublishing.org/content/281/1786/20140558.short">http://rspb.royalsocietypublishing.org/content/281/1786/20140558.short</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading721">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse721" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/combining-direct-and-indirect-impacts-to-assess-ecosystem-service-loss-due-to-infrastructure-construction.html">Non analysée - Combining direct and indirect impacts to assess ecosystem service loss due to infrastructure construction</a>
+    </h4>
+  </div>
+  <div id="Collapse721" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+            <div class="list-group-item clearfix">
+                  <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> 1</a>
+                  <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Technologie" data-toggle="tooltip" href="timelines5d64.html?tag=techno"><span class="fat icon-techno"></span> 1</a>
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Léa Tardieu, Sébastien Roussel, John D. Thompson, Dorothée Labarraque, Jean-Michel Salles </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2015 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Journal of Environmental Management
+        </div>
+            <div class="list-group-item">
+              <div class="bold">
+                Abstract (dans sa langue originale):
+              </div>
+              <div class="justify">
+                <p>The destruction of natural habitats and the associated loss of Ecosystem Services (ES) are rarely jointly assessed and quantified in Environmental Impact Assessment (EIA). Based on a terrestrial transport infrastructure project, the objective of this paper is to quantify the potential loss of ES associated with direct and indirect impacts, and illustrate their contribution to decision-making for route options. We first quantify how much of each type of ES is generated by different land units in the absence of the infrastructure (baseline conditions). We then estimate ES loss caused by infrastructure construction in a way that discriminates among different types of ES and losses because some ES, in addition to losses that are directly proportional to the surface impacted, can show additional indirect losses associated with landscape connectivity. In addition, we illustrate how the assessment of threshold effects in particular ecosystem types that may be most sensitive to their occurrence can affect the estimation of ES loss. We compare implementation options to provide an example of how choices can be improved by assessing ES loss associated with a combination of direct and indirect impacts. This kind of analysis could be used more generally to assess development projects simply by adapting the framework of analysis to the type of project and the ecosystems concerned.</p>
+
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="bold">
+                Identifiant unique:
+              </div> 10.1016/j.jenvman.2015.01.034
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0301479715000432">http://www.sciencedirect.com/science/article/pii/S0301479715000432</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/comment-integrer-le-concept-de-services-ecosystemiques-dans-les-etudes-d-impact-environnemental.html">Peut-on mesurer précisément les impacts des activités humaines sur l&#39;environnement&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading719">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse719" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/linking-ecosystem-services-to-strategic-environmental-assessment-in-development-policies.html">Non analysée - Linking ecosystem services to strategic environmental assessment in development policies</a>
+    </h4>
+  </div>
+  <div id="Collapse719" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+            <div class="list-group-item clearfix">
+                  <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> 1</a>
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Pushpam Kumar, Sitki Ersin Esen, Makiko Yashiro </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2013 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Environmental Impact Assessment Review
+        </div>
+            <div class="list-group-item">
+              <div class="bold">
+                Abstract (dans sa langue originale):
+              </div>
+              <div class="justify">
+                <p>This paper first, introduces the concept of mainstreaming ecosystem services by showing its relevance for development planning. Second, it presents the role and importance of strategic environmental assessment in designing and implementation of development policy. Third, the paper sets-out the concept of economic valuation of ecosystem services by discussing what it means and what is at stake if valuation of ecosystem services is ignored in the process of development policy making. The methods of capturing economic contribution of ecosystem services at policy level are discussed with examples in the paper.</p>
+
+<p>The main focus of this paper is how ecosystem services can be used in policy scale environmental impact assessment. The paper argues that ecosystem services can be an appropriate indicator to weight developmental policies, programs and plans to ensure the consideration of environmental balancing at the policy level. The paper suggests that the roles of ecosystem services in macroeconomic policies including ecosystem accounting, poverty alleviation and employment generation can be used to link environmental policies and SEA with development policies for a successful impact assessment at policy and program levels. By building upon the various contemporary initiatives within UNEP and outside, the paper in its synthesis section, flags-up necessary knowledge gaps, challenges and lessons learned in integrating values of ecosystem services in strategic environmental assessments.</p>
+
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="bold">
+                Identifiant unique:
+              </div> 10.1016/j.eiar.2013.01.002
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://www.sciencedirect.com/science/article/pii/S0195925513000139">http://www.sciencedirect.com/science/article/pii/S0195925513000139</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/comment-integrer-le-concept-de-services-ecosystemiques-dans-les-etudes-d-impact-environnemental.html">Peut-on mesurer précisément les impacts des activités humaines sur l&#39;environnement&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading715">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse715" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/sex-differences-in-the-growth-of-white-matter-during-adolescence.html">Non analysée - Sex differences in the growth of white matter during adolescence</a>
+    </h4>
+  </div>
+  <div id="Collapse715" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+            <div class="list-group-item clearfix">
+                  <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> 1</a>
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> J.S. Perrin, G. Leonard, M. Perron, G.B. Pike, a Pitiot, L. Richer, S. Veillette, Z. Pausova, T.  </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2009 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Neuroimage
+        </div>
+            <div class="list-group-item">
+              <div class="bold">
+                Identifiant unique:
+              </div> doi:10.1016/j.neuroimage.2009.01.023
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://www.sciencedirect.com/science/article/pii/S1053811909000627">http://www.sciencedirect.com/science/article/pii/S1053811909000627</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/les-differences-cerebrales-entre-hommes-et-femmes-dependent-elles-de-facteurs-sociaux-ou-biologiques.html">Y-a-t-il de réelles différences innées entre les cerveaux masculins et féminins&nbsp?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading714">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse714" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="references/environmental-impacts-of-the-use-of-ecosystem-services-case-study-of-birdwatching.html">Non analysée - Environmental Impacts of the Use of Ecosystem Services: Case Study of Birdwatching</a>
+    </h4>
+  </div>
+  <div id="Collapse714" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+            <div class="list-group-item clearfix">
+                  <a class="btn btn-default stick hvr-shadow" title="1 contributeur pense que cette référence appartient au thème Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> 1</a>
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Auteurs:
+          </div> Jakub Kronenberg </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Année de publication:
+          </div> 2014 </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Journal:
+          </div> Environmental Management
+        </div>
+            <div class="list-group-item">
+              <div class="bold">
+                Abstract (dans sa langue originale):
+              </div>
+              <div class="justify">
+                <p>The main reason for promoting the concept of ecosystem services lies in its potential to contribute to environmental conservation. Highlighting the benefits derived from ecosystems fosters an understanding of humans’ dependence on nature, as users of ecosystem services. However, the act of using ecosystem services may not be environmentally neutral. As with the use of products and services generated within an economy, the use of ecosystem services may lead to unintended environmental consequences throughout the ‘ecosystem services supply chain.’ This article puts forward a framework for analyzing environmental impacts related to the use of ecosystem services, indicating five categories of impact: (1) direct impacts (directly limiting the service’s future availability); and four categories of indirect impacts, i.e., on broader ecosystem structures and processes, which can ultimately also affect the initial service: (2) impacts related to managing ecosystems to maximize the delivery of selected services (affecting ecosystems’ capacity to provide other services); (3) impacts associated with accessing ecosystems to use their services (affecting other ecosystem components); (4) additional consumption of products, infrastructure or services required to use a selected ecosystem service, and their life-cycle environmental impacts; and (5) broader impacts on the society as a whole (environmental awareness of ecosystem service users and other stakeholders). To test the usefulness of this framework, the article uses the case study of birdwatching, which demonstrates all of the above categories of impacts. The article justifies the need for a broader consideration of environmental impacts related to the use of ecosystem services.</p>
+
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="bold">
+                Identifiant unique:
+              </div> 10.1007/s00267-014-0317-8
+            </div>
+        <div class="list-group-item">
+          <div class="bold">
+            Lien vers la référence
+            
+            :
+          </div> <a class="break-word" target="_blank" href="http://link.springer.com/article/10.1007%2Fs00267-014-0317-8">http://link.springer.com/article/10.1007%2Fs00267-014-0317-8</a></div>
+        <div class="list-group-item">
+          <div class="bold">
+            Apparait dans la controverse :
+          </div>
+          <a target="_blank" href="timelines/la-nature-face-a-la-mondialisation-les-services-ecosystemiques.html">La nature face à la mondialisation : les services écosystémiques</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                        <nav class="pagination" role="navigation" aria-label="pager">
+    <span class="first">
+  <a href="empty_comments.html">&laquo; Première</a>
+</span>
+
+    <span class="prev">
+  <a rel="prev" href="empty_comments3c09.html?page=22">&lsaquo; Précédente</a>
+</span>
+
+        <span class="page gap">&hellip;</span>
+
+        <span class="page">
+  <a href="empty_comments7537.html?page=19">19</a>
+</span>
+
+        <span class="page">
+  <a href="empty_commentsf62c.html?page=20">20</a>
+</span>
+
+        <span class="page">
+  <a href="empty_commentse4a7.html?page=21">21</a>
+</span>
+
+        <span class="page">
+  <a rel="prev" href="empty_comments3c09.html?page=22">22</a>
+</span>
+
+        <span class="page current">
+  23
+</span>
+
+        <span class="page">
+  <a rel="next" href="empty_comments1d82.html?page=24">24</a>
+</span>
+
+        <span class="page">
+  <a href="empty_comments8c06.html?page=25">25</a>
+</span>
+
+        <span class="page">
+  <a href="empty_comments19d2.html?page=26">26</a>
+</span>
+
+        <span class="page">
+  <a href="empty_comments2459.html?page=27">27</a>
+</span>
+
+        <span class="page gap">&hellip;</span>
+
+      <span class="next">
+  <a rel="next" href="empty_comments1d82.html?page=24">Suivante &rsaquo;</a>
+</span>
+
+      <span class="last">
+  <a href="empty_comments763c.html?page=38">Dernière &raquo;</a>
+</span>
+
+  </nav>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+          <div class="center-block">
+            <img alt="Enrichir" class="img-responsive" src="assets/3rules-3-1fc62dc15112c59c30efaf57ca4ce65b81ed9d335ae4f6420463a6aa0deca7d2.png" />
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/empty_comments?page=23 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 04:22:42 GMT -->
+</html>

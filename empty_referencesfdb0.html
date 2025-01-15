@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=4 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="AiR10eeqRFVltA3De+qoaJ08FvlmY3budP9sitOleMF4Rh6ytQfGFTs1eUaYYG8ePQwmxC7R29qSyp9AO4IkOw==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item clearfix list-group-item clearfix-default cursor-not-allowed" href="empty_references.html"><span class="icon-reference bigger"></span>
+                                    Enrichir les controverses
+                                    <span class="badge">64</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_comments.html"><span class="icon-comment bigger"></span>
+                                    Analyser les références
+                                    <span class="badge">453</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_summaries.html"><span class="icon-summary bigger"></span>
+                                    Synthètiser les controverses
+                                    <span class="badge">11</span></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+      <br/>
+      <br/>
+
+      <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>
+                Ces controverses
+                ont besoin de références scientifiques, venez les enrichir !
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="empties">
+                    <div class="page">
+                      <div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading69">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse69" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-asiatiques-ont-ils-plus-de-mal-a-digerer-les-produits-laitiers.html">Les asiatiques ont-ils plus de mal à digérer les produits laitiers&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse69" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="right"
+               title="2 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            2
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les asiatiques ont la réputation de consommer moins de produits laitiers que les occidentaux, notamment à cause de supposés problèmes de digestion du lactose. Ce fait est il scientifiquement avéré ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading68">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse68" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/des-risques-pour-la-sante-lies-a-la-consommation-d-39-alcool-existent-ils-specifiquement-chez-les-asiatiques.html">Des risques pour la santé liés à la consommation d&#39;alcool existent-ils spécifiquement chez les asiatiques&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse68" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Rougeurs, nausées et maux de têtes sont des symptômes courants lors de consommation d&#39;alcool chez les personnes d&#39;origine asiatique. L&#39;objectif est de déterminer si ces symptômes représentent uniquement un inconfort, ou s&#39;ils sont associés au contraire à de réels risques pour la santé des population concernées.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading67">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse67" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-implantation-de-populations-d-39-ours-dans-les-pyrenees-est-elle-durable.html">L&#39;implantation de populations d&#39;ours dans les Pyrénées est elle durable&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse67" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>L&#39;implantation d&#39;ours dans les Pyrénées est l&#39;objet de vives tensions politiques entre environnementalistes et eleveurs dans cette région. Après plusieurs vagues de réintroduction, il est important de démontrer si oui ou non, la présence d&#39;ours dans les Pyrénées est durable  d&#39;un point de vue écologique, c&#39;est à dire si les populations actuelles suffisent à péréniser la présence de l&#39;espcèce dans le massif.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading65">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse65" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-huile-de-palme-est-elle-moins-bonne-pour-la-sante-que-les-autres-huiles-vegetales.html">L´huile de palme est-elle moins bonne pour la santé que les autres huiles végétales&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse65" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>L&#39;huile de palme est souvent décriée pour ses impacts environnementaux, mais plus rarement pour ses conséquences sur la santé. Pourtant, certains travaux avanceraient l&#39;hypothèse que les propriétés de cette huile pourraient avoir des effets négatifs sur l&#39;organisme.<br>
+Cette controverse traite uniquement de cet aspect sanitaire.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading64">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse64" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-antibiotiques-sont-ils-tous-voues-a-ne-plus-etre-efficaces.html">Quels dangers représente le développement de la résistance aux antibiotiques&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse64" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les antibiotiques sont des armes puissantes pour lutter contre les bactéries pathogènes. Cependant des inquiétudes s&#39;élèvent concernant leur perte d&#39;efficacité, et donc sur notre futur capacité à lutter efficacement contre ces bactéries. Cette controverse vise à comprendre ces inquiétudes et à comprendre si elles sont fondées.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading63">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse63" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/le-neuromarketing-est-il-en-train-de-revolutionner-l-39-efficacite-de-la-publicite.html">Le neuromarketing augmente-t-il significativement l&#39;efficacité de la publicité&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse63" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>La compréhension des mécanismes neurologiques peut avoir des débouchés bien au delà de la médecine, par exemple pour le marketing. On peut ainsi se demander si la mobilisation des neurosciences dans les stratégies publicitaires a un impact significatif sur les  comportements d&#39;achat des consommateurs visés. </p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading61">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse61" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-eoliennes-presentent-elles-des-risques-pour-la-sante-des-residents-proches.html">Les éoliennes présentent-elles des risques pour la santé des résidents proches&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse61" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Pour lutter contre le réchauffement climatique, le développement des énergies à faibles émissions de CO2 est de plus en plus préconnisé. Les éoliennes se multiplient ainsi, parfois à proximité des habitations. Cette controverse vise à identifier la présence ou l&#39;absence de risques sanitaires liés aux éoliennes pour les résidents proches.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading58">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse58" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-peche-a-la-baleine-pratiquee-aujourd-hui-en-islande-en-norvege-et-au-japon-menace-t-elle-la-perennite-des-especes-concernees.html">La pêche à la baleine pratiquée aujourd&#39;hui en Islande, en Norvège et au Japon menace-t-elle la pérennité des espèces concernées&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse58" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Cadre concret</strong><br>
+La chasse à la baleine réellement  <strong>commerciale</strong> commence au milieu du XIXème siècle. Les plus récentes estimations suggèrent qu&#39;approximativement 250 000 <strong>baleines à bosse</strong> (<em>Megaptera novaeangliae</em>), 350 000 <strong>baleines bleus</strong> (<em>Balaenoptera musculus</em>, 500 000 <strong>rorquals communs</strong> (<em>Balaenoptera physalus</em>) et 1 000 000 de <strong>cachalots</strong> (<em>Physeter macrocephalus</em>) ont été abattus. D&#39;autres espèces telles que les <strong>rorquals de Rudolphi</strong> (<em>Balaenoptera borealis</em>) et les <strong>baleines de Minke</strong> (<em>Balaenoptera acutorostrata</em> et <em>bonaerensis</em>) sont également touchées.</p>
+
+<p>La Commission Internationale Baleinière a été crée (IWC) en 1946, puis en 1982 un moratoire sur la chasse à la baleine commerciale a été adopté par les membres de l&#39;IWC. Cependant depuis 1986, on estime que plus de 25 000 baleines ont été chassées dans le monde (ce chiffre n&#39;inclut pas dauphins et marsouins, dont la chasse n&#39;est pas contrôlée par l&#39;IWC). Cette chasse concerne principalement 3 pays:</p>
+
+<ul>
+<li><strong>la Norvège</strong>: a repris ses activités de chasse commerciale en 1994 et a depuis prélevé <strong>600 à 700 baleines de Minke par an</strong>.</li>
+<li><strong>le Japon</strong>: signataire du moratoire en 1988, il s&#39;appuie sur une faille de la convention pour continuer la chasse &quot;à but scientifique&quot;. <strong>Entre 1986 et 2007, 11 389 baleines</strong> ont été prélevées dans le Pacifique Nord et les eaux Antarctiques.</li>
+<li> <strong>l&#39;Islande</strong>: signataire du moratoire en 1986, ce pays pratique également des chasses &quot;à but scientifique&quot;, principalement de rorquals. Depuis 2002, la chasse a concerné <strong>quelques centaines d&#39;individus</strong> (e.g. 125 rorquals communs et 79 rorquals de Minke en 2009).</li>
+</ul>
+
+<p><strong>Cadre conceptuel</strong><br>
+Dans la liste rouge de l&#39;IUCN, les espèces concernées sont aujourd&#39;hui classifiées à l&#39;échelle de la planète comme: <strong>en danger d&#39;extinction</strong> (rorquals bleus, communs, de Minke et de Rudolphi), <strong>vulnérable</strong> (cachalot) et à données insuffisantes (rorquals de Minke de l&#39;Antarctique). Cependant, les abondances peuvent être localement faibles, amenant un <strong>risque d&#39;extirpation</strong> (extinction locale d&#39;une espèce). La question de pérennité doit donc se poser à plusieurs échelles: les espèce et les sous-populations géographiquement distinctes.</p>
+
+<p>​​<strong>Question</strong><br>
+Le sujet de la chasse à la baleine est très polémique mais d&#39;un point de vue purement écologique, cette chasse met-elle en danger les populations de baleines concernées ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading55">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse55" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/le-rechauffement-climatique-peut-il-provoquer-des-seismes.html">Le réchauffement climatique peut-il provoquer des séismes&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse55" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Le réchauffement climatique (quelle que soit son origine) est un fait scientifique avéré. Cette controverse vise à étudier une des conséquences possibles du changement climatique : peut-il provoquer des tremblements de terre ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading54">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse54" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/d-ou-viennent-les-basques-et-leur-langue.html">Quelles sont les origines des Basques et de la langue basque?</a>
+    </h4>
+  </div>
+  <div id="Collapse54" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>La langue basque est très atypique : c&#39;est une des seules langues non indo-européenne encore utilisée en Europe. Certaines particularités génétiques conduisent aussi à se poser la question de l&#39;origine du peuple basque. C&#39;est tout le sujet de cette controverse.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading52">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse52" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-vikings-ont-ils-decouvert-l-39-amerique-avant-christophe-colomb.html">Les vikings ont-ils posé le pied en Amérique avant Christophe Colomb&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse52" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p><strong>Introduction</strong><br>
+On entend souvent que les Vikings ont découvert l&#39;Amérique, à savoir une partie orientale du Canada actuel, qu&#39;ils auraient nommée Vinland. Mais cette idée mérite d&#39;être replacée dans un contexte plus précis.</p>
+
+<p>Qu&#39;est ce qu&#39;un viking ? La question est malaisée, tant il parait que le terme viking soit une construction ne correspondant ni à une ethnie, ni à un peuple précis. <br>
+L&#39;Amérique est un continent. Or, pour reprendre Christian Grataloup, les continents sont des inventions humaines, des mots construits et utilisés pour comprendre l&#39;espace.  Colomb n&#39;a jamais eu l&#39;idée qu&#39;il était arrivé sur un autre continent.  Les vikings, eux, avaient-ils seulement un mot pour désigner le concept de continent?  </p>
+
+<p>Sous l&#39;intitulé &quot;les vikings ont-ils découvert l&#39;Amérique avant Christophe Colomb&quot;, la question est donc biaisée. Aucun des deux partis n&#39;a &quot;découvert&quot; l&#39;Amérique. C&#39;est pourquoi il semble plus pertinent de poser &quot;les vikings ont-ils posé le pied en Amérique avant Christophe Colomb&quot;, en gardant en tête qu&#39;<em>Amérique</em> est un concept contemporain inexistant à l&#39;époque médiévale et au début de l&#39;époque moderne.</p>
+
+<p><strong>Question</strong><br>
+Il semble que les Vikings aient créé des colonies au Groenland (considéré comme une partie du continent Américain) et une éphémère colonie au Vinland. Mais quelles sont les sources qui nous permettent de parler de ce territoire de Vinland? Les recherches archéologiques sur place ont-elles découvert des artefacts originaires de la scandinavie médiévale ? </p>
+
+<p>Cette question peut fournir l&#39;occasion d&#39;éclairer certains faits historiques mais ne doit pas contribuer à alimenter les malentendus concernant les concepts utilisés : gardons en tête que jamais les deux partis n&#39;ont imaginé débarquer sur un nouveau continent.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading48">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse48" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-installation-de-panneaux-solaires-dans-le-sahara-peut-elle-permettre-de-produire-durablement-l-39-electricite-necessaire-pour-toute-l-europe.html">L&#39;installation de panneaux solaires dans le Sahara peut-elle permettre de produire durablement l&#39;éléctricité nécéssaire pour toute l&#39;Europe&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse48" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Cette controverse se limite à analyser l&#39;aspect technique de la question posée en titre. Les considérations politiques et de rentabilité financière sont exclues du cadre de la controverse.</p>
+
+          </div>
+    </div>
+  </div>
+</div>
+                        <nav class="pagination" role="navigation" aria-label="pager">
+    <span class="first">
+  <a href="empty_references.html">&laquo; Première</a>
+</span>
+
+    <span class="prev">
+  <a rel="prev" href="empty_references9ba9.html?page=3">&lsaquo; Précédente</a>
+</span>
+
+        <span class="page">
+  <a href="empty_references.html">1</a>
+</span>
+
+        <span class="page">
+  <a href="empty_references4658.html?page=2">2</a>
+</span>
+
+        <span class="page">
+  <a rel="prev" href="empty_references9ba9.html?page=3">3</a>
+</span>
+
+        <span class="page current">
+  4
+</span>
+
+        <span class="page">
+  <a rel="next" href="empty_referencesaf4d.html?page=5">5</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesc575.html?page=6">6</a>
+</span>
+
+      <span class="next">
+  <a rel="next" href="empty_referencesaf4d.html?page=5">Suivante &rsaquo;</a>
+</span>
+
+      <span class="last">
+  <a href="empty_referencesc575.html?page=6">Dernière &raquo;</a>
+</span>
+
+  </nav>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+          <div class="center-block">
+            <img alt="Enrichir" class="img-responsive" src="assets/3rules-1-72d19a799935de5e1be7f5c12b51f87563b116648d43d5cee5e645195e1ca90b.png" />
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=4 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:10 GMT -->
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/users/a-prud-homme by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:09:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="../assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="../assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="../assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="kBqU33xNuZ20sh51sO50Q3T7rJn72/XPU13XjhLtnmzqeP+8LuA73eozavBTZLM11MucpLNpWPu1aCRE+srClg==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="../index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="../timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="../tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="../about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="../users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="../faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+<div class="row">
+  <div class="col-xs-12 col-md-3">
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <script src="../assets/chart-322ca54d28718a34348f59da1d12f8b4ab0b75b4a1ad7a2392e694aabd771edb.js"></script>
+
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+            <img class="img-rounded" height="80px" src="../assets/uploads/739/739_profil_v_0.png" />
+    <span style="font-size: 3em">
+      &nbsp A. Prud&#39;homme
+    </span>
+  </div>
+  <div class="panel-body">
+  <div class="clearfix">
+      <b> Fonction/métier : </b><br/>
+            Etudiante M2 Darwin
+        <br/><br/>
+        <b> Institution : </b> <br/>
+      Université de Montpellier
+      <br/><br/>
+    <br/>
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <script type="text/javascript">
+          var data = {
+              labels: ["Enthousiaste", "Sphinx", "Seigneur", "Encyclopédique", "Analyste", "Juge", "Écrivain", "Évaluateur", "Bienveillant"],
+              datasets: [
+                  {
+                      label: "A. Prud&#39;homme",
+                      fillColor: "rgba(151,187,205,0.2)",
+                      strokeColor: "rgba(151,187,205,1)",
+                      pointColor: "rgba(151,187,205,1)",
+                      pointStrokeColor: "#fff",
+                      pointHighlightFill: "#fff",
+                      pointHighlightStroke: "rgba(151,187,205,1)",
+                      data: [1.25, 1.04, 1.05, 1.49, 1.05, 1.2, 1.37, 1.0899999999999999, 0.97]
+                  }
+              ]
+          },
+          labels = ["S'intéresse à tout", "Pose des questions", "Ses contributions recoivent des crédits", "Ajoute des références", "Analyse des références", "Évalue les références", "Écrit des synthèses", "Donne des crédits aux contributions", "Suggère des améliorations aux autres"];
+          Chart.defaults.global.responsive = true;
+          Chart.defaults.global.tooltipTemplate = "<%if (toolLabel){%><%=toolLabel%><%}%>";
+          Chart.defaults.global.scaleOverride = true;
+          // Number - The number of steps in a hard coded scale
+          Chart.defaults.global.scaleSteps = 5;
+          // Number - The value jump in the hard coded scale
+          Chart.defaults.global.scaleStepWidth = 0.3;
+          // Number - The scale starting value
+          Chart.defaults.global.scaleStartValue = 0;
+          var canvas = $("#myChart").get(0),
+              ctx = canvas.getContext('2d'),
+              myRadarChart = new Chart(ctx).Radar(data, {pointLabelFontSize : 14, pointLabelFontStyle : "bold"});
+          $.each(myRadarChart.datasets[0].points, function( key, point ) {
+              point.toolLabel = labels[key];
+          });
+      </script>
+
+    <br>
+    <div class="center">
+      <a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a>
+    </div><br>
+  </div>
+    <div class="panel-group" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title clearfix">
+                <a data-toggle="collapse" href="#collapseZero" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                <a class="collapsed" data-toggle="collapse" href="#collapseZero" aria-expanded="false" aria-controls="collapseThree">
+                  A. Prud&#39;homme a écrit 1 proposition de titre et de cadre
+                </a>
+              </h4>
+            </div>
+            <div id="collapseZero" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <table id="notification-summaries" class="table table-striped table-hover">
+                <thead>
+                <tr>
+                  <th class="col-xs-5"> Les propositions de titres et de cadres </th>
+                  <th class="col-xs-5"> De la controverse </th>
+                </tr>
+                </thead>
+                <tbody class="page">
+                    <td> <a class="btn btn-primary" href="../frames/376.html">Le titre et le cadre</a>   </td>
+                    <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br/>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title clearfix">
+            <a data-toggle="collapse" href="#collapseTwo" class="pull-right glyphicon glyphicon-chevron-down"></a>
+            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              A. Prud&#39;homme a ajouté  13 références scientifiques
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <table id="notification-references" class="table table-striped table-hover">
+            <thead>
+            <tr>
+              <th class="col-xs-6"> La référence </th>
+              <th class="col-xs-4"> Dans la controverse </th>
+            </tr>
+            </thead>
+
+            <tbody class="page">
+                    <tr class="notification-reference">
+                      <td> <a href="../references/effects-of-management-on-butterfly-abundance-in-tallgrass-prairie-and-pine-barrens.html">Effects of management on butterfly abundance in tallgrass prairie and pine barrens</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/functional-significance-of-ungulate-diversity-in-african-savannas-and-the-ecological-implications-of-the-spread-of-pastoralism.html">Functional significance of ungulate diversity in African savannas and the ecological implications of the spread of pastoralism</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/does-natural-reforestation-represent-a-potential-threat-to-dung-beetle-diversity-in-the-alps.html">Does natural reforestation represent a potential threat to dung beetle diversity in the Alps?</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/diagnosing-the-causes-of-territory-abandonment-by-the-endangered-egyptian-vulture-neophron-percnopterus-the-importance-of-traditional-pastoralism-and-regional-conservation.html">Diagnosing the causes of territory abandonment by the Endangered Egyptian vulture Neophron percnopterus: the importance of traditional pastoralism and regional conservation</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/year-round-horse-grazing-supports-typical-vascular-plant-species-orchids-and-rare-bird-communities-in-a-dry-calcareous-grassland.html">Year-round horse grazing supports typical vascular plant species, orchids and rare bird communities in a dry calcareous grassland</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/how-pastoralism-changes-savanna-vegetation-impact-of-old-pastoral-settlements-on-plant-diversity-and-abundance-in-south-western-kenya.html">How pastoralism changes savanna vegetation: impact of old pastoral settlements on plant diversity and abundance in south-western Kenya</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/consequences-of-pastoral-abandonment-for-the-structure-and-diversity-of-the-alpine-avifauna.html">Consequences of pastoral abandonment for the structure and diversity of the alpine avifauna</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/responses-of-vertebrates-to-pastoralism-military-land-use-and-landscape-position-in-an-australian-tropical-savanna-a49803d0-77fe-400e-adf9-6b6d87ae7ead.html">Responses of vertebrates to pastoralism, military land use and landscape position in an Australian tropical savanna</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/management-of-semi-natural-grasslands-benefiting-both-plant-and-insect-diversity-the-importance-of-heterogeneity-and-tradition.html">Management of semi-natural grasslands benefiting both plant and insect diversity: The importance of heterogeneity and tradition</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/effects-of-grazing-and-biogeographic-regions-on-grassland-biodiversity-in-hungary-analysing-assemblages-of-1200-species.html">Effects of grazing and biogeographic regions on grassland biodiversity in Hungary – analysing assemblages of 1200 species</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/the-response-of-spider-araneae-assemblages-to-structural-heterogeneity-and-prey-abundance-in-sub-montane-vegetation-modified-by-conservation-grazing.html">The response of spider (Araneae) assemblages to structural heterogeneity and prey abundance in sub-montane vegetation modified by conservation grazing</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/grazing-intensity-and-the-diversity-of-grasshoppers-butterflies-and-trap-nesting-bees-and-wasps.html">Grazing Intensity and the Diversity of Grasshoppers, Butterflies, and Trap-Nesting Bees and Wasps</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/response-of-bat-species-to-sylvo-pastoral-abandonment.html">Response of bat species to sylvo-pastoral abandonment</a>   </td>
+                      <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br/>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title clearfix">
+            <a data-toggle="collapse" href="#collapseThree" class="pull-right glyphicon glyphicon-chevron-down"></a>
+            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              A. Prud&#39;homme a écrit 13 analyses
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <table id="notification-comments" class="table table-striped table-hover">
+            <thead>
+            <tr>
+              <th class="col-xs-3"> L&#39;analyse </th>
+              <th class="col-xs-4"> De la référence </th>
+            </tr>
+            </thead>
+
+            <tbody class="page">
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1640.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/reading-the-pastoral-landscape-palynological-and-historical-evidence-for-the-impacts-of-long-term-grazing-on-wether-hill-ingram-northumberland.html">LECTURE DU PAYSAGE PASTORAL: preuves palynologiques et historiques des impacts du pâturage à long terme sur Wether Hill, INGRAM, NORTHUMBERLAND</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1411.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/how-pastoralism-changes-savanna-vegetation-impact-of-old-pastoral-settlements-on-plant-diversity-and-abundance-in-south-western-kenya.html">Comment le pastoralisme change la végétation de la savane : Impact des anciennes installations pastorales sur la diversité des plantes et leur abondance dans le sud-ouest du Kenya.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1432.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/functional-significance-of-ungulate-diversity-in-african-savannas-and-the-ecological-implications-of-the-spread-of-pastoralism.html">Importance fonctionnelle de la diversité des ongulés dans les savanes africaines et implications écologiques de la propagation du pastoralisme.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1445.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/does-natural-reforestation-represent-a-potential-threat-to-dung-beetle-diversity-in-the-alps.html">Est-ce que la reforestation représente une menace potentielle pour la diversité des bousiers dans les Alpes ?</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1454.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/diagnosing-the-causes-of-territory-abandonment-by-the-endangered-egyptian-vulture-neophron-percnopterus-the-importance-of-traditional-pastoralism-and-regional-conservation.html">Diagnostiquer les causes de l&#39;abandon du territoire par l&#39;étude du vautour menacé <em>Neophron percnopterus</em> : l&#39;importance du pastoralisme traditionnel et de la conservation régionale.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1461.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/effects-of-management-on-butterfly-abundance-in-tallgrass-prairie-and-pine-barrens.html">Effets de la gestion sur l&#39;abondance des papillons dans les prairies à herbes hautes et les pinèdes.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1467.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/response-of-bat-species-to-sylvo-pastoral-abandonment.html">Réponses des espèces de chauves-souris à l&#39;abandon sylvo-pastorale.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1410.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/responses-of-vertebrates-to-pastoralism-military-land-use-and-landscape-position-in-an-australian-tropical-savanna-a49803d0-77fe-400e-adf9-6b6d87ae7ead.html">Réponses des vertébrés au pastoralisme, à l&#39;utilisation militaire des terres et la position géographique dans une savane tropicale Australienne.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1619.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/pastoralism-plant-conservation-and-conflicts-on-proliferation-of-himalayan-knotweed-in-high-altitude-protected-areas-of-the-western-himalaya-india.html">Pastoralisme, conservation des plantes et conflits sur la prolifération de la renouée de l&#39;Himalaya dans les zones protégées de haute altitude de l&#39;Himalaya occidental, en Inde</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1496.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/year-round-horse-grazing-supports-typical-vascular-plant-species-orchids-and-rare-bird-communities-in-a-dry-calcareous-grassland.html">Le pâturage annuel par les chevaux soutient les communautés de plantes vasculaires, d&#39;orchidées et d&#39;oiseaux rares dans les prairies sèches calcaires</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1626.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/grazing-intensity-and-the-diversity-of-grasshoppers-butterflies-and-trap-nesting-bees-and-wasps.html">Intensité du pâturage et diversité des sauterelles, des papillons et des abeilles et guêpes maçonnes</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1483.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/consequences-of-pastoral-abandonment-for-the-structure-and-diversity-of-the-alpine-avifauna.html">Conséquences de l&#39;abandon pastoral sur la structure et la diversité de l&#39;avifaune alpine.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/1490.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/management-of-semi-natural-grasslands-benefiting-both-plant-and-insect-diversity-the-importance-of-heterogeneity-and-tradition.html">Une gestion des prairies semi-naturelles favorisant la diversité des plantes et des insectes : L&#39;importance de l&#39;hétérogénéité et de la tradition</a>   </td>
+                    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+          <br/>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title clearfix">
+                <a data-toggle="collapse" href="#collapseFour" class="pull-right glyphicon glyphicon-chevron-down"></a>
+                <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  A. Prud&#39;homme a écrit 1 synthèse
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <table id="notification-summaries" class="table table-striped table-hover">
+                <thead>
+                <tr>
+                  <th class="col-xs-5"> La synthèse </th>
+                  <th class="col-xs-5"> De la controverse </th>
+                </tr>
+                </thead>
+                <tbody class="page">
+                    <td> <a class="btn btn-primary" href="../summaries/120.html">La synthèse</a>   </td>
+                    <td> <a href="../timelines/le-pastoralisme-est-il-nefaste-ou-benefique-pour-la-biodiversite-5731b2d4-1ab6-4d3c-b6c6-a14dba3574aa.html">Le pastoralisme est-il néfaste ou bénéfique pour la biodiversité&nbsp?</a>   </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br/>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+    <div class="center">
+      <br/>
+      <a class="btn btn-primary" href="../users.html"><span class="icon-users"></span> Tous les contributeurs</a>
+    </div>
+    <br/>
+    <br/>
+  </div>
+</div>
+</div>
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="../about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/users/a-prud-homme by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:09:52 GMT -->
+</html>

@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/tag-pairs-graph?reference=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:58:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="JrPGZ/rNkZ72tMxciYcPH6FtBBItaduNa+cPf8Kqxy5c0a0EqGAT3qg1uNlqDchpAV00L2XbdrmN0vy1Ko2b1A==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+<script src="assets/d3.3.5.5.min.js"></script>
+<script src="assets/underscore-min.1.8.3.js"></script>
+<script>
+    //*******************************************************************
+    //  CHORD MAPPER
+    //*******************************************************************
+    function chordMpr(data) {
+        var mpr = {}, mmap = {}, n = 0,
+                matrix = [], filter, accessor;
+
+        mpr.setFilter = function (fun) {
+            filter = fun;
+            return this;
+        },
+                mpr.setAccessor = function (fun) {
+                    accessor = fun;
+                    return this;
+                },
+                mpr.getMatrix = function () {
+                    matrix = [];
+                    _.each(mmap, function (a) {
+                        if (!matrix[a.id]) matrix[a.id] = [];
+                        _.each(mmap, function (b) {
+                            var recs = _.filter(data, function (row) {
+                                return filter(row, a, b);
+                            });
+                            matrix[a.id][b.id] = accessor(recs, a, b);
+                        });
+                    });
+                    return matrix;
+                },
+                mpr.getMap = function () {
+                    return mmap;
+                },
+                mpr.printMatrix = function () {
+                    _.each(matrix, function (elem) {
+                    })
+                },
+                mpr.addToMap = function (value, info) {
+                    if (!mmap[value]) {
+                        mmap[value] = {name: value, id: n++, data: info}
+                    }
+                },
+                mpr.addValuesToMap = function (varName, info) {
+                    var values = _.uniq(_.pluck(data, varName));
+                    _.map(values, function (v) {
+                        if (!mmap[v]) {
+                            mmap[v] = {name: v, id: n++, data: info}
+                        }
+                    });
+                    return this;
+                };
+        return mpr;
+    }
+    //*******************************************************************
+    //  CHORD READER
+    //*******************************************************************
+    function chordRdr(matrix, mmap) {
+        return function (d) {
+            var i, j, s, t, g, m = {};
+            if (d.source) {
+                i = d.source.index;
+                j = d.target.index;
+                s = _.where(mmap, {id: i});
+                t = _.where(mmap, {id: j});
+                m.sname = s[0].name;
+                m.sdata = d.source.value;
+                m.svalue = +d.source.value;
+                m.stotal = _.reduce(matrix[i], function (k, n) {
+                    return k + n
+                }, 0);
+                m.tname = t[0].name;
+                m.tdata = d.target.value;
+                m.tvalue = +d.target.value;
+                m.ttotal = _.reduce(matrix[j], function (k, n) {
+                    return k + n
+                }, 0);
+            } else {
+                g = _.where(mmap, {id: d.index});
+                m.gname = g[0].name;
+                m.gdata = g[0].data;
+                m.gvalue = d.value;
+            }
+            m.mtotal = _.reduce(matrix, function (m1, n1) {
+                return m1 + _.reduce(n1, function (m2, n2) {
+                            return m2 + n2
+                        }, 0);
+            }, 0);
+            return m;
+        }
+    }
+</script>
+
+<style>
+    #tooltip {
+        color: white;
+        opacity: .9;
+        background: #333;
+        padding: 5px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        position: absolute;
+        z-index: 10;
+        visibility: hidden;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
+    #circle circle {
+        fill: none;
+        pointer-events: all;
+    }
+
+    .chord {
+        opacity: .4 !important;
+        stroke: #000;
+    }
+
+    .fade {
+        opacity: 0.9 !important;
+    }
+</style>
+<div class="side-bar-top">
+  <a class="btn btn-default" href="timelines.html"><span class="icon-arrow-left normal"></span> Revenir aux controverses</a>
+</div>
+<div class="side-bar-right">
+  <a class="btn btn-default " href="tag-pairs-graph090a.html?timeline=true"><span class="icon-versus"></span> Pluridisciplinarité des controverses</a>
+  <br><br>
+  <a class="btn btn-default active" href="tag-pairs-graph4ad6.html?reference=true"><span class="icon-versus"></span> Pluridisciplinarité des références</a>
+</div>
+<div id="d3-graph">
+  <div id="tooltip" style="visibility: hidden;"></div>
+</div>
+<script>
+    //*******************************************************************
+    //  CREATE MATRIX AND MAP
+    //*******************************************************************
+    var data_json = [
+      {
+        "source": "biology",
+        "target": "biology",
+        "count": 454
+      },
+      {
+        "source": "biology",
+        "target": "techno",
+        "count": 10
+      },
+      {
+        "source": "techno",
+        "target": "biology",
+        "count": 10
+      },
+      {
+        "source": "biology",
+        "target": "psycho",
+        "count": 15
+      },
+      {
+        "source": "psycho",
+        "target": "biology",
+        "count": 15
+      },
+      {
+        "source": "biology",
+        "target": "socio",
+        "count": 22
+      },
+      {
+        "source": "socio",
+        "target": "biology",
+        "count": 22
+      },
+      {
+        "source": "biology",
+        "target": "medicine",
+        "count": 43
+      },
+      {
+        "source": "medicine",
+        "target": "biology",
+        "count": 43
+      },
+      {
+        "source": "biology",
+        "target": "planet",
+        "count": 318
+      },
+      {
+        "source": "planet",
+        "target": "biology",
+        "count": 318
+      },
+      {
+        "source": "biology",
+        "target": "physics",
+        "count": 1
+      },
+      {
+        "source": "physics",
+        "target": "biology",
+        "count": 1
+      },
+      {
+        "source": "biology",
+        "target": "geology",
+        "count": 16
+      },
+      {
+        "source": "geology",
+        "target": "biology",
+        "count": 16
+      },
+      {
+        "source": "biology",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "biology",
+        "count": 0
+      },
+      {
+        "source": "biology",
+        "target": "chemistry",
+        "count": 14
+      },
+      {
+        "source": "chemistry",
+        "target": "biology",
+        "count": 14
+      },
+      {
+        "source": "biology",
+        "target": "epistemology",
+        "count": 23
+      },
+      {
+        "source": "epistemology",
+        "target": "biology",
+        "count": 23
+      },
+      {
+        "source": "biology",
+        "target": "history",
+        "count": 4
+      },
+      {
+        "source": "history",
+        "target": "biology",
+        "count": 4
+      },
+      {
+        "source": "biology",
+        "target": "informatics",
+        "count": 2
+      },
+      {
+        "source": "informatics",
+        "target": "biology",
+        "count": 2
+      },
+      {
+        "source": "biology",
+        "target": "linguistic",
+        "count": 2
+      },
+      {
+        "source": "linguistic",
+        "target": "biology",
+        "count": 2
+      },
+      {
+        "source": "biology",
+        "target": "pie",
+        "count": 6
+      },
+      {
+        "source": "pie",
+        "target": "biology",
+        "count": 6
+      },
+      {
+        "source": "biology",
+        "target": "geography",
+        "count": 6
+      },
+      {
+        "source": "geography",
+        "target": "biology",
+        "count": 6
+      },
+      {
+        "source": "techno",
+        "target": "techno",
+        "count": 18
+      },
+      {
+        "source": "techno",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "techno",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "techno",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "psycho",
+        "count": 25
+      },
+      {
+        "source": "psycho",
+        "target": "socio",
+        "count": 10
+      },
+      {
+        "source": "socio",
+        "target": "psycho",
+        "count": 10
+      },
+      {
+        "source": "psycho",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "psycho",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "psycho",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "socio",
+        "count": 51
+      },
+      {
+        "source": "socio",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "socio",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "socio",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "medicine",
+        "count": 70
+      },
+      {
+        "source": "medicine",
+        "target": "planet",
+        "count": 13
+      },
+      {
+        "source": "planet",
+        "target": "medicine",
+        "count": 13
+      },
+      {
+        "source": "medicine",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "chemistry",
+        "count": 1
+      },
+      {
+        "source": "chemistry",
+        "target": "medicine",
+        "count": 1
+      },
+      {
+        "source": "medicine",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "medicine",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "medicine",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "planet",
+        "count": 492
+      },
+      {
+        "source": "planet",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "epistemology",
+        "count": 2
+      },
+      {
+        "source": "epistemology",
+        "target": "planet",
+        "count": 2
+      },
+      {
+        "source": "planet",
+        "target": "history",
+        "count": 2
+      },
+      {
+        "source": "history",
+        "target": "planet",
+        "count": 2
+      },
+      {
+        "source": "planet",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "planet",
+        "target": "pie",
+        "count": 1
+      },
+      {
+        "source": "pie",
+        "target": "planet",
+        "count": 1
+      },
+      {
+        "source": "planet",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "planet",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "physics",
+        "count": 12
+      },
+      {
+        "source": "physics",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "physics",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "physics",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "geology",
+        "count": 37
+      },
+      {
+        "source": "geology",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "history",
+        "count": 4
+      },
+      {
+        "source": "history",
+        "target": "geology",
+        "count": 4
+      },
+      {
+        "source": "geology",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "geology",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "geology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "archeology",
+        "count": 34
+      },
+      {
+        "source": "archeology",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "epistemology",
+        "count": 1
+      },
+      {
+        "source": "epistemology",
+        "target": "archeology",
+        "count": 1
+      },
+      {
+        "source": "archeology",
+        "target": "history",
+        "count": 2
+      },
+      {
+        "source": "history",
+        "target": "archeology",
+        "count": 2
+      },
+      {
+        "source": "archeology",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "archeology",
+        "count": 0
+      },
+      {
+        "source": "archeology",
+        "target": "geography",
+        "count": 3
+      },
+      {
+        "source": "geography",
+        "target": "archeology",
+        "count": 3
+      },
+      {
+        "source": "chemistry",
+        "target": "chemistry",
+        "count": 16
+      },
+      {
+        "source": "chemistry",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "chemistry",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "chemistry",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "epistemology",
+        "count": 32
+      },
+      {
+        "source": "epistemology",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "epistemology",
+        "count": 0
+      },
+      {
+        "source": "epistemology",
+        "target": "geography",
+        "count": 2
+      },
+      {
+        "source": "geography",
+        "target": "epistemology",
+        "count": 2
+      },
+      {
+        "source": "history",
+        "target": "history",
+        "count": 11
+      },
+      {
+        "source": "history",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "history",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "history",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "informatics",
+        "count": 6
+      },
+      {
+        "source": "informatics",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "informatics",
+        "target": "pie",
+        "count": 3
+      },
+      {
+        "source": "pie",
+        "target": "informatics",
+        "count": 3
+      },
+      {
+        "source": "informatics",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "informatics",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "linguistic",
+        "count": 2
+      },
+      {
+        "source": "linguistic",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "linguistic",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "linguistic",
+        "count": 0
+      },
+      {
+        "source": "pie",
+        "target": "pie",
+        "count": 14
+      },
+      {
+        "source": "pie",
+        "target": "geography",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "pie",
+        "count": 0
+      },
+      {
+        "source": "geography",
+        "target": "geography",
+        "count": 32
+      }
+    ]
+    var mpr = chordMpr(data_json);
+    mpr.addValuesToMap('source')
+            .setFilter(function (row, a, b) {
+              return (row.source === a.name && row.target === b.name)
+            })
+            .setAccessor(function (recs, a, b) {
+              if (!recs[0]) return 0;
+              return +recs[0].count;
+            });
+    drawChords(mpr.getMatrix(), mpr.getMap());
+    //*******************************************************************
+    //  DRAW THE CHORD DIAGRAM
+    //*******************************************************************
+    function drawChords(matrix, mmap) {
+        var tag_hash = {"archeology":"Archéologie","biology":"Biologie","chemistry":"Chimie","planet":"Ecologie","epistemology":"Epistémologie","geography":"Géographie","geology":"Géologie","history":"Histoire","informatics":"Informatique","linguistic":"Linguistique","pie":"Mathématiques","medicine":"Médecine et santé","physics":"Physique","psycho":"Psychologie","socio":"Sociologie","techno":"Technologie"};
+
+        var w = $(window).width(),
+                h = $(window).height() - 125,
+                r1 = h / 2,
+                r0 = r1 - 120;
+
+        var fill = d3.scale.ordinal()
+                .domain(d3.range(4))
+                .range(["#0b84a5", "#aed688", "#f5c767", "#ffa056", "#ca472f"]);
+
+        var chord = d3.layout.chord()
+                .padding(.02)
+                .sortSubgroups(d3.descending)
+                .sortChords(d3.descending);
+
+        var arc = d3.svg.arc()
+                .innerRadius(r0)
+                .outerRadius(r0 + 20);
+
+        var svg = d3.select("#d3-graph").append("svg:svg")
+                .attr("width", w)
+                .attr("height", h)
+                .attr("class", "img-responsive")
+                .append("svg:g")
+                .attr("id", "circle")
+                .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+
+        svg.append("circle")
+                .attr("r", r0 + 40)
+                .style("fill", "#FFFFFF");
+
+        var rdr = chordRdr(matrix, mmap);
+        chord.matrix(matrix);
+
+        var g = svg.selectAll("g.group")
+                .data(chord.groups())
+                .enter().append("svg:g")
+                .attr("class", "group")
+                .on("mouseover", mouseover)
+                .on("mouseout", function (d) {
+                    d3.select("#tooltip").style("visibility", "hidden");
+                    chordPaths.classed("fade", false)
+                });
+
+        g.append("svg:path")
+                .style("stroke", "black")
+                .style("fill", function (d) {
+                    return fill(d.index);
+                })
+                .attr("d", arc);
+
+        g.append("svg:text")
+                .each(function (d) {
+                    d.angle = (d.startAngle + d.endAngle) / 2;
+                })
+                .attr("dy", ".35em")
+                .attr("text-anchor", function (d) {
+                    return d.angle > Math.PI ? "end" : null;
+                })
+                .attr("transform", function (d) {
+                    return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+                            + "translate(" + (r0 + 26) + ")"
+                            + (d.angle > Math.PI ? "rotate(180)" : '');
+                })
+                .text(function (d) {
+                    return tag_hash[rdr(d).gname];
+                });
+
+        var chordPaths = svg.selectAll("path.chord")
+                .data(chord.chords())
+                .enter().append("svg:path")
+                .attr("class", "chord")
+                .style("stroke", function (d) {
+                    if (d.source == d.target){
+                        return d3.rgb(fill(d.target.index)).darker();
+                    } else {
+                        return "#acacac";
+                    }
+                })
+                .style("fill", function (d) {
+                    if (d.source == d.target){
+                        return fill(d.target.index);
+                    } else {
+                        return "#cccccc";
+                    }
+                })
+                .attr("d", d3.svg.chord().radius(r0))
+                .on("mouseover", function (d) {
+                    d3.select("#tooltip")
+                            .style("visibility", "visible")
+                            .html(chordTip(rdr(d)))
+                            .style("top", function () {
+                                return (d3.event.pageY - 100) + "px"
+                            })
+                            .style("left", function () {
+                                return (d3.event.pageX - 100) + "px";
+                            });
+                    chordPaths.classed("fade", function (p) {
+                        return (p.source.index == d.source.index && p.target.index == d.target.index);
+                    });
+                })
+                .on("mouseout", function (d) {
+                    d3.select("#tooltip").style("visibility", "hidden");
+                    chordPaths.classed("fade", false)
+                });
+
+        function chordTip(d) {
+            var p = d3.format(".2%"), q = d3.format(",.3r");
+            return (d.sname === d.tname ?
+                    ("<span class='bigger icon icon-" + d.sname + "'></span> Références en " + tag_hash[d.sname] + " : <br/>" +
+                    p(d.svalue / d.stotal) + " sont à thème unique" ) :
+                    ("<span class='bigger icon icon-" + d.sname + "'></span> Références en " + tag_hash[d.sname] + " : <br/>" +
+                    p(d.svalue / d.stotal) + " sont associées au thème " + tag_hash[d.tname] + " (<span class='normal icon icon-" + d.tname + "'></span>)"
+                    + "<br/><br/>" + "<span class='bigger icon icon-" + d.tname + "'></span> Références en " + tag_hash[d.tname] + " : <br/>" +
+                    p(d.tvalue / d.ttotal) + " sont associées au thème " + tag_hash[d.sname] + " (<span class='normal icon icon-" + d.sname + "'></span>)" ));
+        }
+
+        function groupTip(d) {
+            var p = d3.format(".1%"), q = d3.format(",.3r");
+            return "<span class='icon icon-" + d.gname + "'></span> Références en " + tag_hash[d.gname] + "<br/>"
+                    + p(d.gvalue / d.mtotal) + " du total"
+        }
+
+        function mouseover(d, i) {
+            d3.select("#tooltip")
+                    .style("visibility", "visible")
+                    .html(groupTip(rdr(d)))
+                    .style("top", function () {
+                        return (d3.event.pageY - 80) + "px"
+                    })
+                    .style("left", function () {
+                        return (d3.event.pageX - 130) + "px";
+                    });
+
+            chordPaths.classed("fade", function (p) {
+                return !(p.source.index != i && p.target.index != i);
+            });
+        }
+    }
+</script>
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/tag-pairs-graph?reference=true by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 22:58:40 GMT -->
+</html>

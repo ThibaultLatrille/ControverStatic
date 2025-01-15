@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?staging=true&tag=psycho by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:23:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="4rKbhOD9lKxfgSRLsROXitEuTGQtmz4MF3jXvqtb0dmY0PDnslAW7AEAUM5SmVD8cR58WWUpkzjxTSR0Q3yNIw==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-2 col-lg-8">
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-2">
+    </div>
+  </div>
+  <div class="col-xs-12 col-lg-offset-1 col-lg-10">
+    <div class="row">
+      <div id="timelines">
+        <div class="row page">
+                  <div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/infidelite-et-monogamie-chez-l-espece-humaine-des-traits-adaptatifs-8c4a5da1-acf0-4fee-b145-8db864066bec.html">
+    <span class='int'>4</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/infidelite-et-monogamie-chez-l-espece-humaine-des-traits-adaptatifs-8c4a5da1-acf0-4fee-b145-8db864066bec.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Infidélité et monogamie chez l&#39;espèce humaine, des traits adaptatifs&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong></p> <p>Cette controverse s&#39;intéresse à comprendre les origines de la monogamie chez l&#39;homme et comment le passage s&#39;est fait dans notre histoire évolutive à partir de la polygamie de nos ancêtres.<br> L&#39;explication pourrait être...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="20 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">20</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/l-exaptation-constitue-t-elle-un-concept-different-de-l-adaptation.html">
+    <span class='int'>4</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/l-exaptation-constitue-t-elle-un-concept-different-de-l-adaptation.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L&#39;exaptation constitue-t-elle un concept différent de l&#39;adaptation&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong><em>Introduction</em></strong><br> Des études des années 1980 débattent des théories du neutralisme et suggèrent que des caractères (telles que des copies répétées de gène) pourrait survenir pour des raisons non adaptatives au niveau du phénotype individuel. Il s’...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Linguistique" data-toggle="tooltip" href="timelinesc90a.html?tag=linguistic"><span class="fat icon-linguistic"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="14 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">14</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-differences-cerebrales-entre-hommes-et-femmes-dependent-elles-de-facteurs-sociaux-ou-biologiques.html">
+    <span class='int'>17</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-differences-cerebrales-entre-hommes-et-femmes-dependent-elles-de-facteurs-sociaux-ou-biologiques.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Y-a-t-il de réelles différences innées entre les cerveaux masculins et féminins&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les cerveaux des hommes et des femmes présenteraient certaines différences, il est donc intéressant de comprendre si ces différences sont d&#39;ordre biologique (innées) ou principalement le résultat de facteurs sociaux (acquises).<br> La principale...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="6 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">6</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="8 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">8</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-publicite-exploite-t-elle-notre-inconscient.html">
+    <span class='int'>12</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-publicite-exploite-t-elle-notre-inconscient.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La publicité exploite-t-elle notre inconscient&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>La publicité est une technique de communication qui a pour objectif de modifier le comportement des personnes exposées à un message contenant une information en relation avec le but recherché. Comme tout acte de communication, cette technique...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="11 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">11</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-jeux-videos-rendent-ils-plus-violents.html">
+    <span class='int'>15</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-jeux-videos-rendent-ils-plus-violents.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les jeux vidéos sont régulièrement accusés présenter des images et des comportements violents et, par la même occasion, de rendre les joueurs plus agressifs dans la vie de tous les jours.</p> <p>Ces accusations reposent-elles sur des preuves...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Informatique" data-toggle="tooltip" href="timelines28b1.html?tag=informatics"><span class="fat icon-informatics"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="7 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">7</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">3</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-monogamie-sexuelle-est-elle-naturelle-chez-l-39-homme-ou-socialement-construite.html">
+    <span class='int'>15</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-monogamie-sexuelle-est-elle-naturelle-chez-l-39-homme-ou-socialement-construite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La monogamie humaine est-elle socialement construite&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>En Occident, la monogamie sexuelle semble être une évidence tant elle est normalisée. Pourtant, il suffit de s&#39;intéresser aux pays voisins, notamment dans le monde arabe, pour observer que la monogamie n&#39;est pas universelle au sein même de...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">1</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-peine-de-mort-permet-elle-de-reduire-la-criminalite.html">
+    <span class='int'>11</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-peine-de-mort-permet-elle-de-reduire-la-criminalite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La peine de mort permet-elle de réduire la criminalité&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les débats sur la peine de mort se concentrent souvent sur des arguments éthiques, mais rarement sur son efficacité ou inefficacité pour réduire la criminalité. Ses opposants dénoncent une pratique barbare et d&#39;un autre age, ses partisans...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">1</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="4 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">4</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/le-neuromarketing-est-il-en-train-de-revolutionner-l-39-efficacite-de-la-publicite.html">
+    <span class='int'>8</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/le-neuromarketing-est-il-en-train-de-revolutionner-l-39-efficacite-de-la-publicite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Le neuromarketing augmente-t-il significativement l&#39;efficacité de la publicité&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>La compréhension des mécanismes neurologiques peut avoir des débouchés bien au delà de la médecine, par exemple pour le marketing. On peut ainsi se demander si la mobilisation des neurosciences dans les stratégies publicitaires a un impact...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">2</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">2</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-ogm-sont-ils-dangereux-pour-la-sante.html">
+    <span class='int'>9</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-ogm-sont-ils-dangereux-pour-la-sante.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La consommation de produits OGM est-elle dangereuse pour la santé&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Débat passionné en Europe, la question des Organismes Génétiquement Modifiés (OGM) touche à des considérations sanitaires, environnementales, techniques et éthiques. Cette controverse vise à comprendre ce que la littérature scientifique dit au...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">3</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">1</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-detecteurs-de-mensonges-sont-ils-des-outils-fiables.html">
+    <span class='int'>7</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-detecteurs-de-mensonges-sont-ils-des-outils-fiables.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les détecteurs de mensonges sont-ils des outils fiables&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Certains pays utilisent les détecteurs de mensonges dans leur arsenal juridique pour confondre les coupables et identifier les innocents.</p> <ul> <li>Ces outils peuvent-ils objectivement permettre de discerner le vrai du faux avec certitude dans les propos...</li></ul>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Technologie" data-toggle="tooltip" href="timelines5d64.html?tag=techno"><span class="fat icon-techno"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">3</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">1</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/le-thc-quels-effets-a-long-terme.html">
+    <span class='int'>10</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/le-thc-quels-effets-a-long-terme.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Le THC : quels effets à long terme&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Le THC est une molécule présente dans le cannabis, dont elle est le principal agent psychotrope. Ses effets à courts termes sont bien connus puisqu&#39;ils sont la raison même de sa consommation (effet relaxant, altération des sens), où des effets...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">2</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">1</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div>
+              
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 center">
+
+        </div>
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="iptaken" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <br/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"> Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function setupSubscription(context) {
+        $('[data-validate]', context).click(function () {
+            var self = $(this);
+            self.hide();
+            self.after('<svg version="1.1" class="loader-like" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/></path></svg>');
+            $.ajax(self.data('validate'), {
+                url: self.data('validate'),
+                data: {id: self.val()},
+                method: 'POST',
+                statusCode: {
+                    201: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.addClass('btn-success');
+                        self.removeClass('btn-default');
+                        self.removeClass('green');
+                        self.attr('data-original-title', "Vous suivez actuellement cette controverse et recevez les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) + 1);
+                    },
+                    204: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.removeClass('btn-success');
+                        self.addClass('btn-default');
+                        self.addClass('green');
+                        self.attr('data-original-title', "Abonnez-vous à cette controverse si vous souhaitez suivre les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) - 1);
+                    },
+                    401: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        $('#iptaken').modal('show');
+                    }
+                }
+            })
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      $('#filter-button').on( 'click', function() {
+        $('#filter-button').hide();
+        $('.filter').show();
+      });
+        $('.loading-image').imagesLoaded().progress( function( instance, image ) {
+            if (image.isLoaded) {
+                $(image.img).addClass("loaded");
+            }
+        });
+        $('.timeline-name').responsiveEqualHeightGrid();
+        $('.timeline-frame').responsiveEqualHeightGrid();
+        $('.timeline-body').responsiveEqualHeightGrid();
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+        setupSubscription();
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?staging=true&tag=psycho by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:23:39 GMT -->
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Z9oCq757zWpXL2g8du5qssqDQJ3sE7FKS720JLKTrhEduGnI7NZPKgmuHLmVZK3EarNwoKShHH6tiEfuWrTy6w==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-2">
+      <div class="list-group">
+        <a class="list-group-item clearfix list-group-item clearfix-default cursor-not-allowed" href="empty_references.html"><span class="icon-reference bigger"></span>
+                                    Enrichir les controverses
+                                    <span class="badge">64</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_comments.html"><span class="icon-comment bigger"></span>
+                                    Analyser les références
+                                    <span class="badge">453</span></a>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item clearfix" href="empty_summaries.html"><span class="icon-summary bigger"></span>
+                                    Synthètiser les controverses
+                                    <span class="badge">11</span></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-sm-offset-1 col-md-offset-0">
+      <br/>
+      <br/>
+
+      <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>
+                Ces controverses
+                ont besoin de références scientifiques, venez les enrichir !
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="empties">
+                    <div class="page">
+                      <div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading100">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse100" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-biocarburants-de-premiere-generation-sont-ils-preferables-aux-carburants-classiques-d-un-point-de-vue-environnemental.html">Les biocarburants de première génération ont-ils un meilleur bilan environnemental que les carburants classiques&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse100" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>D&#39;abord considérés comme une solution innovante pour réduire la pollution liée aux transports, les biocarburants de première génération (1G), c&#39;est à dire produits à partir de plantes normalement utilisées pour l&#39;alimentation, sont aujourd&#39;hui critiqués y compris pour leur bilan environnemental. Qu&#39;en est-il ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading99">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse99" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/le-regime-mediterraneen-est-il-l-un-des-meilleurs-si-ce-n-est-le-meilleur-regime-a-suivre-pour-avoir-une-bonne-sante.html">Le régime méditerranéen est-il le meilleur régime à suivre pour avoir une bonne santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse99" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="3 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            3
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Ces dernières années on entend de plus en plus parler du régime méditerranéen : longévité et meilleure santé couplées à une alimentation riche en huile plutôt qu&#39;en beurre, avec ail, oignons, poissons, poivrons, courgettes, fromages maigres. Certains soulignent même ses bienfaits sur le cerveau. Cette controverse vise à voir ce qu&#39;en disent les études qui ont été menées sur ce sujet.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading96">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse96" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-composition-biochimique-des-larmes-varie-t-elle-selon-les-circonstances-de-leur-production.html">La composition biochimique des larmes varie-t-elle selon les circonstances de leur production&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse96" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les larmes humaines peuvent être produites dans des circonstances très variées : tristesse, joie, peur, rires, fatigue, etc.. Cette controverse vise à étudier si la composition biochimique des larmes varie en fonction des circonstances de leur production (humeur de la personne).</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading92">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse92" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-empreintes-digitales-sont-elles-invariables-au-cours-de-la-vie.html">Les empreintes digitales d&#39;un individu peuvent-elles changer&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse92" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="right"
+               title="2 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            2
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les empreintes digitales sont utilisées en médecine légale pour identifier les individus. Les méthodes utilisées dépendent de l&#39;unicité et de l&#39;invariabilité de ces empreintes. Cette controverse vise à comprendre si les empreintes digitales sont bien invariables au cours de la vie d&#39;un individu.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading91">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse91" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-ondes-electromagnetiques-sont-elles-dangereuses-pour-la-sante.html">Les ondes électromagnétiques sont-elles dangereuses pour la santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse91" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Le développement des nouvelles technologies et du numérique induit une augmentation importante de la quantité d&#39;ondes éléctromagnétiques auxquelles l&#39;Homme est exposé. Ces ondes ont-elles des impacts avérés sur la santé ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading90">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse90" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-douleur-est-elle-ressentie-differemment-chez-les-hommes-et-les-femmes.html">La douleur est-elle ressentie différemment chez les hommes et les femmes&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse90" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            4
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="right"
+               title="3 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            3
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les réactions face à la douleur sont très variables d&#39;un individu à l&#39;autre. Elles peuvent dépendre de paramètres biologiques (sensibilité plus ou moins forte par exemple), mais aussi sociaux (extérioriser sa souffrance peut-être plus ou moins mal vu). Les hommes sont ainsi parfois considérés comme plus résistants que les femmes face à la douleur. Cette différence apparente trouve-t-elle une justification biologique ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading89">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse89" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-detecteurs-de-mensonges-sont-ils-des-outils-fiables.html">Les détecteurs de mensonges sont-ils des outils fiables&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse89" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="3 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            3
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Certains pays utilisent les détecteurs de mensonges dans leur arsenal juridique pour confondre les coupables et identifier les innocents.</p>
+
+<ul>
+<li>Ces outils peuvent-ils objectivement permettre de discerner le vrai du faux avec certitude dans les propos d&#39;une personne ?</li>
+<li>Existe-il des méthodes différentes pour des résultats différents ?</li>
+<li>Que doit-on comprendre par fiabilité ? </li>
+</ul>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading86">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse86" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/la-monogamie-sexuelle-est-elle-naturelle-chez-l-39-homme-ou-socialement-construite.html">La monogamie humaine est-elle socialement construite&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse86" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            5
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>En Occident, la monogamie sexuelle semble être une évidence tant elle est normalisée. Pourtant, il suffit de s&#39;intéresser aux pays voisins, notamment dans le monde arabe, pour observer que la monogamie n&#39;est pas universelle au sein même de l&#39;espèce humaine. Cette controverse vise à comprendre si la monogamie sexuelle est naturelle ou au contraire socialement construite chez l&#39;Homme.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading85">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse85" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-colorants-alimentaires-ont-ils-un-impact-sur-la-sante.html">Les colorants alimentaires ont-ils un impact sur la santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse85" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="right"
+               title="2 analyses"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            2
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>De nombreux colorants alimentaires sont utilisés par l&#39;industrie agroalimentaire pour rendre les produits plus appétissants. Ces colorants ont-ils des impacts, positifs ou négatifs, sur la santé des consommateurs humains ?</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading84">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse84" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/les-conservateurs-utilises-par-les-industries-agroalimentaires-ont-ils-un-impact-sur-la-sante.html">Les conservateurs utilisés par les industries agroalimentaires ont-ils un impact sur la santé&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse84" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Les produits alimentaires industriels contiennent souvent des additifs permettant une meilleure et plus longue conservation. Cette controverse vise à déterminer si ces conservateurs peuvent avoir un impact, positif ou négatif, sur la santé des consommateurs humains.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading79">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse79" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/l-39-existence-d-39-univers-paralleles-est-elle-scientifiquement-demontrable.html">L&#39;existence d&#39;univers parallèles est-elle scientifiquement démontrable?</a>
+    </h4>
+  </div>
+  <div id="Collapse79" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            1
+          </div>
+          <div class="sticky" data-placement="right"
+               title="1 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            1
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Très présents dans la science fiction, les univers parallèles existent bel et bien ... dans l&#39;imaginaire collectif. Cette controverse vise à déterminer si leur existence réelle est scientifiquement démontrable ou non.</p>
+
+          </div>
+    </div>
+  </div>
+</div><div class="panel panel-default empty">
+  <div class="panel-heading" role="tab" id="heading72">
+    <h4 class="panel-title clearfix" style="padding: 7px; font-size: 1.2em">
+      <div data-toggle="collapse" data-target="#Collapse72" class="my-collapse detail pull-right glyphicon glyphicon-chevron-down"></div>
+      <a href="timelines/dans-un-futur-proche-sera-t-il-techniquement-possible-de-cloner-des-mammouths.html">Dans un futur proche, sera-t-il techniquement possible de cloner des mammouths&nbsp?</a>
+    </h4>
+  </div>
+  <div id="Collapse72" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      <div class="list-group">
+        <div class="list-group-item center">
+          <div class="sticky" data-placement="left"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fatter icon-users"></span>
+            2
+          </div>
+          <div class="sticky" data-placement="bottom"
+               title="0 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fatter icon-reference"></span>
+            0
+          </div>
+          <div class="sticky" data-placement="right"
+               title="0 analyse"
+               data-toggle="tooltip">
+            <span class="fatter icon-comment"></span>
+            0
+          </div>
+        </div>
+      </div>
+          <div class="cadre text-justify">
+            <b style="font-size: 1.4em">Cadre, focus et mise au point  :</b><br/>
+            <p>Cette controverse se limite à étudier la possibilité technique (ou non) de cloner des mammouths, sans en étudier les conséquences. Elle ne vise pas à démontrer les avantages ou inconvénients que présenterait la réintroduction des mammouths dans le milieu naturel, ni les considérations éthiques qui peuvent se poser.</p>
+
+          </div>
+    </div>
+  </div>
+</div>
+                        <nav class="pagination" role="navigation" aria-label="pager">
+    <span class="first">
+  <a href="empty_references.html">&laquo; Première</a>
+</span>
+
+    <span class="prev">
+  <a rel="prev" href="empty_references4658.html?page=2">&lsaquo; Précédente</a>
+</span>
+
+        <span class="page">
+  <a href="empty_references.html">1</a>
+</span>
+
+        <span class="page">
+  <a rel="prev" href="empty_references4658.html?page=2">2</a>
+</span>
+
+        <span class="page current">
+  3
+</span>
+
+        <span class="page">
+  <a rel="next" href="empty_referencesfdb0.html?page=4">4</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesaf4d.html?page=5">5</a>
+</span>
+
+        <span class="page">
+  <a href="empty_referencesc575.html?page=6">6</a>
+</span>
+
+      <span class="next">
+  <a rel="next" href="empty_referencesfdb0.html?page=4">Suivante &rsaquo;</a>
+</span>
+
+      <span class="last">
+  <a href="empty_referencesc575.html?page=6">Dernière &raquo;</a>
+</span>
+
+  </nav>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+          <div class="center-block">
+            <img alt="Enrichir" class="img-responsive" src="assets/3rules-1-72d19a799935de5e1be7f5c12b51f87563b116648d43d5cee5e645195e1ca90b.png" />
+          </div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/empty_references?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:49:10 GMT -->
+</html>

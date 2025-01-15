@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/users/t-latrille by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:09:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="../assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="../assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="../assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="HSmhuJVONUZE1bZ+wvkW/oduGa55MOnRj2Lrq9J+ZNNnS8rbx+O3BhpUwvshc9GIJ14pkzGCROVpVxhhOlk4KQ==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="../index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="../timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="../tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="../about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="../users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="../magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="../faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+      <div class="alert alert-danger">Vous devez vous connecter/inscrire pour explorer ce recoin de ControverSciences.</div>
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+<div id="my-container" class="container-fluid">
+<div class="row">
+  <div class="col-xs-12 col-md-3">
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <script src="../assets/chart-322ca54d28718a34348f59da1d12f8b4ab0b75b4a1ad7a2392e694aabd771edb.js"></script>
+
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+            <img class="img-rounded" height="80px" src="../assets/uploads/1/1_profil_v_2.jpg" />
+    <span style="font-size: 3em">
+      &nbsp T. Latrille
+    </span>
+  </div>
+  <div class="panel-body">
+  <div class="clearfix">
+      <b> Fonction/métier : </b><br/>
+            Fondateur/Webmaster de ControverSciences
+        <br/><br/>
+        <b> Institution : </b> <br/>
+      ENS Lyon
+      <br/><br/>
+        <b> Biographie : </b> <ul>
+<li>Doctorant à l&#39;universtité de Lyon - UMR 5558 (actuellement)</li>
+<li>License &amp; Master BioSciences à L&#39;ENS Lyon</li>
+<li>Erasmus de Mathématiques à Uppsala (Suède)</li>
+<li>Fondateur de <a href="https://controversciences.org/" rel="nofollow">ControverSciences</a> </li>
+</ul>
+
+<p><strong>GitHub :</strong></p>
+
+<ul>
+<li><a href="https://github.com/ThibaultLatrille" rel="nofollow">https://github.com/ThibaultLatrille</a></li>
+</ul>
+ <br/>
+    <br/>
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <script type="text/javascript">
+          var data = {
+              labels: ["Enthousiaste", "Sphinx", "Seigneur", "Encyclopédique", "Analyste", "Juge", "Écrivain", "Évaluateur", "Bienveillant"],
+              datasets: [
+                  {
+                      label: "T. Latrille",
+                      fillColor: "rgba(151,187,205,0.2)",
+                      strokeColor: "rgba(151,187,205,1)",
+                      pointColor: "rgba(151,187,205,1)",
+                      pointStrokeColor: "#fff",
+                      pointHighlightFill: "#fff",
+                      pointHighlightStroke: "rgba(151,187,205,1)",
+                      data: [1.26, 1.04, 1.05, 1.26, 1.05, 1.49, 1.19, 1.47, 0.97]
+                  }
+              ]
+          },
+          labels = ["S'intéresse à tout", "Pose des questions", "Ses contributions recoivent des crédits", "Ajoute des références", "Analyse des références", "Évalue les références", "Écrit des synthèses", "Donne des crédits aux contributions", "Suggère des améliorations aux autres"];
+          Chart.defaults.global.responsive = true;
+          Chart.defaults.global.tooltipTemplate = "<%if (toolLabel){%><%=toolLabel%><%}%>";
+          Chart.defaults.global.scaleOverride = true;
+          // Number - The number of steps in a hard coded scale
+          Chart.defaults.global.scaleSteps = 5;
+          // Number - The value jump in the hard coded scale
+          Chart.defaults.global.scaleStepWidth = 0.3;
+          // Number - The scale starting value
+          Chart.defaults.global.scaleStartValue = 0;
+          var canvas = $("#myChart").get(0),
+              ctx = canvas.getContext('2d'),
+              myRadarChart = new Chart(ctx).Radar(data, {pointLabelFontSize : 14, pointLabelFontStyle : "bold"});
+          $.each(myRadarChart.datasets[0].points, function( key, point ) {
+              point.toolLabel = labels[key];
+          });
+      </script>
+
+    <br>
+    <div class="center">
+      <a href="../comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a>
+    </div><br>
+  </div>
+    <div class="panel-group" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title clearfix">
+            <a data-toggle="collapse" href="#collapseOne" class="pull-right glyphicon glyphicon-chevron-down"></a>
+            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              T. Latrille a ajouté  9 controverses
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <table id="notification-timelines" class="table table-striped table-hover">
+            <thead>
+            <tr>
+              <th class="col-sm-8"> La controverse </th>
+              <th class="col-sm-3"> Thèmes </th>
+            </tr>
+            </thead>
+            <tbody class="page">
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/quels-dangers-pour-les-pilules-de-3eme-generation.html">Quels dangers pour les pilules de 3e génération&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-biology"></span>
+                            <span class="icon-medicine"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/les-vaccins-des-effets-secondaires.html">Quel est le bilan coût/bénéfice des vaccins à l&#39;échelle des populations&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-medicine"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-psycho"></span>
+                            <span class="icon-medicine"></span>
+                            <span class="icon-informatics"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/l-39-intestin-est-il-possible-de-parler-d-39-un-deuxieme-cerveau.html">Est-il possible de parler de l&#39;intestin comme d&#39;un deuxième cerveau&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-biology"></span>
+                            <span class="icon-medicine"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-biology"></span>
+                            <span class="icon-medicine"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/le-point-g-mythe-ou-realite.html">Le point G est-il une réalité anatomique&nbsp? </a> </td>
+                      <td>
+                            <span class="icon-biology"></span>
+                            <span class="icon-medicine"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/le-vaccin-de-l-39-hepatite-b-un-lien-avec-la-sclerose-en-plaque.html">Le vaccin de l&#39;hépatite B : un lien avec la sclérose en plaque&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-biology"></span>
+                            <span class="icon-medicine"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/le-thc-quels-effets-a-long-terme.html">Le THC : quels effets à long terme&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-biology"></span>
+                            <span class="icon-medicine"></span>
+                            <span class="icon-psycho"></span>
+                      </td>
+                    </tr>
+                    <tr class="notification-timeline">
+                      <td> <a href="../timelines/les-europeens-sont-ils-descendants-de-neanderthal.html">Les européens sont-ils des descendants de l&#39;homme de Néanderthal&nbsp?</a> </td>
+                      <td>
+                            <span class="icon-archeology"></span>
+                            <span class="icon-biology"></span>
+                            <span class="icon-history"></span>
+                      </td>
+                    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br/>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title clearfix">
+            <a data-toggle="collapse" href="#collapseTwo" class="pull-right glyphicon glyphicon-chevron-down"></a>
+            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              T. Latrille a ajouté  37 références scientifiques
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <table id="notification-references" class="table table-striped table-hover">
+            <thead>
+            <tr>
+              <th class="col-xs-6"> La référence </th>
+              <th class="col-xs-4"> Dans la controverse </th>
+            </tr>
+            </thead>
+
+            <tbody class="page">
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-gaze-positive-loop-and-the-coevolution-of-human-dog-bonds.html">Oxytocin-gaze positive loop and the coevolution of human-dog bonds</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/epigenetic-modification-of-the-oxytocin-receptor-gene-influences-the-perception-of-anger-and-fear-in-the-human-brain.html">Epigenetic modification of the oxytocin receptor gene influences the perception of anger and fear in the human brain</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-enhances-brain-reward-system-responses-in-men-viewing-the-face-of-their-female-partner.html">Oxytocin enhances brain reward system responses in men viewing the face of their female partner</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/the-neurobiology-of-pair-bonding.html">The Neurobiology of Pair Bonding</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/bee-declines-driven-by-combined-stress-from-parasites-pesticides-and-lack-of-flowers.html">Bee declines driven by combined stress from parasites, pesticides, and lack of flowers</a>   </td>
+                      <td> <a href="../timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/peripheral-oxytocin-administration-buffers-autonomic-but-not-behavioral-responses-to-environmental-stressors-in-isolated-prairie-voles.html">Peripheral oxytocin administration buffers autonomic but not behavioral responses to environmental stressors in isolated prairie voles.</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/brief-report-does-exposure-to-violent-video-games-increase-moral-disengagement-among-adolescents.html">Brief report: Does exposure to violent video games increase moral disengagement among adolescents?</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/chronic-coffee-consumption-has-a-less-potent-effect-on-aortic-stiffness-than-caffeine.html">Chronic Coffee Consumption has a Less Potent Effect on Aortic Stiffness than Caffeine</a>   </td>
+                      <td> <a href="../timelines/le-cafe-est-il-benefique-pour-la-sante.html">Le café a-t-il des effets bénéfiques sur la santé&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/i-am-right-you-are-wrong-how-biased-assimilation-increases-the-perceived-gap-between-believers-and-skeptics-of-violent-video-game-effects.html">I Am Right, You Are Wrong: How Biased Assimilation Increases the Perceived Gap between Believers and Skeptics of Violent Video Game Effects</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/how-the-quantity-and-quality-of-electronic-gaming-relates-to-adolescents-academic-engagement-and-psychosocial-adjustment.html">How the Quantity and Quality of Electronic Gaming Relates to Adolescents’ Academic Engagement and Psychosocial Adjustment.</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/neuroscience-shedding-light-on-a-change-of-mind.html">Neuroscience: Shedding light on a change of mind</a>   </td>
+                      <td> <a href="../timelines/sommes-nous-capables-d-39-influencer-le-comportement-avec-la-technologie.html">Est-il possible de contrôler le comportement par la technologie&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/wireless-magnetothermal-deep-brain-stimulation.html">Wireless magnetothermal deep brain stimulation</a>   </td>
+                      <td> <a href="../timelines/sommes-nous-capables-d-39-influencer-le-comportement-avec-la-technologie.html">Est-il possible de contrôler le comportement par la technologie&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/condition-dependent-expression-of-virulence-in-a-trypanosome-infecting-bumblebees.html">Condition-dependent expression of virulence in a trypanosome infecting bumblebees</a>   </td>
+                      <td> <a href="../timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/multifunctional-fibers-for-simultaneous-optical-electrical-and-chemical-interrogation-of-neural-circuits-in-vivo.html">Multifunctional fibers for simultaneous optical, electrical and chemical interrogation of neural circuits in vivo</a>   </td>
+                      <td> <a href="../timelines/sommes-nous-capables-d-39-influencer-le-comportement-avec-la-technologie.html">Est-il possible de contrôler le comportement par la technologie&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-mediation-of-behavioral-and-cardiac-reactivity-to-acute-stressors-in-socially-isolated-prairie-voles.html">Oxytocin mediation of behavioral and cardiac reactivity to acute stressors in socially isolated prairie voles</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-and-social-perception-oxytocin-increases-perceived-facial-trustworthiness-and-attractiveness.html">Oxytocin and social perception: Oxytocin increases perceived facial trustworthiness and attractiveness</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-increases-generosity-in-humans.html">Oxytocin Increases Generosity in Humans</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/origin-of-the-hiv-1-group-o-epidemic-in-western-lowland-gorillas.html">Origin of the HIV-1 group O epidemic in western lowland gorillas</a>   </td>
+                      <td> <a href="../timelines/transfert-du-vis-vih-du-singe-a-l-39-homme-accident-quot-naturel-quot-ou-erreur-humaine.html">Des expériences scientifiques sont elles à l&#39;origine du transfert du VIS/VIH du singe à l&#39;homme&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/actions-of-caffeine-in-the-brain-with-special-reference-to-factors-that-contribute-to-its-widespread-use.html">Actions of caffeine in the brain with special reference to factors that contribute to its widespread use.</a>   </td>
+                      <td> <a href="../timelines/le-cafe-est-il-benefique-pour-la-sante.html">Le café a-t-il des effets bénéfiques sur la santé&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-increases-the-influence-of-public-service-advertisements.html">Oxytocin Increases the Influence of Public Service Advertisements</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/caffeine-in-floral-nectar-enhances-a-pollinator-s-memory-of-reward.html">Caffeine in Floral Nectar Enhances a Pollinator&#39;s Memory of Reward</a>   </td>
+                      <td> <a href="../timelines/le-cafe-est-il-benefique-pour-la-sante.html">Le café a-t-il des effets bénéfiques sur la santé&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/modified-release-hydrocortisone-to-provide-circadian-cortisol-profiles.html">Modified-release hydrocortisone to provide circadian cortisol profiles</a>   </td>
+                      <td> <a href="../timelines/le-cafe-est-il-benefique-pour-la-sante.html">Le café a-t-il des effets bénéfiques sur la santé&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/characterization-of-the-oxytocin-system-regulating-affiliative-behavior-in-female-prairie-voles.html">Characterization of the oxytocin system regulating affiliative behavior in female prairie voles</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/intense-acts-of-violence-during-video-game-play-make-daily-life-aggression-appear-innocuous-a-new-mechanism-why-violent-video-games-increase-aggression.html">Intense acts of violence during video game play make daily life aggression appear innocuous: A new mechanism why violent video games increase aggression</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/effect-of-playing-violent-video-games-cooperatively-or-competitively-on-subsequent-cooperative-behavior.html">Effect of Playing Violent Video Games Cooperatively or Competitively on Subsequent Cooperative Behavior</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-crossing-the-bridge-between-basic-science-and-pharmacotherapy.html">Oxytocin: Crossing the Bridge between Basic Science and Pharmacotherapy</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/persistence-of-circadian-rhythmicity-in-a-mammalian-hypothalamic-island-containing-the-suprachiasmatic-nucleus.html">Persistence of circadian rhythmicity in a mammalian hypothalamic &quot;island&quot; containing the suprachiasmatic nucleus.</a>   </td>
+                      <td> <a href="../timelines/le-cafe-est-il-benefique-pour-la-sante.html">Le café a-t-il des effets bénéfiques sur la santé&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/explicit-memory-creation-during-sleep-demonstrates-a-causal-role-of-place-cells-in-navigation.html">Explicit memory creation during sleep demonstrates a causal role of place cells in navigation</a>   </td>
+                      <td> <a href="../timelines/sommes-nous-capables-d-39-influencer-le-comportement-avec-la-technologie.html">Est-il possible de contrôler le comportement par la technologie&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/immersed-in-virtual-worlds-and-minds-effects-of-in-game-storytelling-on-immersion-need-satisfaction-and-affective-theory-of-mind.html">Immersed in Virtual Worlds and Minds: Effects of In-Game Storytelling on Immersion, Need Satisfaction, and Affective Theory of Mind</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/early-effects-of-caffeinated-and-decaffeinated-coffee-on-subjective-state-and-gender-differences.html">Early effects of caffeinated and decaffeinated coffee on subjective state and gender differences</a>   </td>
+                      <td> <a href="../timelines/le-cafe-est-il-benefique-pour-la-sante.html">Le café a-t-il des effets bénéfiques sur la santé&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/pesticide-exposure-in-honey-bees-results-in-increased-levels-of-the-gut-pathogen-nosema.html">Pesticide exposure in honey bees results in increased levels of the gut pathogen Nosema</a>   </td>
+                      <td> <a href="../timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-reverses-amphetamine-induced-deficits-in-social-bonding-evidence-for-an-interaction-with-nucleus-accumbens-dopamine.html">Oxytocin Reverses Amphetamine-Induced Deficits in Social Bonding: Evidence for an Interaction with Nucleus Accumbens Dopamine</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/association-of-coffee-drinking-with-total-and-cause-specific-mortality.html">Association of Coffee Drinking with Total and Cause-Specific Mortality</a>   </td>
+                      <td> <a href="../timelines/le-cafe-est-il-benefique-pour-la-sante.html">Le café a-t-il des effets bénéfiques sur la santé&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/oxytocin-and-vasopressin-are-dysregulated-in-williams-syndrome-a-genetic-disorder-affecting-social-behavior.html">Oxytocin and Vasopressin Are Dysregulated in Williams Syndrome, a Genetic Disorder Affecting Social Behavior</a>   </td>
+                      <td> <a href="../timelines/l-39-ocytocine-l-39-hormone-qui-cree-des-liens.html">L&#39;ocytocine : l&#39;hormone qui crée des liens&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/violent-video-games-stress-people-out-and-make-them-more-aggressive.html">Violent Video Games Stress People Out and Make Them More Aggressive</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/field-relevance-of-a-synergistic-effect-observed-in-the-laboratory-between-an-ebi-fungicide-and-a-chloronicotinyl-insecticide-in-the-honeybee-apis-mellifera-l-hymenoptera.html">Field relevance of a synergistic effect observed in the laboratory between an EBI fungicide and a chloronicotinyl insecticide in the honeybee (Apis mellifera L, Hymenoptera)</a>   </td>
+                      <td> <a href="../timelines/les-abeilles-domestiques-vont-elles-disparaitre.html">Les abeilles domestiques vont-elles disparaître&nbsp?</a>   </td>
+                    </tr>
+                    <tr class="notification-reference">
+                      <td> <a href="../references/action-video-game-modifies-visual-selective-attention.html">Action video game modifies visual selective attention</a>   </td>
+                      <td> <a href="../timelines/les-jeux-videos-rendent-ils-plus-violents.html">Les jeux vidéo, et ceux à caractère violent en particulier, rendent-ils plus agressifs dans la vie de tous les jours&nbsp?</a>   </td>
+                    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br/>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title clearfix">
+            <a data-toggle="collapse" href="#collapseThree" class="pull-right glyphicon glyphicon-chevron-down"></a>
+            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              T. Latrille a écrit 9 analyses
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <table id="notification-comments" class="table table-striped table-hover">
+            <thead>
+            <tr>
+              <th class="col-xs-3"> L&#39;analyse </th>
+              <th class="col-xs-4"> De la référence </th>
+            </tr>
+            </thead>
+
+            <tbody class="page">
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/137.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/functional-identification-of-an-aggression-locus-in-the-mouse-hypothalamus.html">Augmentation de l&#39;agressivité par stimulation lumineuse d&#39;une aire spécifique du cerveau grâce à l&#39;optogénétique.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/20.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/characterization-of-the-oxytocin-system-regulating-affiliative-behavior-in-female-prairie-voles.html">La vasopressine serait également impliquée, à l’instar de l’ocytocine, dans les comportements sociaux, comme c’est le cas chez le campagnol des prairies</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/56.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/oxytocin-gaze-positive-loop-and-the-coevolution-of-human-dog-bonds.html">Les propriétaires de chiens ont une concentration d&#39;ocytocine dans l&#39;urine plus élevée lorsque leurs chiens les fixent du regard.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/21.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/the-neurobiology-of-pair-bonding.html">Les campagnols des montagnes, très libertins, deviennent de parfaits monogames en modifiant l&#39;impact de la vasopressine et de l&#39;ocytocine dans le cerveau.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/17.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/oxytocin-enhances-brain-reward-system-responses-in-men-viewing-the-face-of-their-female-partner.html">L’ocytocine contribue au lien amoureux chez l’homme</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/25.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/how-the-quantity-and-quality-of-electronic-gaming-relates-to-adolescents-academic-engagement-and-psychosocial-adjustment.html">Les comportements violents sont liés au temps passé à jouer aux jeux vidéos, mais pas à la violence de ces jeux.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/26.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/bee-declines-driven-by-combined-stress-from-parasites-pesticides-and-lack-of-flowers.html">Le déclin des abeilles résulte du stress engendré par les parasites, les pesticides et le manque de fleurs.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/19.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/epigenetic-modification-of-the-oxytocin-receptor-gene-influences-the-perception-of-anger-and-fear-in-the-human-brain.html">L’altération épigénétique du gène du récepteur à l’ocytocine augmente la perception de la colère et de la peur chez l’humain.</a>   </td>
+                    </tr>
+                    <tr class="notification-comment">
+                      <td> <a class="btn btn-primary" href="../comments/18.html">L&#39;analyse</a>   </td>
+                      <td> <a href="../references/oxytocin-increases-generosity-in-humans.html">L’ocytocine contribue à la stabilisation des liens sociaux et des comportements altruistes.</a>   </td>
+                    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+          <br/>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).parent(".panel").find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+    });
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).parent("div").parent("div").find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+    });
+</script>
+
+    <div class="center">
+      <br/>
+      <a class="btn btn-primary" href="../users.html"><span class="icon-users"></span> Tous les contributeurs</a>
+    </div>
+    <br/>
+    <br/>
+  </div>
+</div>
+</div>
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="../about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/users/t-latrille by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 03:09:55 GMT -->
+</html>

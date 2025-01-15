@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?staging=true&tag=socio by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:23:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>ControverSciences.org</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ControverSciences est un portail collaboratif et indépendant qui rassemble les publications scientifiques autour de questions controversées, en les rendant accessible à tous.">
+  <meta name="author" content="Thibault Latrille">
+  <meta name="Keywords" content="controverse scientifique débat discussion interpretation polémique">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ControverSciences-1a5c1e6943f129e238e4753a6eb02b26b0d417437b7d1b9da526269af5e4e521.png">
+  <link rel="icon"
+        type="image/png"
+        href="assets/favicon-59715d6b9c0070414066df33b1a36bd59f9593b515f72fc69d0bc71d0daeffe4.png">
+  <link rel="stylesheet" media="all" href="assets/application-d1f048f5fcf93923c5dce224528c6cbd6ee715444f8ac7d1083e763025778347.css" />
+
+      <script src="assets/not_logged-ea8105de7bc0eb277c12fe54406458f2446988085b1e7b6633840fe45887bfaf.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="JJMjkeqJ3NXiqSZT64DyxnOAmhpKnnNFHbSFtnzykDZe8UjyuCRelbwoUtYICjWw07CqJwIs3nH7gXZ8lNXMzA==" />
+  <base />
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+<body>
+<header id="top" class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" data-target=".bs-navbar-collapse"
+              data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav">
+        <li><a id="logo-header" href="index.html"><span class="icon icon-frog"></span></a></li>
+      </ul>
+    </div>
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Les controverses</strong> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><b><span class="icon-search bigger"></span> &nbsp Voir les controverses</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="discover.html"><b><span class="icon-hatch bigger" ></span> &nbsp Comment naissent-elles ?</b></a> </li>
+            <li><a href="timelines_graph.html"><b><span class="icon-network bigger" ></span> &nbsp Sont-elles liées ?</b></a> </li>
+            <li><a href="tag-pairs-graph090a.html?timeline=true"><b><span class="icon-circo bigger" ></span> &nbsp Sont-elles inter-disciplinaires ?</b></a> </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <strong>Controver</strong>Sciences <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html"><b><span class="icon-rocket bigger" ></span> &nbsp Visite guidée du site</b></a> </li>
+            <li><a href="about.html"><b><span class="icon icon-frog bigger" ></span> &nbsp Qui sommes-nous ?</b></a></li>
+            <li class="divider"></li>
+            <li><a href="users.html"><b><span class="icon-users bigger" ></span> &nbsp Qui sont les contributeurs ?</b></a> </li>
+            <li><a href="comics.html"><b><span class="icon-superman bigger" ></span> &nbsp Quel contributeur êtes-vous ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="contributions.html"><b><span class="icon-graph-int bigger" ></span> &nbsp Le site évolue-t-il ?</b></a> </li>
+            <li class="divider"></li>
+            <li><a href="magna-charta.html"><b><span class="glyphicon glyphicon-book font12" ></span> &nbsp La charte du site</b></a></li>
+            <li><a href="faq.html"><b><span class="glyphicon glyphicon-question-sign font12" ></span> &nbsp FAQ</b></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="notifications">
+</div>
+<div id="error-container" class="container-fluid">
+</div>
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-2 col-md-8 center">
+      <span id="static" class="alert alert-warning alert-dismissible show" role="alert"  style="margin-bottom: 10px; margin-top: 10px;">
+        <strong>Controver</strong>Sciences est archivé. Il reste consultable mais il n'est plus possible de contribuer. <br>
+        Le code source pour faire tourner le serveur reste disponible sur <a href="https://github.com/ThibaultLatrille/ControverSciences" target="_blank">GitHub</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+<div id="my-container" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-2 col-lg-8">
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-offset-0 col-lg-2">
+    </div>
+  </div>
+  <div class="col-xs-12 col-lg-offset-1 col-lg-10">
+    <div class="row">
+      <div id="timelines">
+        <div class="row page">
+                  <div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-place-des-villes-pour-la-biodiversite.html">
+    <span class='int'>5</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-place-des-villes-pour-la-biodiversite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les zones urbaines sont-elles toujours synonyme de perte de biodiversité&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>L&#39;établissement de l&#39;Homme dans un nouvel habitat amène souvent à la construction de colonies plus ou moins grandes. L’urbanisation est le phénomène qui amène les populations à aller vivre à l’intérieur ou proche des villes, pour des...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="20 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">20</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/infidelite-et-monogamie-chez-l-espece-humaine-des-traits-adaptatifs-8c4a5da1-acf0-4fee-b145-8db864066bec.html">
+    <span class='int'>4</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/infidelite-et-monogamie-chez-l-espece-humaine-des-traits-adaptatifs-8c4a5da1-acf0-4fee-b145-8db864066bec.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Infidélité et monogamie chez l&#39;espèce humaine, des traits adaptatifs&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong></p> <p>Cette controverse s&#39;intéresse à comprendre les origines de la monogamie chez l&#39;homme et comment le passage s&#39;est fait dans notre histoire évolutive à partir de la polygamie de nos ancêtres.<br> L&#39;explication pourrait être...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="20 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">20</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-progres-techniques-de-l-humanite-conduisent-ils-a-une-emancipation-de-la-selection-naturelle.html">
+    <span class='int'>4</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-progres-techniques-de-l-humanite-conduisent-ils-a-une-emancipation-de-la-selection-naturelle.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les progrès techniques de l&#39;humanité conduisent-ils à son émancipation de la sélection naturelle&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>A l’heure de l’explosion de la génétique, des techniques de séquençage et de l&#39;édition des génomes, le débat sur l’eugénisme ne fait que s’étoffer. L’eugénisme, que l’on peut qualifier de science visant à améliorer l&#39;espèce humaine, soit...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="15 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">15</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-compensation-ecologique-benefice-economique-ou-ecologique.html">
+    <span class='int'>4</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-compensation-ecologique-benefice-economique-ou-ecologique.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Quel bénéfice écologique des mesures compensatoires&nbsp? 
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> L’<strong>érosion de la biodiversité</strong> à l’échelle globale entraîne la biosphère, c&#39;est-à-dire l&#39;ensemble des organismes vivants, vers une 6ème extinction de masse (<a href="https://science.sciencemag.org/content/345/6195/401" rel="nofollow">Dirzo et al. 2014</a>). L’Homme en est le premier responsable,...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="16 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">16</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/l-agroecologie-pour-nourrir-le-monde-realite-ou-utopie.html">
+    <span class='int'>3</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/l-agroecologie-pour-nourrir-le-monde-realite-ou-utopie.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L&#39;agroécologie pour nourrir le monde : réalité ou utopie&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Dans un contexte de prise de conscience environnementale, l&#39;agroécologie comme futur système agricultural se fait de plus en plus de place dans la pensée collective. Mais alors que la population mondiale ne cesse de croître, et que les...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="14 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">14</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-colonisation-assistee-est-elle-une-methode-de-conservation-viable-face-au-changement-climatique.html">
+    <span class='int'>4</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-colonisation-assistee-est-elle-une-methode-de-conservation-viable-face-au-changement-climatique.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La colonisation assistée est elle une méthode de conservation viable face au changement climatique&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>La perte de biodiversité attribuée au réchauffement climatique est un enjeu majeur dans les futures campagnes de conservations à l&#39;échelle mondiale. L&#39;idée de recourir à la colonisation assistée, définie comme l’introduction intentionnelle...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="14 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">14</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-mauvaises-herbes-sont-elles-vraiment-nefastes-pour-les-cultures.html">
+    <span class='int'>3</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-mauvaises-herbes-sont-elles-vraiment-nefastes-pour-les-cultures.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les mauvaises herbes sont-elles vraiment néfastes&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les espèces adventices désignent les espèces de plantes non semées qui se développent spontanément dans les parcelles agricoles. Du point de vue de l&#39;agriculteur, ces plantes ont longtemps été considérées comme des espèces nuisibles qui...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="13 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">13</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/peut-on-reellement-parler-de-l-anthropocene-comme-une-nouvelle-ere-geologique.html">
+    <span class='int'>3</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/peut-on-reellement-parler-de-l-anthropocene-comme-une-nouvelle-ere-geologique.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Peut on réellement parler de l&#39;Anthropocène comme une nouvelle période géologique&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p><strong>Introduction</strong><br> L’échelle des temps géologique permet de décrire l’histoire des changements globaux terrestres. Elle permet de classer les événements marquants des principaux facteurs biotiques et abiotiques. Afin de définir ces unités géologiques,...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Géologie" data-toggle="tooltip" href="timelines7097.html?tag=geology"><span class="fat icon-geology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Histoire" data-toggle="tooltip" href="timelines82bc.html?tag=history"><span class="fat icon-history"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="14 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">14</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-publicite-exploite-t-elle-notre-inconscient.html">
+    <span class='int'>12</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-publicite-exploite-t-elle-notre-inconscient.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La publicité exploite-t-elle notre inconscient&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>La publicité est une technique de communication qui a pour objectif de modifier le comportement des personnes exposées à un message contenant une information en relation avec le but recherché. Comme tout acte de communication, cette technique...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="11 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">11</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/l-39-humanite-peut-elle-se-nourrir-sans-degrader-son-environnement.html">
+    <span class='int'>12</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/l-39-humanite-peut-elle-se-nourrir-sans-degrader-son-environnement.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                L&#39;humanité peut-elle se nourrir sans dégrader son environnement&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>La population humaine ne cesse de croître et devrait attendre 9 milliards d&#39;individus en 2040. Alors que le problème de la faim est loin d&#39;être résolu aujourd&#39;hui, il risque d&#39;être encore plus important demain si la production...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Technologie" data-toggle="tooltip" href="timelines5d64.html?tag=techno"><span class="fat icon-techno"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="6 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">6</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="2 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">2</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-douleur-est-elle-ressentie-differemment-chez-les-hommes-et-les-femmes.html">
+    <span class='int'>9</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-douleur-est-elle-ressentie-differemment-chez-les-hommes-et-les-femmes.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La douleur est-elle ressentie différemment chez les hommes et les femmes&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les réactions face à la douleur sont très variables d&#39;un individu à l&#39;autre. Elles peuvent dépendre de paramètres biologiques (sensibilité plus ou moins forte par exemple), mais aussi sociaux (extérioriser sa souffrance peut-être plus ou...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Médecine et santé" data-toggle="tooltip" href="timelines23c8.html?tag=medicine"><span class="fat icon-medicine"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="4 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">4</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="3 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">3</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/les-zoos-et-aquariums-sont-ils-efficaces-comme-vecteurs-de-sensibilisation-a-la-protection-de-la-biodiversite.html">
+    <span class='int'>9</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/les-zoos-et-aquariums-sont-ils-efficaces-comme-vecteurs-de-sensibilisation-a-la-protection-de-la-biodiversite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                Les zoos et aquariums sont-ils efficaces comme vecteurs de sensibilisation à la protection de la biodiversité&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les parcs zoologiques et aquariums ouverts au grand public sont en général considérés comme des lieux éducatifs, permettant d&#39;inculquer aux visiteurs des bases concernant la protection des espèces animales voire même de l&#39;environnement...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">2</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="4 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">4</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-monogamie-sexuelle-est-elle-naturelle-chez-l-39-homme-ou-socialement-construite.html">
+    <span class='int'>15</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-monogamie-sexuelle-est-elle-naturelle-chez-l-39-homme-ou-socialement-construite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La monogamie humaine est-elle socialement construite&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>En Occident, la monogamie sexuelle semble être une évidence tant elle est normalisée. Pourtant, il suffit de s&#39;intéresser aux pays voisins, notamment dans le monde arabe, pour observer que la monogamie n&#39;est pas universelle au sein même de...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="5 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">5</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">1</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-peine-de-mort-permet-elle-de-reduire-la-criminalite.html">
+    <span class='int'>11</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-peine-de-mort-permet-elle-de-reduire-la-criminalite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La peine de mort permet-elle de réduire la criminalité&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Les débats sur la peine de mort se concentrent souvent sur des arguments éthiques, mais rarement sur son efficacité ou inefficacité pour réduire la criminalité. Ses opposants dénoncent une pratique barbare et d&#39;un autre age, ses partisans...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Psychologie" data-toggle="tooltip" href="timelinesf510.html?tag=psycho"><span class="fat icon-psycho"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="1 contribut·eur·rice"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">1</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="4 références scientifiques analysées"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">4</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div><div class="timeline col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-6 ">
+  <div class="panel panel-primary" style="background-color: transparent">
+    <div class="timeline-body">
+      <div class="panel-body" style="position: relative;">
+        <div class="timeline-frame clearfix">
+          <div class="timeline-name clearfix">
+          <div class="pull-right" style="margin-left: 10px">
+              <a class="btn btn-default green" data-placement="left"
+     href="timelines/la-chasse-est-elle-compatible-avec-la-conservation-de-la-biodiversite.html">
+    <span class='int'>5</span> abonnés
+  </a>
+
+          </div>
+          <a href="timelines/la-chasse-est-elle-compatible-avec-la-conservation-de-la-biodiversite.html">
+            <div class="transparent flex hvr-grow1">
+              <h3 class="shadowed">
+                La chasse récréative est-elle compatible avec la conservation de la biodiversité en France&nbsp?
+              </h3>
+            </div>
+          </a>
+          </div>
+          <div class="cadre text-justify">
+            <p>Il y a 50 ans de nombreux pays mettent en place des réglementations pour la protection de la nature et pour la conservation des espèces. La question de la chasse fait l&#39;objet de débats parfois houleux en France dans les années 80-90 entre les...</p>
+          </div>
+        </div>
+        <br/>
+        <div class="pull-right">
+              <a class="btn btn-default stick hvr-shadow" title="Ecologie" data-toggle="tooltip" href="timelinesf5b1.html?tag=planet"><span class="fat icon-planet"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Biologie" data-toggle="tooltip" href="timelinesdae9.html?tag=biology"><span class="fat icon-biology"></span> </a>
+              <a class="btn btn-default stick hvr-shadow" title="Sociologie" data-toggle="tooltip" href="timelines72e9.html?tag=socio"><span class="fat icon-socio"></span> </a>
+        </div>
+        <div class="transparent inline-block">
+          <div class="sticky" data-placement="top"
+               title="2 contribut·eur·rice·s"
+               data-toggle="tooltip">
+            <span class="fat icon-users"></span>
+            <span class="badge">2</span>
+          </div>
+          <div class="sticky" data-placement="top"
+               title="1 référence scientifique analysée"
+               data-toggle="tooltip">
+            <span class="fat icon-reference"></span>
+            <span class="badge">1</span>
+          </div>
+        </div>
+        <div class="background">
+        </div>
+        <img class="loading-image" src="#" alt=''
+             style="background-size: 100%; background-repeat:no-repeat;">
+
+      </div>
+    </div>
+  </div>
+</div>
+              
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 center">
+
+        </div>
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="iptaken" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <br/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"> Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function setupSubscription(context) {
+        $('[data-validate]', context).click(function () {
+            var self = $(this);
+            self.hide();
+            self.after('<svg version="1.1" class="loader-like" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/></path></svg>');
+            $.ajax(self.data('validate'), {
+                url: self.data('validate'),
+                data: {id: self.val()},
+                method: 'POST',
+                statusCode: {
+                    201: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.addClass('btn-success');
+                        self.removeClass('btn-default');
+                        self.removeClass('green');
+                        self.attr('data-original-title', "Vous suivez actuellement cette controverse et recevez les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) + 1);
+                    },
+                    204: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        var int = $('.int', self);
+                        self.removeClass('btn-success');
+                        self.addClass('btn-default');
+                        self.addClass('green');
+                        self.attr('data-original-title', "Abonnez-vous à cette controverse si vous souhaitez suivre les nouveautés la concernant.");
+                        int.text(parseInt(int.text()) - 1);
+                    },
+                    401: function (response) {
+                        $('.loader-like').remove();
+                        self.show();
+                        $('#iptaken').modal('show');
+                    }
+                }
+            })
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      $('#filter-button').on( 'click', function() {
+        $('#filter-button').hide();
+        $('.filter').show();
+      });
+        $('.loading-image').imagesLoaded().progress( function( instance, image ) {
+            if (image.isLoaded) {
+                $(image.img).addClass("loaded");
+            }
+        });
+        $('.timeline-name').responsiveEqualHeightGrid();
+        $('.timeline-frame').responsiveEqualHeightGrid();
+        $('.timeline-body').responsiveEqualHeightGrid();
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+        setupSubscription();
+    });
+</script>
+
+</body>
+<footer class="clearfix">
+  <div id="about-link" class="white-href">
+    
+    <a href="about.html"><span class="icon-frog normal"></span> A propos</a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
+        });
+        autosize($('textarea'));
+    });
+    $('#newissue').on('shown.bs.modal', function () {
+        $('.my-btn', this).responsiveEqualHeightGrid();
+    });
+</script>
+
+
+
+<!-- Mirrored from 0.0.0.0:3000/timelines?staging=true&tag=socio by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2025 23:23:39 GMT -->
+</html>
